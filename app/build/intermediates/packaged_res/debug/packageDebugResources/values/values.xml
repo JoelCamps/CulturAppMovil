@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul">#00F2E9</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="grisClaro">#F3F3F3</color>
+    <color name="grisOscuro">#C9C9C9</color>
+    <color name="morado">#C77DFF</color>
+    <color name="negro">#222222</color>
+    <color name="rojo">#D51C1C</color>
+    <string name="ajustes">Ajustes</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="app_name">CulturApp</string>
+    <string name="buscar">Buscar eventos</string>
+    <string name="cambiar">Cambiar contraseña</string>
+    <string name="cancelar">Cancelar reserva</string>
+    <string name="chat">Chat</string>
+    <string name="claro">Modo claro</string>
+    <string name="conf_cambios">Confirmar cambios</string>
+    <string name="conf_contra">Confirmar Contraseña</string>
+    <string name="contra">Contraseña</string>
+    <string name="correo">Correo</string>
+    <string name="crear">Crear evento</string>
+    <string name="cuenta">¿No tienes cuenta?</string>
+    <string name="datos">Cambiar datos</string>
+    <string name="descripcion">Descripción</string>
+    <string name="disponibles">Disponibles</string>
+    <string name="duracion">Duración</string>
+    <string name="entradas">Entradas</string>
+    <string name="eventos">Eventos</string>
+    <string name="fecha">Fecha</string>
+    <string name="filtro">Filtro</string>
+    <string name="generales">Ajustes generales</string>
+    <string name="hora">Hora</string>
+    <string name="iniciar">Iniciar sesión</string>
+    <string name="mensaje">Mensaje</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_evento">Nombre del evento</string>
+    <string name="nueva">Nueva contraseña</string>
+    <string name="olvidado">¿Has olvidado la contraseña?</string>
+    <string name="oscuro">Modo oscuro</string>
+    <string name="precio">Precio</string>
+    <string name="registrar">Registrarse</string>
+    <string name="reservar">Reservar</string>
+    <string name="reservas">Reservas</string>
+    <string name="sala">Sala</string>
+    <string name="tipo">Tipo</string>
+    <string name="total">Totales</string>
+    <style name="Base.Theme.CulturApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.CulturApp" parent="Base.Theme.CulturApp"/>
+</resources>
