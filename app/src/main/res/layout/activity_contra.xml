@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_claro"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:textColorHint="@color/grisOscuro"
+        android:textColor="@color/negro"
+        android:fontFamily="@font/dmseriftextregular"
+        android:background="@drawable/edittext_personalizado"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/txtNueva"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nueva"
+        android:textColorHint="@color/grisOscuro"
+        android:textColor="@color/negro"
+        android:fontFamily="@font/dmseriftextregular"
+        android:background="@drawable/edittext_personalizado"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtConfirmar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/conf_contra"
+        android:textColorHint="@color/grisOscuro"
+        android:textColor="@color/negro"
+        android:fontFamily="@font/dmseriftextregular"
+        android:background="@drawable/edittext_personalizado"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIniciar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cambiar"
+                android:fontFamily="@font/alkatrabariablefontwght"
+                android:background="@drawable/boton_personalizado"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

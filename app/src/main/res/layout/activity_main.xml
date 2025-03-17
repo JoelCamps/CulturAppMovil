@@ -23,7 +23,7 @@
         android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/correo"
+        android:id="@+id/txtCorreo"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="@string/correo"
@@ -35,7 +35,7 @@
         android:layout_marginTop="30dp"/>
 
     <EditText
-        android:id="@+id/contra"
+        android:id="@+id/txtContra"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:hint="@string/contra"
@@ -60,7 +60,7 @@
             android:fontFamily="@font/dmseriftextregular"/>
 
         <TextView
-            android:id="@+id/cambiarContra"
+            android:id="@+id/lblContra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cambiar"
@@ -104,7 +104,7 @@
                 android:fontFamily="@font/dmseriftextregular"/>
 
             <TextView
-                android:id="@+id/registrar"
+                android:id="@+id/lblRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/registrar"
@@ -112,8 +112,5 @@
                 android:fontFamily="@font/alkatrabariablefontwght"
                 android:layout_marginStart="3dp"/>
         </LinearLayout>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </LinearLayout>
