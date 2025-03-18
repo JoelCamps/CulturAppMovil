@@ -65,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/cambiar"
                 android:fontFamily="@font/alkatrabariablefontwght"
+                android:textStyle="bold"
                 android:background="@drawable/boton_personalizado"
                 app:layout_constraintBottom_toTopOf="@+id/lblInicio"
                 app:layout_constraintStart_toStartOf="parent"

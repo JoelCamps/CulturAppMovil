@@ -18,7 +18,7 @@ class ContraActivity : AppCompatActivity() {
         val txtCorreo: EditText = findViewById(R.id.txtCorreo)
         val txtContra: EditText = findViewById(R.id.txtNueva)
         val txtConfirmar: EditText = findViewById(R.id.txtConfirmar)
-        val btnIniciar: Button = findViewById(R.id.btnIniciar)
+        val btnCambiar: Button = findViewById(R.id.btnCambiar)
         val lblInicio: TextView = findViewById(R.id.lblInicio)
 
         lblInicio.setOnClickListener{

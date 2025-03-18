@@ -14,13 +14,14 @@
         android:layout_height="wrap_content"
         android:background="@drawable/spinner_personalizado"
         android:layout_gravity="end"
-        android:layout_marginEnd="5dp"/>
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
         android:src="@drawable/logo_claro"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="90dp"/>
 
     <EditText
         android:id="@+id/txtCorreo"
@@ -32,7 +33,7 @@
         android:fontFamily="@font/dmseriftextregular"
         android:background="@drawable/edittext_personalizado"
         android:padding="10dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/txtContra"
@@ -44,14 +45,14 @@
         android:fontFamily="@font/dmseriftextregular"
         android:background="@drawable/edittext_personalizado"
         android:padding="10dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="3dp">
+        android:layout_marginTop="5dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -80,6 +81,7 @@
             android:layout_height="wrap_content"
             android:text="@string/iniciar"
             android:fontFamily="@font/alkatrabariablefontwght"
+            android:textStyle="bold"
             android:background="@drawable/boton_personalizado"
             app:layout_constraintBottom_toTopOf="@+id/registroLayout"
             app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +97,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="70dp">
 
             <TextView
                 android:layout_width="wrap_content"

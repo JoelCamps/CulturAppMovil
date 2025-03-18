@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnIniciar.setOnClickListener {
-//            val intent = Intent(this, ContraActivity::class.java)
+//            val intent = Intent(this, EventosActivity::class.java)
 //            startActivity(intent)
         }
 
