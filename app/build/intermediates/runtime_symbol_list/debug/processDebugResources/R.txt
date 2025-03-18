@@ -3241,6 +3241,7 @@ int id bounce 0x7f090062
 int id bounceBoth 0x7f090063
 int id bounceEnd 0x7f090064
 int id bounceStart 0x7f090065
+int id btnCambiar 0x7f09020c
 int id btnIniciar 0x7f090066
 int id buttonPanel 0x7f090067
 int id cache_measures 0x7f090068
@@ -3369,6 +3370,10 @@ int id ifRoom 0x7f0900e2
 int id ignore 0x7f0900e3
 int id ignoreRequest 0x7f0900e4
 int id image 0x7f0900e5
+int id imgAjustes 0x7f09020d
+int id imgChat 0x7f09020e
+int id imgEvento 0x7f09020f
+int id imgReserva 0x7f090210
 int id immediateStop 0x7f0900e6
 int id included 0x7f0900e7
 int id indeterminate 0x7f0900e8
@@ -3381,9 +3386,14 @@ int id jumpToEnd 0x7f0900ee
 int id jumpToStart 0x7f0900ef
 int id labeled 0x7f0900f0
 int id layout 0x7f0900f1
+int id lblAjustes 0x7f090211
+int id lblChat 0x7f090212
 int id lblContra 0x7f0900f2
+int id lblEvento 0x7f090213
 int id lblInicio 0x7f0900f3
 int id lblRegister 0x7f0900f4
+int id lblReserva 0x7f090214
+int id lblTitulo 0x7f090215
 int id left 0x7f0900f5
 int id leftToRight 0x7f0900f6
 int id legacy 0x7f0900f7
@@ -3453,6 +3463,7 @@ int id mtrl_picker_text_input_range_start 0x7f090136
 int id mtrl_picker_title_text 0x7f090137
 int id mtrl_view_tag_bottom_padding 0x7f090138
 int id multiply 0x7f090139
+int id navbar 0x7f090216
 int id navigation_bar_item_active_indicator_view 0x7f09013a
 int id navigation_bar_item_icon_container 0x7f09013b
 int id navigation_bar_item_icon_view 0x7f09013c
@@ -3621,6 +3632,7 @@ int id title_template 0x7f0901de
 int id toggle 0x7f0901df
 int id top 0x7f0901e0
 int id topPanel 0x7f0901e1
+int id topbar 0x7f090217
 int id touch_outside 0x7f0901e2
 int id transitionToEnd 0x7f0901e3
 int id transitionToStart 0x7f0901e4
@@ -3778,6 +3790,7 @@ int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
 int layout activity_contra 0x7f0c001c
+int layout activity_eventos 0x7f0c006f
 int layout activity_login 0x7f0c001d
 int layout activity_register 0x7f0c001e
 int layout custom_dialog 0x7f0c001f
@@ -3860,6 +3873,7 @@ int layout select_dialog_item_material 0x7f0c006b
 int layout select_dialog_multichoice_material 0x7f0c006c
 int layout select_dialog_singlechoice_material 0x7f0c006d
 int layout support_simple_spinner_dropdown_item 0x7f0c006e
+int layout topbar 0x7f0c0070
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000

@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.CulturApp" >
         <activity
+            android:name="com.example.culturapp.EventosActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.culturapp.ContraActivity"
             android:exported="false" />
         <activity

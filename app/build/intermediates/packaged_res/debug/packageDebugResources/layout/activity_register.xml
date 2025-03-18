@@ -9,13 +9,14 @@
     android:gravity="center_horizontal">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo_claro"/>
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:src="@drawable/logo_claro"
+        android:layout_marginTop="50dp"/>
 
     <EditText
         android:id="@+id/txtNombre"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="@string/nombre"
         android:textColorHint="@color/grisOscuro"
@@ -28,7 +29,7 @@
 
     <EditText
         android:id="@+id/txtApellidos"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="@string/apellidos"
         android:textColorHint="@color/grisOscuro"
@@ -40,7 +41,7 @@
 
     <EditText
         android:id="@+id/txtCorreo"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="@string/correo"
         android:textColorHint="@color/grisOscuro"
@@ -52,7 +53,7 @@
 
     <EditText
         android:id="@+id/txtContra"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="@string/contra"
         android:textColorHint="@color/grisOscuro"
@@ -64,7 +65,7 @@
 
     <EditText
         android:id="@+id/txtConfirmar"
-        android:layout_width="250dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:hint="@string/conf_contra"
         android:textColorHint="@color/grisOscuro"
@@ -80,10 +81,12 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnIniciar"
-            android:layout_width="250dp"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:text="@string/registrar"
+            android:textSize="18sp"
             android:fontFamily="@font/alkatrabariablefontwght"
+            android:textStyle="bold"
             android:background="@drawable/boton_personalizado"
             app:layout_constraintBottom_toTopOf="@+id/lblInicio"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +100,7 @@
                 android:text="@string/iniciar"
                 android:textColor="@color/azul"
                 android:fontFamily="@font/alkatrabariablefontwght"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="75dp"
                 android:layout_marginStart="3dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

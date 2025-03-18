@@ -3242,6 +3242,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnCambiar
 id btnIniciar
 id buttonPanel
 id cache_measures
@@ -3370,6 +3371,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgAjustes
+id imgChat
+id imgEvento
+id imgReserva
 id immediateStop
 id included
 id indeterminate
@@ -3382,9 +3387,14 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id lblAjustes
+id lblChat
 id lblContra
+id lblEvento
 id lblInicio
 id lblRegister
+id lblReserva
+id lblTitulo
 id left
 id leftToRight
 id legacy
@@ -3454,6 +3464,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id navbar
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3622,6 +3633,7 @@ id title_template
 id toggle
 id top
 id topPanel
+id topbar
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -3779,6 +3791,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_contra
+layout activity_eventos
 layout activity_login
 layout activity_register
 layout custom_dialog
@@ -3861,6 +3874,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout topbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
