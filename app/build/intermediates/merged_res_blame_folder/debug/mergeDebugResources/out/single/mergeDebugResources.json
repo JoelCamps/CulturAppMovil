@@ -36,12 +36,12 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ajustes_blanco.png"
     },
     {
-        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_edittext_personalizado.xml.flat",
@@ -156,10 +156,6 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_eventos.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_eventos.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_logo_oscuro.png.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\logo_oscuro.png"
     },
@@ -186,6 +182,10 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_navbar.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/navbar.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_lupa_negra.png.flat",

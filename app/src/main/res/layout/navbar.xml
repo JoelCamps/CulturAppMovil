@@ -39,7 +39,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/eventos"
+                android:textSize="17sp"
                 android:textColor="@color/negro"
+                android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
 
@@ -63,7 +65,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/chat"
+                android:textSize="17sp"
                 android:textColor="@color/negro"
+                android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
 
@@ -80,14 +84,16 @@
                 android:id="@+id/imgReserva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/calendario_negro"/>
+                android:src="@drawable/calendario_negro" />
 
             <TextView
                 android:id="@+id/lblReserva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reservas"
+                android:textSize="17sp"
                 android:textColor="@color/negro"
+                android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
 
@@ -111,7 +117,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ajustes"
+                android:textSize="17sp"
                 android:textColor="@color/negro"
+                android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
 
         </LinearLayout>
