@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">CulturApp</string>
+    <string-array name="languages">
+        <item>es</item>
+        <item>en</item>
+        <item>de</item>
+        <item>zh</item>
+        <item>ja</item>
+        <item>it</item>
+        <item>pt</item>
+        <item>ca</item>
+    </string-array>
     <string name="eventos">Eventos</string>
     <string name="chat">Chat</string>
     <string name="reservas">Reservas</string>

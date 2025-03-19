@@ -1,16 +1,12 @@
 package com.example.culturapp
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class EventosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

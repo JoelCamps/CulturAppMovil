@@ -6,6 +6,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -19,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
 
         val txtCorreo: EditText = findViewById(R.id.txtCorreo)
         val txtContra: EditText = findViewById(R.id.txtContra)
+        val spIdioma: Spinner = findViewById(R.id.spIdioma)
         val lblContra: TextView = findViewById(R.id.lblContra)
         val lblRegister: TextView = findViewById(R.id.lblRegister)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)

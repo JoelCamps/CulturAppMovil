@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CulturApp</string>
+    <string-array name="languages">
+        <item>es</item>
+        <item>en</item>
+        <item>de</item>
+        <item>zh</item>
+        <item>ja</item>
+        <item>it</item>
+        <item>pt</item>
+        <item>ca</item>
+    </string-array>
+    <string name="eventos">Eventi</string>
+    <string name="chat">Chat</string>
+    <string name="reservas">Prenotazioni</string>
+    <string name="ajustes">Impostazioni</string>
+    <string name="nombre">Nome</string>
+    <string name="apellidos">Cognome</string>
+    <string name="correo">Email</string>
+    <string name="contra">Password</string>
+    <string name="conf_contra">Conferma password</string>
+    <string name="nueva">Nuova password</string>
+    <string name="iniciar">Accedi</string>
+    <string name="registrar">Registrati</string>
+    <string name="cambiar">Cambia password</string>
+    <string name="olvidado">Password dimenticata?</string>
+    <string name="cuenta">Non hai un account?</string>
+    <string name="buscar">Cerca eventi</string>
+    <string name="filtro">Filtro</string>
+    <string name="crear">Crea evento</string>
+    <string name="nombre_evento">Nome evento</string>
+    <string name="fecha">Data</string>
+    <string name="hora">Orario</string>
+    <string name="tipo">Tipo</string>
+    <string name="sala">Sala</string>
+    <string name="duracion">Durata</string>
+    <string name="precio">Prezzo</string>
+    <string name="entradas">Biglietti</string>
+    <string name="total">Totale</string>
+    <string name="disponibles">Disponibile</string>
+    <string name="descripcion">Descrizione</string>
+    <string name="reservar">Prenota</string>
+    <string name="mensaje">Messaggio</string>
+    <string name="cancelar">Annulla prenotazione</string>
+    <string name="generales">Impostazioni generali</string>
+    <string name="oscuro">Modalità scura</string>
+    <string name="claro">Modalità chiara</string>
+    <string name="datos">Modifica dati</string>
+    <string name="conf_cambios">Conferma modifiche</string>
+</resources>

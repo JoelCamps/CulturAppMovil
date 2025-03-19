@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CulturApp</string>
+    <string-array name="languages">
+        <item>es</item>
+        <item>en</item>
+        <item>de</item>
+        <item>zh</item>
+        <item>ja</item>
+        <item>it</item>
+        <item>pt</item>
+        <item>ca</item>
+    </string-array>
+    <string name="eventos">Events</string>
+    <string name="chat">Chat</string>
+    <string name="reservas">Reservations</string>
+    <string name="ajustes">Settings</string>
+    <string name="nombre">First Name</string>
+    <string name="apellidos">Last Name</string>
+    <string name="correo">Email</string>
+    <string name="contra">Password</string>
+    <string name="conf_contra">Confirm Password</string>
+    <string name="nueva">New password</string>
+    <string name="iniciar">Log In</string>
+    <string name="registrar">Sign Up</string>
+    <string name="cambiar">Change password</string>
+    <string name="olvidado">Forgot your password?</string>
+    <string name="cuenta">Don\'t have an account?</string>
+    <string name="buscar">Search events</string>
+    <string name="filtro">Filter</string>
+    <string name="crear">Create event</string>
+    <string name="nombre_evento">Event name</string>
+    <string name="fecha">Date</string>
+    <string name="hora">Time</string>
+    <string name="tipo">Type</string>
+    <string name="sala">Room</string>
+    <string name="duracion">Duration</string>
+    <string name="precio">Price</string>
+    <string name="entradas">Tickets</string>
+    <string name="total">Total</string>
+    <string name="disponibles">Available</string>
+    <string name="descripcion">Description</string>
+    <string name="reservar">Reserve</string>
+    <string name="mensaje">Message</string>
+    <string name="cancelar">Cancel reservation</string>
+    <string name="generales">General settings</string>
+    <string name="oscuro">Dark mode</string>
+    <string name="claro">Light mode</string>
+    <string name="datos">Change data</string>
+    <string name="conf_cambios">Confirm changes</string>
+</resources>

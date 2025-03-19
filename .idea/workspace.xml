@@ -44,78 +44,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6531cc40-2dff-48db-817c-be35c3371157" name="Changes" comment="Crear topbar&#10;Linkear EventoActivity">
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+    <list default="true" id="6531cc40-2dff-48db-817c-be35c3371157" name="Changes" comment="Poner fullscreen en las activities&#10;Cambiar color seleccionado en EventosActivity">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/ChatActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chat.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/apk/debug/app-debug.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_eventos.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_eventos.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_navbar.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_navbar.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_topbar.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_topbar.xml.flat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/single/mergeDebugResources.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_eventos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/activity_eventos.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/navbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/navbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/topbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/packaged_res/debug/packageDebugResources/layout/topbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/ContraActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/ContraActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/EventosActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/EventosActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/LoginActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/LoginActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/RegisterActivity.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/dexBuilderDebug/out/com/example/culturapp/RegisterActivity.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/processDebugResources/stableIds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/local-state/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/ContraActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/ContraActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/EventosActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/EventosActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/LoginActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/LoginActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/RegisterActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/com/example/culturapp/RegisterActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/ContraActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/ContraActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/EventosActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/EventosActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/RegisterActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_eventos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_eventos.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/navbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/navbar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/topbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/topbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,12 +87,12 @@
     &quot;assignee&quot;: &quot;JoelCamps&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JoelCamps/CulturAppMovil",
-    "accountId": "cc41e763-6dff-4e2e-9d44-ce1f5ce36d8f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JoelCamps/CulturAppMovil&quot;,
+    &quot;accountId&quot;: &quot;cc41e763-6dff-4e2e-9d44-ce1f5ce36d8f&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -173,10 +113,17 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/CEP-TARDA/Desktop/CulturAppMovil/app/src/main/res/values"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="android.template.348847939">
+      <recent name="com.example.culturapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\res\values" />
+    </key>
     <key name="android.template.1967975001">
       <recent name="com.example.culturapp" />
     </key>
@@ -303,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742314784410</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Poner fullscreen en las activities&#10;Cambiar color seleccionado en EventosActivity">
+      <option name="closed" value="true" />
+      <created>1742316674855</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742316674855</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,19 +276,20 @@
     <MESSAGE value="Prueba de commit en Android Studio" />
     <MESSAGE value="Crear EventosActivity&#10;Resizear layouts&#10;Adaptar navbar" />
     <MESSAGE value="Crear topbar&#10;Linkear EventoActivity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crear topbar&#10;Linkear EventoActivity" />
+    <MESSAGE value="Poner fullscreen en las activities&#10;Cambiar color seleccionado en EventosActivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poner fullscreen en las activities&#10;Cambiar color seleccionado en EventosActivity" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
         <entry key="com.example.culturapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1742306494657" />
+            <CheckInfo lastCheckTimestamp="1742397680405" />
           </value>
         </entry>
         <entry key="com.example.culturapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1742306494656" />
+            <CheckInfo lastCheckTimestamp="1742397680404" />
           </value>
         </entry>
       </map>

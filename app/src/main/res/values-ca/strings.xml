@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CulturApp</string>
+    <string-array name="languages">
+        <item>es</item>
+        <item>en</item>
+        <item>de</item>
+        <item>zh</item>
+        <item>ja</item>
+        <item>it</item>
+        <item>pt</item>
+        <item>ca</item>
+    </string-array>
+    <string name="eventos">Esdeveniments</string>
+    <string name="chat">Xat</string>
+    <string name="reservas">Reserves</string>
+    <string name="ajustes">Configuració</string>
+    <string name="nombre">Nom</string>
+    <string name="apellidos">Cognom</string>
+    <string name="correo">Correu electrònic</string>
+    <string name="contra">Contrasenya</string>
+    <string name="conf_contra">Confirmar contrasenya</string>
+    <string name="nueva">Nova contrasenya</string>
+    <string name="iniciar">Iniciar sessió</string>
+    <string name="registrar">Registra\'t</string>
+    <string name="cambiar">Canviar contrasenya</string>
+    <string name="olvidado">Has oblidat la contrasenya?</string>
+    <string name="cuenta">No tens compte?</string>
+    <string name="buscar">Cercar esdeveniments</string>
+    <string name="filtro">Filtre</string>
+    <string name="crear">Crear esdeveniment</string>
+    <string name="nombre_evento">Nom de l\'esdeveniment</string>
+    <string name="fecha">Data</string>
+    <string name="hora">Hora</string>
+    <string name="tipo">Tipus</string>
+    <string name="sala">Sala</string>
+    <string name="duracion">Durada</string>
+    <string name="precio">Preu</string>
+    <string name="entradas">Entrades</string>
+    <string name="total">Total</string>
+    <string name="disponibles">Disponibles</string>
+    <string name="descripcion">Descripció</string>
+    <string name="reservar">Reservar</string>
+    <string name="mensaje">Missatge</string>
+    <string name="cancelar">Cancel·lar reserva</string>
+    <string name="generales">Configuració general</string>
+    <string name="oscuro">Mode fosc</string>
+    <string name="claro">Mode clar</string>
+    <string name="datos">Canviar dades</string>
+    <string name="conf_cambios">Confirmar canvis</string>
+</resources>
