@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>ES</item>
+        <item>EN</item>
+        <item>CA</item>
+        <item>ZH</item>
+        <item>JA</item>
+        <item>IT</item>
+        <item>PT</item>
+        <item>DE</item>
+        <item>GL</item>
+        <item>RU</item>
+        <item>LT</item>
+        <item>TR</item>
+    </string-array>
+    <string name="ajustes">Impostazioni</string>
+    <string name="apellidos">Cognome</string>
+    <string name="app_name">CulturApp</string>
+    <string name="buscar">Cerca eventi</string>
+    <string name="cambiar">Cambia password</string>
+    <string name="cancelar">Annulla prenotazione</string>
+    <string name="chat">Chat</string>
+    <string name="claro">Modalità chiara</string>
+    <string name="conf_cambios">Conferma modifiche</string>
+    <string name="conf_contra">Conferma password</string>
+    <string name="contra">Password</string>
+    <string name="correo">Email</string>
+    <string name="crear">Crea evento</string>
+    <string name="cuenta">Non hai un account?</string>
+    <string name="datos">Modifica dati</string>
+    <string name="descripcion">Descrizione</string>
+    <string name="disponibles">Disponibile</string>
+    <string name="duracion">Durata</string>
+    <string name="entradas">Biglietti</string>
+    <string name="eventos">Eventi</string>
+    <string name="fecha">Data</string>
+    <string name="filtro">Filtro</string>
+    <string name="generales">Impostazioni generali</string>
+    <string name="hora">Orario</string>
+    <string name="iniciar">Accedi</string>
+    <string name="mensaje">Messaggio</string>
+    <string name="nombre">Nome</string>
+    <string name="nombre_evento">Nome evento</string>
+    <string name="nueva">Nuova password</string>
+    <string name="olvidado">Password dimenticata?</string>
+    <string name="oscuro">Modalità scura</string>
+    <string name="precio">Prezzo</string>
+    <string name="registrar">Registrati</string>
+    <string name="reservar">Prenota</string>
+    <string name="reservas">Prenotazioni</string>
+    <string name="sala">Sala</string>
+    <string name="tipo">Tipo</string>
+    <string name="total">Totale</string>
+</resources>

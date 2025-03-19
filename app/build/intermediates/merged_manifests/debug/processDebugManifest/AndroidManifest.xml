@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.CulturApp" >
         <activity
+            android:name="com.example.culturapp.AjustesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.culturapp.ReservasActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.culturapp.ChatActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.culturapp.EventosActivity"
             android:exported="false" />
         <activity

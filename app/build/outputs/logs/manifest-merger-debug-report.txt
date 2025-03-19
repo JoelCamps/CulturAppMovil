@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:1-44:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\cf656d045e430a124527102b061a2de5\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\043bedc51f99c4c17d4d41476815beff\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\a12a5ed3371a140825f77f01bf6d16b4\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
@@ -56,8 +56,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\CEP-TAR
 	xmlns:android
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:5:5-33:19
-INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:5:5-33:19
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:5:5-42:19
+INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:5:5-42:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\cf656d045e430a124527102b061a2de5\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\cf656d045e430a124527102b061a2de5\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\CEP-TARDA\.gradle\caches\8.10.2\transforms\043bedc51f99c4c17d4d41476815beff\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -96,40 +96,58 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\CE
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:13:9-47
 	android:dataExtractionRules
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:7:9-65
-activity#com.example.culturapp.EventosActivity
+activity#com.example.culturapp.AjustesActivity
 ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:15:9-17:40
 	android:exported
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:16:13-44
-activity#com.example.culturapp.ContraActivity
+activity#com.example.culturapp.ReservasActivity
 ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:19:13-43
-activity#com.example.culturapp.RegisterActivity
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:19:13-45
+activity#com.example.culturapp.ChatActivity
 ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:22:13-45
-activity#com.example.culturapp.LoginActivity
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:24:9-32:20
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:22:13-41
+activity#com.example.culturapp.EventosActivity
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:25:13-42
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:25:13-44
+activity#com.example.culturapp.ContraActivity
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:27:9-29:40
+	android:exported
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:28:13-43
+activity#com.example.culturapp.RegisterActivity
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:30:9-32:40
+	android:exported
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:31:13-45
+activity#com.example.culturapp.LoginActivity
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:33:9-41:20
+	android:exported
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:34:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:27:13-31:29
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:36:13-40:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:37:17-69
 	android:name
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:37:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:39:17-77
 	android:name
-		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml:39:27-74
 uses-sdk
 INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\CEP-TARDA\Desktop\CulturAppMovil\app\src\main\AndroidManifest.xml

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>ES</item>
+        <item>EN</item>
+        <item>CA</item>
+        <item>ZH</item>
+        <item>JA</item>
+        <item>IT</item>
+        <item>PT</item>
+        <item>DE</item>
+        <item>GL</item>
+        <item>RU</item>
+        <item>LT</item>
+        <item>TR</item>
+    </string-array>
+    <string name="ajustes">Nustatymai</string>
+    <string name="apellidos">Pavardė</string>
+    <string name="app_name">CulturApp</string>
+    <string name="buscar">Ieškoti renginių</string>
+    <string name="cambiar">Keisti slaptažodį</string>
+    <string name="cancelar">Atšaukti rezervaciją</string>
+    <string name="chat">Pokalbis</string>
+    <string name="claro">Šviesus režimas</string>
+    <string name="conf_cambios">Patvirtinti pakeitimus</string>
+    <string name="conf_contra">Patvirtinti slaptažodį</string>
+    <string name="contra">Slaptažodis</string>
+    <string name="correo">El. paštas</string>
+    <string name="crear">Kurti renginį</string>
+    <string name="cuenta">Neturite paskyros?</string>
+    <string name="datos">Keisti duomenis</string>
+    <string name="descripcion">Aprašymas</string>
+    <string name="disponibles">Pasiekiama</string>
+    <string name="duracion">Trukmė</string>
+    <string name="entradas">Bilietai</string>
+    <string name="eventos">Renginiai</string>
+    <string name="fecha">Data</string>
+    <string name="filtro">Filtras</string>
+    <string name="generales">Bendrieji nustatymai</string>
+    <string name="hora">Laikas</string>
+    <string name="iniciar">Prisijungti</string>
+    <string name="mensaje">Žinutė</string>
+    <string name="nombre">Vardas</string>
+    <string name="nombre_evento">Renginio pavadinimas</string>
+    <string name="nueva">Naujas slaptažodis</string>
+    <string name="olvidado">Pamirkote slaptažodį?</string>
+    <string name="oscuro">Tamsus režimas</string>
+    <string name="precio">Kaina</string>
+    <string name="registrar">Užsiregistruoti</string>
+    <string name="reservar">Rezervuoti</string>
+    <string name="reservas">Rezervacijos</string>
+    <string name="sala">Salė</string>
+    <string name="tipo">Tipas</string>
+    <string name="total">Viso</string>
+</resources>

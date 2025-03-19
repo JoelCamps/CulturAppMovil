@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array languages
 color azul
 color blanco
 color grisClaro
@@ -66,10 +67,13 @@ id txtContra
 id txtCorreo
 id txtNombre
 id txtNueva
+layout activity_ajustes
+layout activity_chat
 layout activity_contra
 layout activity_eventos
 layout activity_login
 layout activity_register
+layout activity_reservas
 layout navbar
 layout topbar
 mipmap ic_launcher

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="languages">
+        <item>ES</item>
+        <item>EN</item>
+        <item>CA</item>
+        <item>ZH</item>
+        <item>JA</item>
+        <item>IT</item>
+        <item>PT</item>
+        <item>DE</item>
+        <item>GL</item>
+        <item>RU</item>
+        <item>LT</item>
+        <item>TR</item>
+    </string-array>
     <color name="azul">#00F2E9</color>
     <color name="blanco">#FFFFFFFF</color>
     <color name="grisClaro">#F3F3F3</color>

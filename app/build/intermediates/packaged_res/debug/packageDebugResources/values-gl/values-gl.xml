@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>ES</item>
+        <item>EN</item>
+        <item>CA</item>
+        <item>ZH</item>
+        <item>JA</item>
+        <item>IT</item>
+        <item>PT</item>
+        <item>DE</item>
+        <item>GL</item>
+        <item>RU</item>
+        <item>LT</item>
+        <item>TR</item>
+    </string-array>
+    <string name="ajustes">Configuración</string>
+    <string name="apellidos">Apelidos</string>
+    <string name="app_name">CulturApp</string>
+    <string name="buscar">Buscar eventos</string>
+    <string name="cambiar">Cambiar contrasinal</string>
+    <string name="cancelar">Cancelar reserva</string>
+    <string name="chat">Chat</string>
+    <string name="claro">Modo claro</string>
+    <string name="conf_cambios">Confirmar cambios</string>
+    <string name="conf_contra">Confirmar contrasinal</string>
+    <string name="contra">Contrasinal</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="crear">Crear evento</string>
+    <string name="cuenta">Non tes conta?</string>
+    <string name="datos">Cambiar datos</string>
+    <string name="descripcion">Descrición</string>
+    <string name="disponibles">Disponibles</string>
+    <string name="duracion">Duración</string>
+    <string name="entradas">Entradas</string>
+    <string name="eventos">Eventos</string>
+    <string name="fecha">Data</string>
+    <string name="filtro">Filtro</string>
+    <string name="generales">Configuración xeral</string>
+    <string name="hora">Hora</string>
+    <string name="iniciar">Iniciar sesión</string>
+    <string name="mensaje">Mensaxe</string>
+    <string name="nombre">Nome</string>
+    <string name="nombre_evento">Nome do evento</string>
+    <string name="nueva">Nova contrasinal</string>
+    <string name="olvidado">Esqueciches a contrasinal?</string>
+    <string name="oscuro">Modo escuro</string>
+    <string name="precio">Prezo</string>
+    <string name="registrar">Rexístrate</string>
+    <string name="reservar">Reservar</string>
+    <string name="reservas">Reservas</string>
+    <string name="sala">Sala</string>
+    <string name="tipo">Tipo</string>
+    <string name="total">Total</string>
+</resources>

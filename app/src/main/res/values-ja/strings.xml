@@ -1,14 +1,18 @@
 <resources>
     <string name="app_name">CulturApp</string>
     <string-array name="languages">
-        <item>es</item>
-        <item>en</item>
-        <item>de</item>
-        <item>zh</item>
-        <item>ja</item>
-        <item>it</item>
-        <item>pt</item>
-        <item>ca</item>
+        <item>ES</item>
+        <item>EN</item>
+        <item>CA</item>
+        <item>ZH</item>
+        <item>JA</item>
+        <item>IT</item>
+        <item>PT</item>
+        <item>DE</item>
+        <item>GL</item>
+        <item>RU</item>
+        <item>LT</item>
+        <item>TR</item>
     </string-array>
     <string name="eventos">イベント</string>
     <string name="chat">チャット</string>
@@ -23,8 +27,8 @@
     <string name="iniciar">ログイン</string>
     <string name="registrar">サインアップ</string>
     <string name="cambiar">パスワード変更</string>
-    <string name="olvidado">パスワードを忘れた場合</string>
-    <string name="cuenta">アカウントをお持ちでないですか？</string>
+    <string name="olvidado">パスワードを忘れた場合?</string>
+    <string name="cuenta">アカウントをお持ちでないですか?</string>
     <string name="buscar">イベントを検索</string>
     <string name="filtro">フィルター</string>
     <string name="crear">イベント作成</string>
