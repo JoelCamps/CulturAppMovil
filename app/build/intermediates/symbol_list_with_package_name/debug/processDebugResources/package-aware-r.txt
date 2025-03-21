@@ -3011,6 +3011,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable avion_blanco
 drawable avion_negro
+drawable borde_negro
 drawable boton_personalizado
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3059,7 +3060,8 @@ drawable indeterminate_static
 drawable logo_claro
 drawable logo_oscuro
 drawable lupa_blanca
-drawable lupa_buscador
+drawable lupa_buscador_blanca
+drawable lupa_buscador_negra
 drawable lupa_negra
 drawable lupa_seleccionada
 drawable m3_avd_hide_password
@@ -3148,6 +3150,7 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id RVEvento
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3651,8 +3654,11 @@ id txtApellidos
 id txtConfirmar
 id txtContra
 id txtCorreo
+id txtFechaEvento
 id txtNombre
+id txtNombreEvento
 id txtNueva
+id txtTipoEvento
 id unchecked
 id uniform
 id unlabeled
@@ -3816,6 +3822,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_evento
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -30,14 +30,14 @@
     <string name="cuenta">No tens compte?</string>
     <string name="datos">Canviar dades</string>
     <string name="descripcion">Descripció</string>
-    <string name="disponibles">Disponibles</string>
-    <string name="duracion">Durada</string>
-    <string name="entradas">Entrades</string>
+    <string name="disponibles">Disponibles:</string>
+    <string name="duracion">Durada:</string>
+    <string name="entradas">Entrades:</string>
     <string name="eventos">Esdeveniments</string>
-    <string name="fecha">Data</string>
+    <string name="fecha">Data:</string>
     <string name="filtro">Filtre</string>
     <string name="generales">Configuració general</string>
-    <string name="hora">Hora</string>
+    <string name="hora">Hora:</string>
     <string name="iniciar">Iniciar sessió</string>
     <string name="mensaje">Missatge</string>
     <string name="nombre">Nom</string>
@@ -45,11 +45,11 @@
     <string name="nueva">Nova contrasenya</string>
     <string name="olvidado">Has oblidat la contrasenya?</string>
     <string name="oscuro">Mode fosc</string>
-    <string name="precio">Preu</string>
+    <string name="precio">Preu:</string>
     <string name="registrar">Registra\'t</string>
     <string name="reservar">Reservar</string>
     <string name="reservas">Reserves</string>
-    <string name="sala">Sala</string>
-    <string name="tipo">Tipus</string>
-    <string name="total">Total</string>
+    <string name="sala">Sala:</string>
+    <string name="tipo">Tipus:</string>
+    <string name="total">Total:</string>
 </resources>

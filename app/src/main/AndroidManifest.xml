@@ -13,25 +13,25 @@
         android:theme="@style/Theme.CulturApp"
         tools:targetApi="31">
         <activity
-            android:name=".AjustesActivity"
+            android:name=".activities.AjustesActivity"
             android:exported="false" />
         <activity
-            android:name=".ReservasActivity"
+            android:name=".activities.ReservasActivity"
             android:exported="false" />
         <activity
-            android:name=".ChatActivity"
+            android:name=".activities.ChatActivity"
             android:exported="false" />
         <activity
-            android:name=".EventosActivity"
+            android:name=".activities.EventosActivity"
             android:exported="false" />
         <activity
-            android:name=".ContraActivity"
+            android:name=".activities.ContraActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

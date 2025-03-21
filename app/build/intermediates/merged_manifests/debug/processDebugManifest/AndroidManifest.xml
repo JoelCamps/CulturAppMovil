@@ -28,25 +28,25 @@
         android:testOnly="true"
         android:theme="@style/Theme.CulturApp" >
         <activity
-            android:name="com.example.culturapp.AjustesActivity"
+            android:name="com.example.culturapp.activities.AjustesActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.ReservasActivity"
+            android:name="com.example.culturapp.activities.ReservasActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.ChatActivity"
+            android:name="com.example.culturapp.activities.ChatActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.EventosActivity"
+            android:name="com.example.culturapp.activities.EventosActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.ContraActivity"
+            android:name="com.example.culturapp.activities.ContraActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.RegisterActivity"
+            android:name="com.example.culturapp.activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.culturapp.LoginActivity"
+            android:name="com.example.culturapp.activities.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

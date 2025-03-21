@@ -13,6 +13,7 @@ drawable ajustes_negro
 drawable ajustes_seleccionado
 drawable avion_blanco
 drawable avion_negro
+drawable borde_negro
 drawable boton_personalizado
 drawable calendario_blanco
 drawable calendario_negro
@@ -29,13 +30,15 @@ drawable ic_launcher_foreground
 drawable logo_claro
 drawable logo_oscuro
 drawable lupa_blanca
-drawable lupa_buscador
+drawable lupa_buscador_blanca
+drawable lupa_buscador_negra
 drawable lupa_negra
 drawable lupa_seleccionada
 drawable spinner_personalizado
 font alkatrabariablefontwght
 font dmseriftextitalic
 font dmseriftextregular
+id RVEvento
 id ajustes
 id btnCambiar
 id btnIniciar
@@ -65,8 +68,11 @@ id txtApellidos
 id txtConfirmar
 id txtContra
 id txtCorreo
+id txtFechaEvento
 id txtNombre
+id txtNombreEvento
 id txtNueva
+id txtTipoEvento
 layout activity_ajustes
 layout activity_chat
 layout activity_contra
@@ -74,6 +80,7 @@ layout activity_eventos
 layout activity_login
 layout activity_register
 layout activity_reservas
+layout item_evento
 layout navbar
 layout topbar
 mipmap ic_launcher
