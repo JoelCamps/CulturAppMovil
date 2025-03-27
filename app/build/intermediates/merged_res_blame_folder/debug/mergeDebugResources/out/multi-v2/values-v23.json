@@ -4,26 +4,7 @@
             "outputFile": "com.example.culturapp-mergeDebugResources-30:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joel\\.gradle\\caches\\8.10.2\\transforms\\3eba96aaa9ccfc51fafec9a68ba99fac\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "200"
-                    },
-                    "to": {
-                        "startLines": "50",
-                        "startColumns": "4",
-                        "startOffsets": "3232",
-                        "endLines": "52",
-                        "endColumns": "12",
-                        "endOffsets": "3377"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Joel\\.gradle\\caches\\8.10.2\\transforms\\cf656d045e430a124527102b061a2de5\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\cf656d045e430a124527102b061a2de5\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -42,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Joel\\.gradle\\caches\\8.10.2\\transforms\\8887fabf35c079982e9c2b477822bce0\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\3eba96aaa9ccfc51fafec9a68ba99fac\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "3232",
+                        "endLines": "52",
+                        "endColumns": "12",
+                        "endOffsets": "3377"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\8887fabf35c079982e9c2b477822bce0\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

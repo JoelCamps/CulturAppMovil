@@ -1,5 +1,6 @@
 package com.example.culturapp.activities
 
+import Usuario
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.culturapp.R
 
@@ -25,6 +27,26 @@ class RegisterActivity : AppCompatActivity() {
         val txtConfirmar: EditText = findViewById(R.id.txtConfirmar)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
         val lblInicio: TextView = findViewById(R.id.lblInicio)
+        val usuarios = intent.getSerializableExtra("usuarios_lista") as? ArrayList<Usuario>
+
+        btnIniciar.setOnClickListener{
+            if (txtNombre.text.isEmpty() || txtApellidos.text.isEmpty() || txtCorreo.text.isEmpty() ||
+                txtContra.text.isEmpty() || txtConfirmar.text.isEmpty()) {
+                Toast.makeText(this, "Debes completar todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
+            }
+            else if (usuarios?.any { it.email == txtCorreo.text.toString() } == true) {
+                Toast.makeText(this, "Este usuario ya existe", Toast.LENGTH_SHORT).show()
+            }
+            else {
+                if (txtContra.text == txtConfirmar.text) {
+                    val intent = Intent(this, EventosActivity::class.java)
+                    startActivity(intent)
+                }
+                else {
+                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
 
         lblInicio.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)

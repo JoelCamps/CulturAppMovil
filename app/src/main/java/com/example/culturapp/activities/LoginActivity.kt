@@ -1,5 +1,6 @@
 package com.example.culturapp.activities
 
+import Usuario
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -11,6 +12,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.culturapp.R
 import java.util.Locale
@@ -30,6 +32,11 @@ class LoginActivity : AppCompatActivity() {
         val lblRegister: TextView = findViewById(R.id.lblRegister)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
 
+        val listaUsuarios = listOf(
+            Usuario("Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR),
+            Usuario("Charlie","Brown","charlie.brown@example.com","1234",Usuario.Tipo.BASICO)
+        )
+
         lblContra.setOnClickListener {
             val intent = Intent(this, ContraActivity::class.java)
             startActivity(intent)
@@ -38,10 +45,24 @@ class LoginActivity : AppCompatActivity() {
         btnIniciar.setOnClickListener {
             val intent = Intent(this, EventosActivity::class.java)
             startActivity(intent)
+
+//            if (listaUsuarios.find { it.email == txtCorreo.text.toString() } != null && listaUsuarios.find
+//            { it.contra == txtContra.text.toString() } != null){
+//                val intent = Intent(this, EventosActivity::class.java)
+//                startActivity(intent)
+//            }
+//            else if (txtCorreo.text.isEmpty() || txtContra.text.isEmpty()) {
+//                Toast.makeText(this, "Debes poner un correo y una contraseña", Toast.LENGTH_SHORT).show() //guardar texto
+//            }
+//            else {
+//                Toast.makeText(this, "Ese usuario no existe", Toast.LENGTH_SHORT).show() //guardar texto
+//            }
         }
 
         lblRegister.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java).apply {
+                putExtra("usuarios_lista", ArrayList(listaUsuarios))
+            }
             startActivity(intent)
         }
 

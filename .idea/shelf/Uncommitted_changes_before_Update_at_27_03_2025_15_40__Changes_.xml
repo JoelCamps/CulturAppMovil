@@ -1,0 +1,54 @@
+<changelist name="Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]" date="1743086465051" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 27/03/2025 15:40 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" />
+    <option name="AFTER_PATH" value="app/build/intermediates/linked_resources_binary_format/debug/processDebugResources/linked-resources-binary-format-debug.ap_" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/linked-resources-binary-format-debug.ap_" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.10.2/executionHistory/executionHistory.lock" />
+    <option name="AFTER_PATH" value=".gradle/8.10.2/executionHistory/executionHistory.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/executionHistory.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.10.2/fileHashes/fileHashes.bin" />
+    <option name="AFTER_PATH" value=".gradle/8.10.2/fileHashes/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/merged_res/debug/mergeDebugResources/layout_topbar.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/merged_res/debug/mergeDebugResources/layout_topbar.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/layout_topbar.xml.flat" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.10.2/fileHashes/fileHashes.lock" />
+    <option name="AFTER_PATH" value=".gradle/8.10.2/fileHashes/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/apk/debug/app-debug.apk" />
+    <option name="AFTER_PATH" value="app/build/intermediates/apk/debug/app-debug.apk" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/app-debug.apk" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.10.2/executionHistory/executionHistory.bin" />
+    <option name="AFTER_PATH" value=".gradle/8.10.2/executionHistory/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="AFTER_PATH" value="app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/androidResources" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/androidResources" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="AFTER_PATH" value=".gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_login.xml.flat" />
+    <option name="AFTER_PATH" value="app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_login.xml.flat" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_03_2025_15_40_[Changes]/layout_activity_login.xml.flat" />
+  </binary>
+</changelist>
