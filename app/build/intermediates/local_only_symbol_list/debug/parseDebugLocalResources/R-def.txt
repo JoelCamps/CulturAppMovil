@@ -48,6 +48,7 @@ id btnCambiar
 id btnCerrar
 id btnContra
 id btnCrear
+id btnEnviar
 id btnIniciar
 id chat
 id contra
@@ -99,6 +100,7 @@ string app_name
 string buscar
 string cambiar
 string cancelar
+string cerrar
 string chat
 string claro
 string conf_cambios

@@ -4,15 +4,7 @@
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>ZH</item>
         <item>JA</item>
-        <item>IT</item>
-        <item>PT</item>
-        <item>DE</item>
-        <item>GL</item>
-        <item>RU</item>
-        <item>LT</item>
-        <item>TR</item>
     </string-array>
     <color name="azul">#00F2E9</color>
     <color name="blanco">#FFFFFFFF</color>
@@ -27,6 +19,7 @@
     <string name="buscar">Buscar eventos</string>
     <string name="cambiar">Cambiar contraseña</string>
     <string name="cancelar">Cancelar reserva</string>
+    <string name="cerrar">Cerrar sesión</string>
     <string name="chat">Chat</string>
     <string name="claro">Modo claro</string>
     <string name="conf_cambios">Confirmar cambios</string>

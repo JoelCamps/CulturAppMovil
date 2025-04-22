@@ -3253,6 +3253,7 @@ int id btnCambiar 0x7f0a0067
 int id btnCerrar 0x7f0a021f
 int id btnContra 0x7f0a0220
 int id btnCrear 0x7f0a0068
+int id btnEnviar 0x7f0a0221
 int id btnIniciar 0x7f0a0069
 int id buttonPanel 0x7f0a006a
 int id cache_measures 0x7f0a006b
@@ -3944,6 +3945,7 @@ int string call_notification_ongoing_text 0x7f11002c
 int string call_notification_screening_text 0x7f11002d
 int string cambiar 0x7f11002e
 int string cancelar 0x7f11002f
+int string cerrar 0x7f1100cc
 int string character_counter_content_description 0x7f110030
 int string character_counter_overflowed_content_description 0x7f110031
 int string character_counter_pattern 0x7f110032

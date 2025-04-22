@@ -44,12 +44,12 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ajustes_blanco.png"
     },
     {
-        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\xml\\backup_rules.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_edittext_personalizado.xml.flat",

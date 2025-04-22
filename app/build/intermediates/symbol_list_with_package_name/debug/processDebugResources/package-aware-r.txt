@@ -3254,6 +3254,7 @@ id btnCambiar
 id btnCerrar
 id btnContra
 id btnCrear
+id btnEnviar
 id btnIniciar
 id buttonPanel
 id cache_measures
@@ -3945,6 +3946,7 @@ string call_notification_ongoing_text
 string call_notification_screening_text
 string cambiar
 string cancelar
+string cerrar
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern

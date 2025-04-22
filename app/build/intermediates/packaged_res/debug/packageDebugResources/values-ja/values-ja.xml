@@ -4,15 +4,7 @@
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>ZH</item>
         <item>JA</item>
-        <item>IT</item>
-        <item>PT</item>
-        <item>DE</item>
-        <item>GL</item>
-        <item>RU</item>
-        <item>LT</item>
-        <item>TR</item>
     </string-array>
     <string name="ajustes">設定</string>
     <string name="apellidos">苗字</string>
@@ -20,6 +12,7 @@
     <string name="buscar">イベントを検索</string>
     <string name="cambiar">パスワード変更</string>
     <string name="cancelar">予約をキャンセル</string>
+    <string name="cerrar">ログアウト</string>
     <string name="chat">チャット</string>
     <string name="claro">ライトモード</string>
     <string name="conf_cambios">変更確認</string>
