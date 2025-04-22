@@ -23,9 +23,9 @@ class EventoAdapter(private val eventos: List<Evento>) : RecyclerView.Adapter<Ev
 
     override fun onBindViewHolder(holder: EventoViewHolder, position: Int) {
         val evento = eventos[position]
-        holder.txtNombre.text = evento.nombre
-        holder.txtFecha.text = evento.fecha
-        holder.txtTipo.text = evento.tipo
+        holder.txtNombre.text = evento.title
+        holder.txtFecha.text = evento.fechaInicio.toString()
+        holder.txtTipo.text = evento.tipo_id.toString()
     }
 
     override fun getItemCount() = eventos.size

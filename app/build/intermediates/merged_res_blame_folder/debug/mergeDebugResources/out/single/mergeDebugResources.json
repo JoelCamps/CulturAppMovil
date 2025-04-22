@@ -44,12 +44,12 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ajustes_blanco.png"
     },
     {
-        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_edittext_personalizado.xml.flat",
@@ -110,6 +110,10 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\font_alkatrabariablefontwght.ttf.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\font\\alkatrabariablefontwght.ttf"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_switch_thumb.xml.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\switch_thumb.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_calendario_seleccionado.png.flat",
@@ -180,10 +184,6 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_eventos.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_eventos.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_activity_reservas.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\activity_reservas.xml"
     },
@@ -194,6 +194,10 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_avion_blanco.png.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\avion_blanco.png"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/drawable_switch_track.xml.flat",
+        "source": "com.example.culturapp-main-34:/drawable/switch_track.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -210,6 +214,10 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_switch_track.xml.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\switch_track.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",

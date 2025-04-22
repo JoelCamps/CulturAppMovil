@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp">
 
-            <TextView
+            <EditText
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
@@ -52,7 +52,7 @@
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btnIniciar"
+            android:id="@+id/btnCrear"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:text="@string/crear"

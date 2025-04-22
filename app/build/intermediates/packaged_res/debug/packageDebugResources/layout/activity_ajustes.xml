@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +21,79 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:textSize="45sp"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/generales"
+            android:textSize="30sp"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:gravity="center_horizontal"/>
+
+        <Spinner
+            android:id="@+id/spIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_personalizado"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oscuro"
+                android:textSize="25sp"
+                android:textColor="@color/negro"
+                android:fontFamily="@font/alkatrabariablefontwght"
+                android:layout_marginEnd="5dp"/>
+
+            <Switch
+                android:id="@+id/customSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track"
+                tools:ignore="UseSwitchCompatOrMaterialXml,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datos"
+            android:textSize="30sp"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cambiar"
+            android:textSize="30sp"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:gravity="center_horizontal"/>
+
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

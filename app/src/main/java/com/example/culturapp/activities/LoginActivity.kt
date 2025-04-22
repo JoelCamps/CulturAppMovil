@@ -33,8 +33,8 @@ class LoginActivity : AppCompatActivity() {
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
 
         val listaUsuarios = listOf(
-            Usuario("Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR),
-            Usuario("Charlie","Brown","charlie.brown@example.com","1234",Usuario.Tipo.BASICO)
+            Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR,true),
+            Usuario(2,"Charlie","Brown","charlie.brown@example.com","1234",Usuario.Tipo.BASICO,true)
         )
 
         lblContra.setOnClickListener {
@@ -43,12 +43,20 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnIniciar.setOnClickListener {
-            val intent = Intent(this, EventosActivity::class.java)
+            val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.BASICO, true)
+
+            val intent = Intent(this, EventosActivity::class.java).apply {
+                putExtra("userlogin", usuario)
+            }
             startActivity(intent)
 
 //            if (listaUsuarios.find { it.email == txtCorreo.text.toString() } != null && listaUsuarios.find
 //            { it.contra == txtContra.text.toString() } != null){
-//                val intent = Intent(this, EventosActivity::class.java)
+//                val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.BASICO, true)
+//
+//                val intent = Intent(this, EventosActivity::class.java).apply {
+//                    putExtra("userlogin", usuario)
+//                }
 //                startActivity(intent)
 //            }
 //            else if (txtCorreo.text.isEmpty() || txtContra.text.isEmpty()) {
