@@ -22,7 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="match_parent"
@@ -85,6 +86,68 @@
             android:fontFamily="@font/alkatrabariablefontwght"
             android:gravity="center_horizontal"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre"
+                android:textColorHint="@color/grisOscuro"
+                android:textColor="@color/negro"
+                android:fontFamily="@font/dmseriftextregular"
+                android:textStyle="bold"
+                android:background="@drawable/edittext_personalizado"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:id="@+id/txtApellidos"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/apellidos"
+                android:textColorHint="@color/grisOscuro"
+                android:textColor="@color/negro"
+                android:fontFamily="@font/dmseriftextregular"
+                android:background="@drawable/edittext_personalizado"
+                android:padding="10dp"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo"
+                android:textColorHint="@color/grisOscuro"
+                android:textColor="@color/negro"
+                android:fontFamily="@font/dmseriftextregular"
+                android:background="@drawable/edittext_personalizado"
+                android:padding="10dp"
+                android:layout_marginVertical="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCambiar"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="@string/conf_cambios"
+                android:textSize="18sp"
+                android:fontFamily="@font/alkatrabariablefontwght"
+                android:textStyle="bold"
+                android:background="@drawable/boton_perso_azul"
+                android:layout_marginBottom="8dp"/>
+
+        </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,6 +156,51 @@
             android:textColor="@color/negro"
             android:fontFamily="@font/alkatrabariablefontwght"
             android:gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/txtContra"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contra"
+            android:textColorHint="@color/grisOscuro"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/dmseriftextregular"
+            android:background="@drawable/edittext_personalizado"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtConfirmar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/conf_contra"
+            android:textColorHint="@color/grisOscuro"
+            android:textColor="@color/negro"
+            android:fontFamily="@font/dmseriftextregular"
+            android:background="@drawable/edittext_personalizado"
+            android:padding="10dp"
+            android:layout_marginVertical="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContra"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cambiar"
+            android:textSize="18sp"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:textStyle="bold"
+            android:background="@drawable/boton_perso_azul"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCerrar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cerrar"
+            android:textSize="18sp"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:textStyle="bold"
+            android:background="@drawable/boton_perso_rojo"/>
 
     </LinearLayout>
 

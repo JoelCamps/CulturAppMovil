@@ -3012,7 +3012,8 @@ drawable avd_show_password
 drawable avion_blanco
 drawable avion_negro
 drawable borde_negro
-drawable boton_personalizado
+drawable boton_perso_azul
+drawable boton_perso_rojo
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3250,6 +3251,8 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btnCambiar
+id btnCerrar
+id btnContra
 id btnCrear
 id btnIniciar
 id buttonPanel

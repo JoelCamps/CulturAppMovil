@@ -4,15 +4,7 @@
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>ZH</item>
         <item>JA</item>
-        <item>IT</item>
-        <item>PT</item>
-        <item>DE</item>
-        <item>GL</item>
-        <item>RU</item>
-        <item>LT</item>
-        <item>TR</item>
     </string-array>
     <string name="eventos">Events</string>
     <string name="chat">Chat</string>
@@ -51,4 +43,5 @@
     <string name="claro">Light mode</string>
     <string name="datos">Change data</string>
     <string name="conf_cambios">Confirm changes</string>
+    <string name="cerrar">Log out</string>
 </resources>

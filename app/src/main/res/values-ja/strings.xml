@@ -4,15 +4,7 @@
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>ZH</item>
         <item>JA</item>
-        <item>IT</item>
-        <item>PT</item>
-        <item>DE</item>
-        <item>GL</item>
-        <item>RU</item>
-        <item>LT</item>
-        <item>TR</item>
     </string-array>
     <string name="eventos">イベント</string>
     <string name="chat">チャット</string>
@@ -51,4 +43,5 @@
     <string name="claro">ライトモード</string>
     <string name="datos">データ変更</string>
     <string name="conf_cambios">変更確認</string>
+    <string name="cerrar">ログアウト</string>
 </resources>

@@ -3011,7 +3011,8 @@ int drawable avd_show_password 0x7f08007c
 int drawable avion_blanco 0x7f08007d
 int drawable avion_negro 0x7f08007e
 int drawable borde_negro 0x7f08007f
-int drawable boton_personalizado 0x7f080080
+int drawable boton_perso_azul 0x7f080102
+int drawable boton_perso_rojo 0x7f080103
 int drawable btn_checkbox_checked_mtrl 0x7f080081
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f080082
 int drawable btn_checkbox_unchecked_mtrl 0x7f080083
@@ -3249,6 +3250,8 @@ int id bounceBoth 0x7f0a0064
 int id bounceEnd 0x7f0a0065
 int id bounceStart 0x7f0a0066
 int id btnCambiar 0x7f0a0067
+int id btnCerrar 0x7f0a021f
+int id btnContra 0x7f0a0220
 int id btnCrear 0x7f0a0068
 int id btnIniciar 0x7f0a0069
 int id buttonPanel 0x7f0a006a

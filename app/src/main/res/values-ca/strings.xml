@@ -4,15 +4,7 @@
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>ZH</item>
         <item>JA</item>
-        <item>IT</item>
-        <item>PT</item>
-        <item>DE</item>
-        <item>GL</item>
-        <item>RU</item>
-        <item>LT</item>
-        <item>TR</item>
     </string-array>
     <string name="eventos">Esdeveniments</string>
     <string name="chat">Xat</string>
@@ -51,4 +43,5 @@
     <string name="claro">Mode clar</string>
     <string name="datos">Canviar dades</string>
     <string name="conf_cambios">Confirmar canvis</string>
+    <string name="cerrar">Tancar sessió</string>
 </resources>
