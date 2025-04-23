@@ -18,9 +18,11 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
+        android:id="@+id/chat"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
     </LinearLayout>
 
     <LinearLayout
@@ -32,10 +34,10 @@
         android:layout_marginHorizontal="5dp">
 
         <EditText
-            android:layout_width="330dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:hint="@string/buscar"
+            android:textSize="18sp"
+            android:hint="@string/mensaje"
             android:textColorHint="@color/grisOscuro"
             android:textColor="@color/negro"
             android:paddingHorizontal="10dp"

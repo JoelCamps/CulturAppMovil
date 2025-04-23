@@ -54,6 +54,7 @@ id chat
 id contra
 id customSwitch
 id evento
+id fragment_container
 id imgAjustes
 id imgChat
 id imgEvento
@@ -89,6 +90,7 @@ layout activity_eventos
 layout activity_login
 layout activity_register
 layout activity_reservas
+layout fragment_eventos
 layout item_evento
 layout navbar
 layout topbar
@@ -118,6 +120,7 @@ string eventos
 string fecha
 string filtro
 string generales
+string hello_blank_fragment
 string hora
 string iniciar
 string mensaje

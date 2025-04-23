@@ -3358,6 +3358,7 @@ int id fixed 0x7f0a00cc
 int id flip 0x7f0a00cd
 int id floating 0x7f0a00ce
 int id forever 0x7f0a00cf
+int id fragment_container 0x7f0a0222
 int id fragment_container_view_tag 0x7f0a00d0
 int id frost 0x7f0a00d1
 int id fullscreen_header 0x7f0a00d2
@@ -3828,6 +3829,7 @@ int layout design_navigation_menu 0x7f0d002f
 int layout design_navigation_menu_item 0x7f0d0030
 int layout design_text_input_end_icon 0x7f0d0031
 int layout design_text_input_start_icon 0x7f0d0032
+int layout fragment_eventos 0x7f0d0075
 int layout ime_base_split_test_activity 0x7f0d0033
 int layout ime_secondary_split_test_activity 0x7f0d0034
 int layout item_evento 0x7f0d0035
@@ -3972,6 +3974,7 @@ int string fab_transformation_sheet_behavior 0x7f110046
 int string fecha 0x7f110047
 int string filtro 0x7f110048
 int string generales 0x7f110049
+int string hello_blank_fragment 0x7f1100cd
 int string hide_bottom_view_on_scroll_behavior 0x7f11004a
 int string hora 0x7f11004b
 int string icon_content_description 0x7f11004c
