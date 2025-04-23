@@ -4,21 +4,14 @@ import Usuario
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.view.View.VISIBLE
 import android.view.WindowManager
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
-import com.example.culturapp.adapters.EventoAdapter
-import com.example.culturapp.clases.Evento
-import com.example.culturapp.fragments.EventoFragment
-import java.sql.Timestamp
+import com.example.culturapp.fragments.EventosFragment
 
 class EventosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,7 +34,7 @@ class EventosActivity : AppCompatActivity() {
         lblEvento.setTextColor(seleccionado)
 
         val usuario = intent.getSerializableExtra("userlogin") as? Usuario
-        val fragment = usuario?.let { EventoFragment.newInstance(it) }
+        val fragment = usuario?.let { EventosFragment.newInstance(it) }
         if (fragment != null) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         }

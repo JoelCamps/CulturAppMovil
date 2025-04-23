@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fecha"
+                android:text="@string/fechaInicio"
                 android:textColor="@color/negro"
                 android:fontFamily="@font/dmseriftextregular"/>
 

@@ -3587,6 +3587,8 @@ id snap
 id snapMargins
 id south
 id spIdioma
+id spSala
+id spTipo
 id spacer
 id special_effects_controller_view_tag
 id spline
@@ -3664,10 +3666,15 @@ id txtApellidos
 id txtConfirmar
 id txtContra
 id txtCorreo
+id txtDescripcion
+id txtEntradas
 id txtFechaEvento
+id txtFechaFinal
+id txtFechaInicio
 id txtNombre
 id txtNombreEvento
 id txtNueva
+id txtPrecio
 id txtTipoEvento
 id unchecked
 id uniform
@@ -3830,6 +3837,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_crear_evento
 layout fragment_eventos
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -3964,7 +3972,6 @@ string cuenta
 string datos
 string descripcion
 string disponibles
-string duracion
 string entradas
 string error_a11y_label
 string error_icon_content_description
@@ -3972,12 +3979,11 @@ string eventos
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string fecha
+string fechaFinal
+string fechaInicio
 string filtro
 string generales
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
-string hora
 string icon_content_description
 string iniciar
 string item_view_role_description

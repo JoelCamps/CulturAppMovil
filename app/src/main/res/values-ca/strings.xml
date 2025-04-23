@@ -25,13 +25,12 @@
     <string name="filtro">Filtre</string>
     <string name="crear">Crear esdeveniment</string>
     <string name="nombre_evento">Nom de l\'esdeveniment</string>
-    <string name="fecha">Data:</string>
-    <string name="hora">Hora:</string>
+    <string name="fechaInicio">Data i hora inici:</string>
+    <string name="fechaFinal">Data i hora final:</string>
     <string name="tipo">Tipus:</string>
     <string name="sala">Sala:</string>
-    <string name="duracion">Durada:</string>
     <string name="precio">Preu:</string>
-    <string name="entradas">Entrades:</string>
+    <string name="entradas">Entrades</string>
     <string name="total">Total:</string>
     <string name="disponibles">Disponibles:</string>
     <string name="descripcion">Descripció</string>

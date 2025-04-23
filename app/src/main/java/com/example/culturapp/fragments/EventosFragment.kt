@@ -1,6 +1,7 @@
 package com.example.culturapp.fragments
 
 import Usuario
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,11 +12,12 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
+import com.example.culturapp.activities.EventosActivity
 import com.example.culturapp.adapters.EventoAdapter
 import com.example.culturapp.clases.Evento
 import java.sql.Timestamp
 
-class EventoFragment : Fragment() {
+class EventosFragment : Fragment() {
 
     private lateinit var usuario: Usuario
 
@@ -52,11 +54,23 @@ class EventoFragment : Fragment() {
 
         rvEvento.layoutManager = LinearLayoutManager(requireContext())
         rvEvento.adapter = EventoAdapter(listaEventos)
+
+        btnCrear.setOnClickListener {
+            val crearEventos = CrearEventosFragment().apply {
+                arguments = Bundle().apply {
+                    putSerializable("userlogin", usuario)
+                }
+            }
+
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, crearEventos)
+                .commit()
+        }
     }
 
     companion object {
-        fun newInstance(usuario: Usuario): EventoFragment {
-            val fragment = EventoFragment()
+        fun newInstance(usuario: Usuario): EventosFragment {
+            val fragment = EventosFragment()
             val args = Bundle()
             args.putSerializable("userlogin", usuario)
             fragment.arguments = args

@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         btnIniciar.setOnClickListener {
-            val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.BASICO, true)
+            val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR, true)
 
             val intent = Intent(this, EventosActivity::class.java).apply {
                 putExtra("userlogin", usuario)
