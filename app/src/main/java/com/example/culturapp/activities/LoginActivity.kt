@@ -89,15 +89,7 @@ class LoginActivity : AppCompatActivity() {
                         0 -> "es"
                         1 -> "en"
                         2 -> "ca"
-                        3 -> "zh"
-                        4 -> "ja"
-                        5 -> "it"
-                        6 -> "pt"
-                        7 -> "de"
-                        8 -> "gl"
-                        9 -> "ru"
-                        10 -> "lt"
-                        11 -> "tr"
+                        3 -> "ja"
                         else -> "es"
                     }
                     val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)

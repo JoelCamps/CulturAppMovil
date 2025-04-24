@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.culturapp.R
+import com.example.culturapp.fragments.EventosFragment
+import com.example.culturapp.fragments.ReservasFragment
 
 class ReservasActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +32,12 @@ class ReservasActivity : AppCompatActivity() {
         lblTitulo.text = getString(R.string.reservas)
         imgReserva.setImageResource(R.drawable.calendario_seleccionado)
         lblReserva.setTextColor(seleccionado)
+
+        val fragment = ReservasFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .commit()
+
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java)

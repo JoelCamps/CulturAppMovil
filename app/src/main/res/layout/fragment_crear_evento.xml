@@ -212,7 +212,6 @@
         android:textColor="@color/negro"
         android:textSize="20sp"
         android:fontFamily="@font/dmseriftextregular"
-        android:inputType="number"
         android:paddingVertical="7dp"
         android:paddingHorizontal="15dp"
         android:layout_marginHorizontal="20dp"
