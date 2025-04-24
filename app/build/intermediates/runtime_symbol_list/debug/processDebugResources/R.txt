@@ -3667,6 +3667,7 @@ int id txtContra 0x7f0a01fe
 int id txtCorreo 0x7f0a01ff
 int id txtDescripcion 0x7f0a0225
 int id txtEntradas 0x7f0a0226
+int id txtFechFinal 0x7f0a022a
 int id txtFechaEvento 0x7f0a0200
 int id txtFechaFinal 0x7f0a0227
 int id txtFechaInicio 0x7f0a0228
@@ -3836,8 +3837,11 @@ int layout design_navigation_menu 0x7f0d002f
 int layout design_navigation_menu_item 0x7f0d0030
 int layout design_text_input_end_icon 0x7f0d0031
 int layout design_text_input_start_icon 0x7f0d0032
+int layout fragment_cancelar_reserva 0x7f0d0077
 int layout fragment_crear_evento 0x7f0d0076
 int layout fragment_eventos 0x7f0d0075
+int layout fragment_reservar_eventos 0x7f0d0078
+int layout fragment_reservas 0x7f0d0079
 int layout ime_base_split_test_activity 0x7f0d0033
 int layout ime_secondary_split_test_activity 0x7f0d0034
 int layout item_evento 0x7f0d0035
@@ -3982,6 +3986,7 @@ int string fechaFinal 0x7f1100ce
 int string fechaInicio 0x7f1100cf
 int string filtro 0x7f110048
 int string generales 0x7f110049
+int string hello_blank_fragment 0x7f1100cd
 int string hide_bottom_view_on_scroll_behavior 0x7f11004a
 int string icon_content_description 0x7f11004c
 int string iniciar 0x7f11004d

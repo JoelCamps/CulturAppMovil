@@ -36,11 +36,12 @@
     <string name="descripcion">Descripció</string>
     <string name="reservar">Reservar</string>
     <string name="mensaje">Missatge</string>
-    <string name="cancelar">Cancel·lar reserva</string>
+    <string name="cancelarReserva">Cancel·lar reserva</string>
     <string name="generales">Configuració general</string>
     <string name="oscuro">Mode fosc</string>
     <string name="claro">Mode clar</string>
     <string name="datos">Canviar dades</string>
     <string name="conf_cambios">Confirmar canvis</string>
     <string name="cerrar">Tancar sessió</string>
+    <string name="cancelar">Cancel·lar</string>
 </resources>

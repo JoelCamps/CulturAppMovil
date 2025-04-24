@@ -82,6 +82,7 @@ id txtContra
 id txtCorreo
 id txtDescripcion
 id txtEntradas
+id txtFechFinal
 id txtFechaEvento
 id txtFechaFinal
 id txtFechaInicio
@@ -97,8 +98,11 @@ layout activity_eventos
 layout activity_login
 layout activity_register
 layout activity_reservas
+layout fragment_cancelar_reserva
 layout fragment_crear_evento
 layout fragment_eventos
+layout fragment_reservar_eventos
+layout fragment_reservas
 layout item_evento
 layout navbar
 layout topbar
@@ -128,6 +132,7 @@ string fechaFinal
 string fechaInicio
 string filtro
 string generales
+string hello_blank_fragment
 string iniciar
 string mensaje
 string nombre

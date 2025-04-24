@@ -24,6 +24,7 @@ class EventosActivity : AppCompatActivity() {
         val lblTitulo: TextView = findViewById(R.id.lblTitulo)
         val imgEvento: ImageView = findViewById(R.id.imgEvento)
         val lblEvento: TextView = findViewById(R.id.lblEvento)
+        val evento: LinearLayout = findViewById(R.id.evento)
         val chat: LinearLayout = findViewById(R.id.chat)
         val reserva: LinearLayout = findViewById(R.id.reserva)
         val ajustes: LinearLayout = findViewById(R.id.ajustes)
@@ -39,18 +40,30 @@ class EventosActivity : AppCompatActivity() {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         }
 
+        evento.setOnClickListener{
+            if (fragment != null) {
+                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+            }
+        }
+
         chat.setOnClickListener{
-            val intent = Intent(this, ChatActivity::class.java)
+            val intent = Intent(this, ChatActivity::class.java).apply {
+                putExtra("userlogin", usuario)
+            }
             startActivity(intent)
         }
 
         reserva.setOnClickListener{
-            val intent = Intent(this, ReservasActivity::class.java)
+            val intent = Intent(this, ReservasActivity::class.java).apply {
+                putExtra("userlogin", usuario)
+            }
             startActivity(intent)
         }
 
         ajustes.setOnClickListener{
-            val intent = Intent(this, AjustesActivity::class.java)
+            val intent = Intent(this, AjustesActivity::class.java).apply {
+                putExtra("userlogin", usuario)
+            }
             startActivity(intent)
         }
     }

@@ -3668,6 +3668,7 @@ id txtContra
 id txtCorreo
 id txtDescripcion
 id txtEntradas
+id txtFechFinal
 id txtFechaEvento
 id txtFechaFinal
 id txtFechaInicio
@@ -3837,8 +3838,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_cancelar_reserva
 layout fragment_crear_evento
 layout fragment_eventos
+layout fragment_reservar_eventos
+layout fragment_reservas
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_evento
@@ -3983,6 +3987,7 @@ string fechaFinal
 string fechaInicio
 string filtro
 string generales
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string iniciar

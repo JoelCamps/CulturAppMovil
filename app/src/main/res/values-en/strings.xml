@@ -36,11 +36,12 @@
     <string name="descripcion">Description</string>
     <string name="reservar">Reserve</string>
     <string name="mensaje">Message</string>
-    <string name="cancelar">Cancel reservation</string>
+    <string name="cancelarReserva">Cancel reservation</string>
     <string name="generales">General settings</string>
     <string name="oscuro">Dark mode</string>
     <string name="claro">Light mode</string>
     <string name="datos">Change data</string>
     <string name="conf_cambios">Confirm changes</string>
     <string name="cerrar">Log out</string>
+    <string name="cancelar">Cancel</string>
 </resources>

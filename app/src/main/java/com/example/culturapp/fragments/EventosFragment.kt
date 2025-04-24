@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
-import com.example.culturapp.activities.EventosActivity
 import com.example.culturapp.adapters.EventoAdapter
 import com.example.culturapp.clases.Evento
 import java.sql.Timestamp

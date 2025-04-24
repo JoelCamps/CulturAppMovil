@@ -36,11 +36,12 @@
     <string name="descripcion">説明</string>
     <string name="reservar">予約</string>
     <string name="mensaje">メッセージ</string>
-    <string name="cancelar">予約をキャンセル</string>
+    <string name="cancelarReserva">予約をキャンセル</string>
     <string name="generales">一般設定</string>
     <string name="oscuro">ダークモード</string>
     <string name="claro">ライトモード</string>
     <string name="datos">データ変更</string>
     <string name="conf_cambios">変更確認</string>
     <string name="cerrar">ログアウト</string>
+    <string name="cancelar">キャンセル</string>
 </resources>
