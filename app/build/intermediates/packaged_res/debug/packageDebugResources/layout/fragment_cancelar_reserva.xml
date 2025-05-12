@@ -216,7 +216,7 @@
         android:id="@+id/btnCrear"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:text="@string/cancelar"
+        android:text="@string/cancelarReserva"
         android:textColor="@color/blanco"
         android:textSize="18sp"
         android:fontFamily="@font/alkatrabariablefontwght"

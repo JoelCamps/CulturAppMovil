@@ -1,6 +1,6 @@
 package com.example.culturapp.activities
 
-import Usuario
+import Users
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -32,25 +32,25 @@ class AjustesActivity : AppCompatActivity() {
         imgAjustes.setImageResource(R.drawable.ajustes_seleccionado)
         lblAjustes.setTextColor(seleccionado)
 
-        val usuario = intent.getSerializableExtra("userlogin") as? Usuario
+        val users = intent.getSerializableExtra("userlogin") as? Users
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         chat.setOnClickListener{
             val intent = Intent(this, ChatActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         reserva.setOnClickListener{
             val intent = Intent(this, ReservasActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }

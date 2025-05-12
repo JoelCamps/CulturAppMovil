@@ -1,6 +1,6 @@
 package com.example.culturapp.activities
 
-import Usuario
+import Users
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -34,8 +34,8 @@ class EventosActivity : AppCompatActivity() {
         imgEvento.setImageResource(R.drawable.lupa_seleccionada)
         lblEvento.setTextColor(seleccionado)
 
-        val usuario = intent.getSerializableExtra("userlogin") as? Usuario
-        val fragment = usuario?.let { EventosFragment.newInstance(it) }
+        val users = intent.getSerializableExtra("userlogin") as? Users
+        val fragment = users?.let { EventosFragment.newInstance(it) }
         if (fragment != null) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         }
@@ -48,21 +48,21 @@ class EventosActivity : AppCompatActivity() {
 
         chat.setOnClickListener{
             val intent = Intent(this, ChatActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         reserva.setOnClickListener{
             val intent = Intent(this, ReservasActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         ajustes.setOnClickListener{
             val intent = Intent(this, AjustesActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }

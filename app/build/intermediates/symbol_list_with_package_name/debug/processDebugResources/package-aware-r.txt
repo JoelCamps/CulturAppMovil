@@ -3250,7 +3250,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAceptar
 id btnCambiar
+id btnCancelar
 id btnCerrar
 id btnContra
 id btnCrear
@@ -3839,6 +3841,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cancelar_reserva
+layout fragment_cantidad
 layout fragment_crear_evento
 layout fragment_eventos
 layout fragment_reservar_eventos
@@ -3960,6 +3963,7 @@ string call_notification_ongoing_text
 string call_notification_screening_text
 string cambiar
 string cancelar
+string cancelarReserva
 string cerrar
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -3987,7 +3991,6 @@ string fechaFinal
 string fechaInicio
 string filtro
 string generales
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string iniciar

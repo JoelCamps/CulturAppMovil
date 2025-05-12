@@ -1,7 +1,6 @@
 package com.example.culturapp.fragments
 
-import Usuario
-import android.content.Intent
+import Users
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,12 +17,12 @@ import java.sql.Timestamp
 
 class EventosFragment : Fragment() {
 
-    private lateinit var usuario: Usuario
+    private lateinit var user: Users
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            usuario = it.getSerializable("userlogin") as Usuario
+            user = it.getSerializable("userlogin") as Users
         }
     }
 
@@ -38,7 +37,7 @@ class EventosFragment : Fragment() {
         val btnCrear = view.findViewById<Button>(R.id.btnCrear)
         val rvEvento = view.findViewById<RecyclerView>(R.id.RVEvento)
 
-        if (usuario.tipo.value == Usuario.Tipo.ORGANIZADOR.value) {
+        if (user.type.equals("organizator")) {
             btnCrear.visibility = VISIBLE
         } else {
             btnCrear.visibility = GONE
@@ -57,7 +56,7 @@ class EventosFragment : Fragment() {
         btnCrear.setOnClickListener {
             val crearEventos = CrearEventosFragment().apply {
                 arguments = Bundle().apply {
-                    putSerializable("userlogin", usuario)
+                    putSerializable("userlogin", user)
                 }
             }
 
@@ -68,10 +67,10 @@ class EventosFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(usuario: Usuario): EventosFragment {
+        fun newInstance(users: Users): EventosFragment {
             val fragment = EventosFragment()
             val args = Bundle()
-            args.putSerializable("userlogin", usuario)
+            args.putSerializable("userlogin", users)
             fragment.arguments = args
             return fragment
         }

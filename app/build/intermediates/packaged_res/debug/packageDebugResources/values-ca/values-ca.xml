@@ -11,7 +11,8 @@
     <string name="app_name">CulturApp</string>
     <string name="buscar">Cercar esdeveniments</string>
     <string name="cambiar">Canviar contrasenya</string>
-    <string name="cancelar">Cancel·lar reserva</string>
+    <string name="cancelar">Cancel·lar</string>
+    <string name="cancelarReserva">Cancel·lar reserva</string>
     <string name="cerrar">Tancar sessió</string>
     <string name="chat">Xat</string>
     <string name="claro">Mode clar</string>

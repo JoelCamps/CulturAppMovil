@@ -11,7 +11,8 @@
     <string name="app_name">CulturApp</string>
     <string name="buscar">Search events</string>
     <string name="cambiar">Change password</string>
-    <string name="cancelar">Cancel reservation</string>
+    <string name="cancelar">Cancel</string>
+    <string name="cancelarReserva">Cancel reservation</string>
     <string name="cerrar">Log out</string>
     <string name="chat">Chat</string>
     <string name="claro">Light mode</string>

@@ -16,6 +16,7 @@
             android:id="@+id/lblTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/negro"
             android:fontFamily="@font/alkatrabariablefontwght"
             android:textSize="20sp"
             android:textStyle="bold"

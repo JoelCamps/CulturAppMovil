@@ -1,6 +1,5 @@
 package com.example.culturapp.activities
 
-import Usuario
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
@@ -14,7 +13,13 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.culturapp.Encrypt
 import com.example.culturapp.R
+import com.example.culturapp.api.users.UsersCall
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.util.Locale
 
 class LoginActivity : AppCompatActivity() {
@@ -32,45 +37,40 @@ class LoginActivity : AppCompatActivity() {
         val lblRegister: TextView = findViewById(R.id.lblRegister)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
 
-        val listaUsuarios = listOf(
-            Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR,true),
-            Usuario(2,"Charlie","Brown","charlie.brown@example.com","1234",Usuario.Tipo.BASICO,true)
-        )
-
         lblContra.setOnClickListener {
             val intent = Intent(this, ContraActivity::class.java)
             startActivity(intent)
         }
 
         btnIniciar.setOnClickListener {
-            val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.ORGANIZADOR, true)
+            val password = Encrypt().encriptar(txtContra.text.trim().toString())
 
-            val intent = Intent(this, EventosActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+            if (txtCorreo.text.isEmpty() || txtContra.text.isEmpty()) {
+                Toast.makeText(this, "Debes poner un correo y una contraseña", Toast.LENGTH_SHORT).show() //guardar texto
             }
-            startActivity(intent)
+            else {
+                CoroutineScope(Dispatchers.IO).launch {
+                    try {
+                        val user = UsersCall().login(txtCorreo.text.trim().toString(), password)
 
-//            if (listaUsuarios.find { it.email == txtCorreo.text.toString() } != null && listaUsuarios.find
-//            { it.contra == txtContra.text.toString() } != null){
-//                val usuario = Usuario(1,"Bob","Johnson","bob.johnson@example.com","1234",Usuario.Tipo.BASICO, true)
-//
-//                val intent = Intent(this, EventosActivity::class.java).apply {
-//                    putExtra("userlogin", usuario)
-//                }
-//                startActivity(intent)
-//            }
-//            else if (txtCorreo.text.isEmpty() || txtContra.text.isEmpty()) {
-//                Toast.makeText(this, "Debes poner un correo y una contraseña", Toast.LENGTH_SHORT).show() //guardar texto
-//            }
-//            else {
-//                Toast.makeText(this, "Ese usuario no existe", Toast.LENGTH_SHORT).show() //guardar texto
-//            }
+                        withContext(Dispatchers.Main) {
+                            val intent = Intent(this@LoginActivity, EventosActivity::class.java).apply {
+                                putExtra("userlogin", user)
+                            }
+                            startActivity(intent)
+                        }
+                    } catch (e: Exception) {
+                        withContext(Dispatchers.Main) {
+                            Toast.makeText(this@LoginActivity, "Error al iniciar sesión", Toast.LENGTH_SHORT).show() //guardar texto
+                            txtContra.text = null
+                        }
+                    }
+                }
+            }
         }
 
         lblRegister.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java).apply {
-                putExtra("usuarios_lista", ArrayList(listaUsuarios))
-            }
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 

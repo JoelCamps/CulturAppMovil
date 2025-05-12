@@ -11,7 +11,8 @@
     <string name="app_name">CulturApp</string>
     <string name="buscar">イベントを検索</string>
     <string name="cambiar">パスワード変更</string>
-    <string name="cancelar">予約をキャンセル</string>
+    <string name="cancelar">キャンセル</string>
+    <string name="cancelarReserva">予約をキャンセル</string>
     <string name="cerrar">ログアウト</string>
     <string name="chat">チャット</string>
     <string name="claro">ライトモード</string>

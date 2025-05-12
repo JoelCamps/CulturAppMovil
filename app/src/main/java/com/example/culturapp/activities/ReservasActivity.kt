@@ -1,6 +1,6 @@
 package com.example.culturapp.activities
 
-import Usuario
+import Users
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -11,7 +11,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.culturapp.R
-import com.example.culturapp.fragments.EventosFragment
 import com.example.culturapp.fragments.ReservasFragment
 
 class ReservasActivity : AppCompatActivity() {
@@ -34,7 +33,7 @@ class ReservasActivity : AppCompatActivity() {
         imgReserva.setImageResource(R.drawable.calendario_seleccionado)
         lblReserva.setTextColor(seleccionado)
 
-        val usuario = intent.getSerializableExtra("userlogin") as? Usuario
+        val users = intent.getSerializableExtra("userlogin") as? Users
 
         val fragment = ReservasFragment()
         supportFragmentManager.beginTransaction()
@@ -44,21 +43,21 @@ class ReservasActivity : AppCompatActivity() {
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         chat.setOnClickListener{
             val intent = Intent(this, ChatActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
         ajustes.setOnClickListener{
             val intent = Intent(this, AjustesActivity::class.java).apply {
-                putExtra("userlogin", usuario)
+                putExtra("userlogin", users)
             }
             startActivity(intent)
         }

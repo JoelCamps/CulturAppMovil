@@ -18,7 +18,8 @@
     <string name="app_name">CulturApp</string>
     <string name="buscar">Buscar eventos</string>
     <string name="cambiar">Cambiar contraseña</string>
-    <string name="cancelar">Cancelar reserva</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cancelarReserva">Cancelar reserva</string>
     <string name="cerrar">Cerrar sesión</string>
     <string name="chat">Chat</string>
     <string name="claro">Modo claro</string>
@@ -37,7 +38,6 @@
     <string name="fechaInicio">Fecha y hora inicio:</string>
     <string name="filtro">Filtro</string>
     <string name="generales">Ajustes generales</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="iniciar">Iniciar sesión</string>
     <string name="mensaje">Mensaje</string>
     <string name="nombre">Nombre</string>
