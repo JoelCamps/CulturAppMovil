@@ -15,7 +15,6 @@ import java.util.Locale
 class EventoAdapter(
     private val events: List<Events>,
     private val listener: OnItemClickListener,
-    private val context: Context
                    ) : RecyclerView.Adapter<EventoAdapter.EventoViewHolder>() {
 
     interface OnItemClickListener {

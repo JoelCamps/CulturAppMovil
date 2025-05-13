@@ -3249,7 +3249,6 @@ int id bounce 0x7f0a0064
 int id bounceBoth 0x7f0a0065
 int id bounceEnd 0x7f0a0066
 int id bounceStart 0x7f0a0067
-int id btnAceptar 0x7f0a0068
 int id btnCambiar 0x7f0a0069
 int id btnCancelar 0x7f0a006a
 int id btnCerrar 0x7f0a006b
@@ -3674,6 +3673,7 @@ int id transition_scene_layoutid_cache 0x7f0a0203
 int id transition_transform 0x7f0a0204
 int id triangle 0x7f0a0205
 int id txtApellidos 0x7f0a0206
+int id txtCantidad 0x7f0a0237
 int id txtConfirmar 0x7f0a0207
 int id txtContra 0x7f0a0208
 int id txtCorreo 0x7f0a0209

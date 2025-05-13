@@ -46,7 +46,6 @@
                 android:id="@+id/lblFechaInicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yyyy-mm-dd 00:00"
                 android:textColor="@color/negro"
                 android:textSize="20sp"
                 android:fontFamily="@font/dmseriftextregular"
@@ -73,7 +72,6 @@
                 android:id="@+id/lblFechFinal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="yyyy-mm-dd 00:00"
                 android:textColor="@color/negro"
                 android:textSize="20sp"
                 android:fontFamily="@font/dmseriftextregular"
@@ -98,9 +96,8 @@
 
             <TextView
                 android:id="@+id/lblTipo"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="tipo"
                 android:textColor="@color/negro"
                 android:textSize="20sp"
                 android:fontFamily="@font/dmseriftextregular"
@@ -119,9 +116,8 @@
 
             <TextView
                 android:id="@+id/lblPrecio"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="numero"
                 android:textColor="@color/negro"
                 android:textSize="20sp"
                 android:fontFamily="@font/dmseriftextregular"
@@ -186,7 +182,6 @@
             android:id="@+id/lblEntradas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="entrada"
             android:textColor="@color/negro"
             android:textSize="20sp"
             android:fontFamily="@font/dmseriftextregular"
@@ -207,7 +202,6 @@
             android:id="@+id/lblEntradasDispo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="entrada"
             android:textColor="@color/negro"
             android:textSize="20sp"
             android:fontFamily="@font/dmseriftextregular"
@@ -229,9 +223,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/edittext_personalizado"
-        android:text="Lorem ipsum dolor sit amet, consecteturadipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         android:textColor="@color/negro"
         android:textSize="20sp"
         android:fontFamily="@font/dmseriftextregular"

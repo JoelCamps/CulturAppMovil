@@ -63,6 +63,7 @@ class EventosFragment : Fragment() {
 
                             val bundle = Bundle()
                             bundle.putSerializable("event", event)
+                            bundle.putSerializable("user", user)
 
                             reservarEventosFragment.arguments = bundle
 
@@ -71,7 +72,7 @@ class EventosFragment : Fragment() {
                             transaction.addToBackStack(null)
                             transaction.commit()
                         }
-                    }, requireContext())
+                    })
 
                     rvEvento.adapter = adapter
                 }

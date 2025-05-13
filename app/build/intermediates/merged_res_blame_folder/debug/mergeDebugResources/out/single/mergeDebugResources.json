@@ -64,10 +64,6 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\navbar.xml"
     },
     {
-        "merged": "com.example.culturapp-debug-32:/layout_fragment_reservar_eventos.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/fragment_reservar_eventos.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_lupa_blanca.png.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\lupa_blanca.png"
     },
@@ -110,6 +106,10 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_borde_negro.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\borde_negro.xml"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_fragment_cantidad.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/fragment_cantidad.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_topbar.xml.flat",
