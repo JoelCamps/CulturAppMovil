@@ -64,6 +64,10 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\navbar.xml"
     },
     {
+        "merged": "com.example.culturapp-debug-32:/layout_fragment_reservar_eventos.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/fragment_reservar_eventos.xml"
+    },
+    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_lupa_blanca.png.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\lupa_blanca.png"
     },
@@ -118,10 +122,6 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_boton_perso_azul.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\boton_perso_azul.xml"
-    },
-    {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_login.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_switch_thumb.xml.flat",
@@ -188,12 +188,12 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_ic_launcher_foreground.xml.flat",

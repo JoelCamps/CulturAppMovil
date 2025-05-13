@@ -3257,6 +3257,7 @@ int id btnContra 0x7f0a006c
 int id btnCrear 0x7f0a006d
 int id btnEnviar 0x7f0a006e
 int id btnIniciar 0x7f0a006f
+int id btnReservar 0x7f0a022d
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3405,10 +3406,19 @@ int id layout 0x7f0a0100
 int id lblAjustes 0x7f0a0101
 int id lblChat 0x7f0a0102
 int id lblContra 0x7f0a0103
+int id lblDescripcion 0x7f0a022e
+int id lblEntradas 0x7f0a022f
+int id lblEntradasDispo 0x7f0a0230
 int id lblEvento 0x7f0a0104
+int id lblFechFinal 0x7f0a0231
+int id lblFechaInicio 0x7f0a0232
 int id lblInicio 0x7f0a0105
+int id lblNombreEvento 0x7f0a0233
+int id lblPrecio 0x7f0a0234
 int id lblRegister 0x7f0a0106
 int id lblReserva 0x7f0a0107
+int id lblSala 0x7f0a0235
+int id lblTipo 0x7f0a0236
 int id lblTitulo 0x7f0a0108
 int id left 0x7f0a0109
 int id leftToRight 0x7f0a010a

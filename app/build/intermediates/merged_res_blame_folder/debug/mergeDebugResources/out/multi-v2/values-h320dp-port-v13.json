@@ -4,7 +4,7 @@
             "outputFile": "com.example.culturapp-mergeDebugResources-30:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\cf656d045e430a124527102b061a2de5\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\056b2cca2dc7d37d8b5aa14de69576dc\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

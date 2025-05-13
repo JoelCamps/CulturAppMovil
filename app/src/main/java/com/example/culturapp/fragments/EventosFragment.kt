@@ -2,17 +2,25 @@ package com.example.culturapp.fragments
 
 import Users
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.*
 import android.view.ViewGroup
+import android.view.inputmethod.CorrectionInfo
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
 import com.example.culturapp.adapters.EventoAdapter
-import com.example.culturapp.clases.Evento
+import com.example.culturapp.api.calls.EventsCall
+import com.example.culturapp.clases.Events
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.sql.Timestamp
 
 class EventosFragment : Fragment() {
@@ -43,15 +51,37 @@ class EventosFragment : Fragment() {
             btnCrear.visibility = GONE
         }
 
-        val listaEventos = listOf(
-            Evento(1, "Charla Motivacional", Timestamp.valueOf("2025-12-22 00:00:00.000"), 100, "Una charla inspiradora para motivar a los asistentes.", 50, Timestamp.valueOf("2025-12-22 00:00:00.000"), true, 1, 1),
-            Evento(2, "Concierto en Vivo", Timestamp.valueOf("2007-07-01 00:00:00.000"), 500, "Un concierto en vivo de música popular.", 100, Timestamp.valueOf("2007-07-01 00:00:00.000"), true, 2, 2),
-            Evento(3, "Partido de Fútbol", Timestamp.valueOf("2021-09-17 00:00:00.000"), 300, "Un emocionante partido de fútbol entre dos grandes equipos.", 40, Timestamp.valueOf("2021-09-17 00:00:00.000"), true, 3, 3),
-            Evento(4, "Torneo de eSports", Timestamp.valueOf("2033-02-13 00:00:00.000"), 200, "Un torneo de eSports donde los mejores jugadores competirán.", 30, Timestamp.valueOf("2033-02-13 00:00:00.000"), true, 4, 4)
-                                 )
+        CoroutineScope(Dispatchers.IO). launch {
+            try {
+                val events: List<Events> = EventsCall().getEvents()
 
-        rvEvento.layoutManager = LinearLayoutManager(requireContext())
-        rvEvento.adapter = EventoAdapter(listaEventos)
+                withContext(Dispatchers.Main) {
+                    rvEvento.layoutManager = LinearLayoutManager(requireContext())
+                    val adapter = EventoAdapter(events, object : EventoAdapter.OnItemClickListener {
+                        override fun onItemClick(event: Events) {
+                            val reservarEventosFragment = ReservarEventosFragment()
+
+                            val bundle = Bundle()
+                            bundle.putSerializable("event", event)
+
+                            reservarEventosFragment.arguments = bundle
+
+                            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+                            transaction.replace(R.id.fragment_container, reservarEventosFragment)
+                            transaction.addToBackStack(null)
+                            transaction.commit()
+                        }
+                    }, requireContext())
+
+                    rvEvento.adapter = adapter
+                }
+            }
+            catch (e: Exception){
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(context, "Error al mostrar los eventos", Toast.LENGTH_SHORT).show() //guardar texto
+                }
+            }
+        }
 
         btnCrear.setOnClickListener {
             val crearEventos = CrearEventosFragment().apply {

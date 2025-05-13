@@ -3258,6 +3258,7 @@ id btnContra
 id btnCrear
 id btnEnviar
 id btnIniciar
+id btnReservar
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3406,10 +3407,19 @@ id layout
 id lblAjustes
 id lblChat
 id lblContra
+id lblDescripcion
+id lblEntradas
+id lblEntradasDispo
 id lblEvento
+id lblFechFinal
+id lblFechaInicio
 id lblInicio
+id lblNombreEvento
+id lblPrecio
 id lblRegister
 id lblReserva
+id lblSala
+id lblTipo
 id lblTitulo
 id left
 id leftToRight
