@@ -142,9 +142,8 @@
 
             <TextView
                 android:id="@+id/lblSala"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sala"
                 android:textColor="@color/negro"
                 android:textSize="20sp"
                 android:fontFamily="@font/dmseriftextregular"

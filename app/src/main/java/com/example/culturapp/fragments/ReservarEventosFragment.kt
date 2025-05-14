@@ -5,24 +5,20 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
-import android.view.View.GONE
-import android.view.View.VISIBLE
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
-import com.example.culturapp.adapters.EventoAdapter
 import com.example.culturapp.api.calls.BookingsCall
-import com.example.culturapp.api.calls.EventsCall
 import com.example.culturapp.clases.Bookings
 import com.example.culturapp.clases.Events
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.text.ParseException
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 private lateinit var event: Events
 private lateinit var user: Users
@@ -44,7 +40,6 @@ class ReservarEventosFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
         CoroutineScope(Dispatchers.IO). launch {
             val bundle = Bundle()
 
@@ -72,6 +67,23 @@ class ReservarEventosFragment : Fragment() {
                 }
             }
 
+            val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
+            val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+
+            val formattedStartDate = try {
+                val date = inputFormat.parse(event.start_datetime)
+                outputFormat.format(date!!)
+            } catch (e: ParseException) {
+                "Fecha inválida"
+            }
+
+            val formattedEndDate = try {
+                val date = inputFormat.parse(event.end_datetime)
+                outputFormat.format(date!!)
+            } catch (e: ParseException) {
+                "Fecha inválida"
+            }
+
             val lblNombreEvento = view.findViewById<TextView>(R.id.lblNombreEvento)
             val lblFechaInicio = view.findViewById<TextView>(R.id.lblFechaInicio)
             val lblFechFinal = view.findViewById<TextView>(R.id.lblFechFinal)
@@ -83,8 +95,8 @@ class ReservarEventosFragment : Fragment() {
             val btnReservar = view.findViewById<TextView>(R.id.btnReservar)
 
             lblNombreEvento.text = event.title
-            lblFechaInicio.text = event.start_datetime
-            lblFechFinal.text = event.end_datetime
+            lblFechaInicio.text = formattedStartDate
+            lblFechFinal.text = formattedEndDate
             lblTipo.text = event.type_event.name
             lblPrecio.text = event.price.toString()
             lblSala.text = event.rooms.name

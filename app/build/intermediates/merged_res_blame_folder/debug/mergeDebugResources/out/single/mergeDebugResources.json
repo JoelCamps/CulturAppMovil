@@ -108,10 +108,6 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\borde_negro.xml"
     },
     {
-        "merged": "com.example.culturapp-debug-32:/layout_fragment_cantidad.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/fragment_cantidad.xml"
-    },
-    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_topbar.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\topbar.xml"
     },
@@ -254,5 +250,9 @@
     {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_boton_perso_rojo.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\boton_perso_rojo.xml"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_fragment_cancelar_reserva.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/fragment_cancelar_reserva.xml"
     }
 ]

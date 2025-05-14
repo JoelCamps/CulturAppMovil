@@ -60,8 +60,8 @@ class CantidadFragment : Fragment() {
                                 quantity = booking,
                                 user_id = user.id,
                                 event_id = event.id,
-                                active = true
-                                )
+                                active = true,
+                                events = event )
 
                             BookingsCall().postBooking(newBooking)
 

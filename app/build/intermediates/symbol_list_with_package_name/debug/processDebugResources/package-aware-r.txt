@@ -3680,7 +3680,6 @@ id txtContra
 id txtCorreo
 id txtDescripcion
 id txtEntradas
-id txtFechFinal
 id txtFechaEvento
 id txtFechaFinal
 id txtFechaInicio

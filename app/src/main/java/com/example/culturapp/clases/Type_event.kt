@@ -1,7 +1,8 @@
 package com.example.culturapp.clases
 
+import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class Type_event(
-    val id: Int,
-    val name: String ) : Serializable
+    @SerializedName("Id") val id: Int,
+    @SerializedName("Name") val name: String ) : Serializable

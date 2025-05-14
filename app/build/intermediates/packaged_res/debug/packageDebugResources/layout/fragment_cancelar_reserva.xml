@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtNombreEvento"
+        android:id="@+id/lblNombreEvento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre del evento"
@@ -43,7 +43,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <TextView
-                android:id="@+id/txtFechaInicio"
+                android:id="@+id/lblFechaInicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yyyy-mm-dd 00:00"
@@ -70,7 +70,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <TextView
-                android:id="@+id/txtFechFinal"
+                android:id="@+id/lblFechFinal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="yyyy-mm-dd 00:00"
@@ -97,7 +97,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <TextView
-                android:id="@+id/spTipo"
+                android:id="@+id/lblTipo"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="tipo"
@@ -118,7 +118,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <TextView
-                android:id="@+id/txtPrecio"
+                android:id="@+id/lblPrecio"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="numero"
@@ -145,7 +145,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <TextView
-                android:id="@+id/spSala"
+                android:id="@+id/lblSala"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="sala"
@@ -168,7 +168,7 @@
         android:layout_marginTop="10dp"/>
 
     <TextView
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/lblDescripcion"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -193,7 +193,7 @@
         android:layout_marginBottom="10dp">
 
         <TextView
-            android:id="@+id/txtEntradas"
+            android:id="@+id/lblEntradas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="numero"
@@ -213,7 +213,7 @@
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCrear"
+        android:id="@+id/btnCancelar"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:text="@string/cancelarReserva"

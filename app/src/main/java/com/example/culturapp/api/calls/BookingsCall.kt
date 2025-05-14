@@ -8,6 +8,10 @@ class BookingsCall {
         return RetrofitClient.instance.getBookingEvent(id_event)
     }
 
+    suspend fun getBookingUser(id_user: Int): List<Bookings> {
+        return RetrofitClient.instance.getBookingUser(id_user)
+    }
+
     suspend fun postBooking(booking: Bookings): Bookings {
         return RetrofitClient.instance.postBooking(booking)
     }

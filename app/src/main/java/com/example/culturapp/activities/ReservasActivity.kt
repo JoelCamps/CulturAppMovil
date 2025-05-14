@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.culturapp.R
+import com.example.culturapp.fragments.EventosFragment
 import com.example.culturapp.fragments.ReservasFragment
 
 class ReservasActivity : AppCompatActivity() {
@@ -26,6 +27,7 @@ class ReservasActivity : AppCompatActivity() {
         val lblReserva: TextView = findViewById(R.id.lblReserva)
         val evento: LinearLayout = findViewById(R.id.evento)
         val chat: LinearLayout = findViewById(R.id.chat)
+        val reserva: LinearLayout = findViewById(R.id.reserva)
         val ajustes: LinearLayout = findViewById(R.id.ajustes)
         val seleccionado = ContextCompat.getColor(this, R.color.morado)
 
@@ -35,11 +37,10 @@ class ReservasActivity : AppCompatActivity() {
 
         val users = intent.getSerializableExtra("userlogin") as? Users
 
-        val fragment = ReservasFragment()
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .commit()
-
+        val fragment = users?.let { ReservasFragment.newInstance(it) }
+        if (fragment != null) {
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+        }
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java).apply {
@@ -53,6 +54,12 @@ class ReservasActivity : AppCompatActivity() {
                 putExtra("userlogin", users)
             }
             startActivity(intent)
+        }
+
+        reserva.setOnClickListener{
+            if (fragment != null) {
+                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+            }
         }
 
         ajustes.setOnClickListener{

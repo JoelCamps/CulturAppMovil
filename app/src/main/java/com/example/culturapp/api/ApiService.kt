@@ -26,6 +26,11 @@ interface ApiService {
         @Query("id_event") id_event: Int,
         ): List<Bookings>
 
+    @GET("api/Bookings/Users/{id_user}")
+    suspend fun getBookingUser(
+        @Query("id_user") id_user: Int,
+        ): List<Bookings>
+
     @POST("api/Bookings")
     suspend fun postBooking(
         @Body booking: Bookings

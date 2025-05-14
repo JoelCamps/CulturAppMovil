@@ -42,6 +42,8 @@ class EventosFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
         val btnCrear = view.findViewById<Button>(R.id.btnCrear)
         val rvEvento = view.findViewById<RecyclerView>(R.id.RVEvento)
 

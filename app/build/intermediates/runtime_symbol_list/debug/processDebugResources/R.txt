@@ -3679,7 +3679,6 @@ int id txtContra 0x7f0a0208
 int id txtCorreo 0x7f0a0209
 int id txtDescripcion 0x7f0a020a
 int id txtEntradas 0x7f0a020b
-int id txtFechFinal 0x7f0a020c
 int id txtFechaEvento 0x7f0a020d
 int id txtFechaFinal 0x7f0a020e
 int id txtFechaInicio 0x7f0a020f
