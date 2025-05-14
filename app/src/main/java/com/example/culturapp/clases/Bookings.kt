@@ -7,5 +7,5 @@ data class Bookings(
     @SerializedName("User_id") var user_id: Int,
     @SerializedName("Event_id") var event_id: Int,
     @SerializedName("Quantity") var quantity: Int,
-    @SerializedName("Active") val active: Boolean,
+    @SerializedName("Active") var active: Boolean,
     @SerializedName("Events") val events: Events ) : Serializable

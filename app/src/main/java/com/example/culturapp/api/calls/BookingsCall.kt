@@ -2,6 +2,7 @@ package com.example.culturapp.api.calls
 
 import com.example.culturapp.api.RetrofitClient
 import com.example.culturapp.clases.Bookings
+import retrofit2.Response
 
 class BookingsCall {
     suspend fun getBookingEvent(id_event: Int): List<Bookings> {
@@ -14,5 +15,9 @@ class BookingsCall {
 
     suspend fun postBooking(booking: Bookings): Bookings {
         return RetrofitClient.instance.postBooking(booking)
+    }
+
+    suspend fun putBooking(booking: Bookings): Response<Bookings?> {
+        return RetrofitClient.instance.putBooking(booking)
     }
 }

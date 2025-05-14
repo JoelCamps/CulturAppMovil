@@ -3,9 +3,11 @@ package com.example.culturapp.api
 import Users
 import com.example.culturapp.clases.Bookings
 import com.example.culturapp.clases.Events
+import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.PUT
 import retrofit2.http.Query
 
 interface ApiService {
@@ -35,6 +37,11 @@ interface ApiService {
     suspend fun postBooking(
         @Body booking: Bookings
         ): Bookings
+
+    @PUT("api/Bookings")
+    suspend fun putBooking(
+        @Body booking: Bookings
+        ): Response<Bookings?>
 
     // ROOMS
 

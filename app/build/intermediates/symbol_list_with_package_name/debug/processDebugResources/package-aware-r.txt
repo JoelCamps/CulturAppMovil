@@ -3258,6 +3258,7 @@ id btnCrear
 id btnEnviar
 id btnIniciar
 id btnReservar
+id btnSalir
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3851,6 +3852,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_cancelar_reserva
 layout fragment_cantidad
+layout fragment_conf_cancelar
 layout fragment_crear_evento
 layout fragment_eventos
 layout fragment_reservar_eventos
@@ -4000,6 +4002,7 @@ string fechaFinal
 string fechaInicio
 string filtro
 string generales
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string iniciar

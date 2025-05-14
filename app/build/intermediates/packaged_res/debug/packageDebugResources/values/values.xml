@@ -38,6 +38,7 @@
     <string name="fechaInicio">Fecha y hora inicio:</string>
     <string name="filtro">Filtro</string>
     <string name="generales">Ajustes generales</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="iniciar">Iniciar sesión</string>
     <string name="mensaje">Mensaje</string>
     <string name="nombre">Nombre</string>

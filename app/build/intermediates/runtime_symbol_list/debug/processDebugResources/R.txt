@@ -3257,6 +3257,7 @@ int id btnCrear 0x7f0a006d
 int id btnEnviar 0x7f0a006e
 int id btnIniciar 0x7f0a006f
 int id btnReservar 0x7f0a022d
+int id btnSalir 0x7f0a0238
 int id buttonPanel 0x7f0a0070
 int id cache_measures 0x7f0a0071
 int id callMeasure 0x7f0a0072
@@ -3850,6 +3851,7 @@ int layout design_text_input_end_icon 0x7f0d0031
 int layout design_text_input_start_icon 0x7f0d0032
 int layout fragment_cancelar_reserva 0x7f0d0033
 int layout fragment_cantidad 0x7f0d0034
+int layout fragment_conf_cancelar 0x7f0d007b
 int layout fragment_crear_evento 0x7f0d0035
 int layout fragment_eventos 0x7f0d0036
 int layout fragment_reservar_eventos 0x7f0d0037
@@ -3999,6 +4001,7 @@ int string fechaFinal 0x7f110048
 int string fechaInicio 0x7f110049
 int string filtro 0x7f11004a
 int string generales 0x7f11004b
+int string hello_blank_fragment 0x7f1100cd
 int string hide_bottom_view_on_scroll_behavior 0x7f11004c
 int string icon_content_description 0x7f11004d
 int string iniciar 0x7f11004e

@@ -81,7 +81,7 @@ class EventosFragment : Fragment() {
             }
             catch (e: Exception){
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(context, "Error al mostrar los eventos", Toast.LENGTH_SHORT).show() //guardar texto
+                    Toast.makeText(requireContext(), "Error al mostrar los eventos", Toast.LENGTH_SHORT).show() //guardar texto
                 }
             }
         }
