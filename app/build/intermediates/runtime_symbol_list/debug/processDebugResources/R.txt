@@ -3413,6 +3413,7 @@ int id lblEvento 0x7f0a0104
 int id lblFechFinal 0x7f0a0231
 int id lblFechaInicio 0x7f0a0232
 int id lblInicio 0x7f0a0105
+int id lblMensaje 0x7f0a0239
 int id lblNombreEvento 0x7f0a0233
 int id lblPrecio 0x7f0a0234
 int id lblRegister 0x7f0a0106
@@ -3683,6 +3684,7 @@ int id txtEntradas 0x7f0a020b
 int id txtFechaEvento 0x7f0a020d
 int id txtFechaFinal 0x7f0a020e
 int id txtFechaInicio 0x7f0a020f
+int id txtMensaje 0x7f0a023a
 int id txtNombre 0x7f0a0210
 int id txtNombreEvento 0x7f0a0211
 int id txtNueva 0x7f0a0212

@@ -72,6 +72,7 @@ id lblEvento
 id lblFechFinal
 id lblFechaInicio
 id lblInicio
+id lblMensaje
 id lblNombreEvento
 id lblPrecio
 id lblRegister
@@ -98,6 +99,7 @@ id txtEntradas
 id txtFechaEvento
 id txtFechaFinal
 id txtFechaInicio
+id txtMensaje
 id txtNombre
 id txtNombreEvento
 id txtNueva

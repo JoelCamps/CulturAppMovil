@@ -5,14 +5,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
+import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
+import com.example.culturapp.ChatSocket
 import com.example.culturapp.R
+import kotlinx.coroutines.launch
 
 class ChatActivity : AppCompatActivity() {
+    private val client = ChatSocket("10.0.2.2", 6400)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
@@ -27,12 +34,30 @@ class ChatActivity : AppCompatActivity() {
         val reserva: LinearLayout = findViewById(R.id.reserva)
         val ajustes: LinearLayout = findViewById(R.id.ajustes)
         val seleccionado = ContextCompat.getColor(this, R.color.morado)
+        val txtMensaje: EditText = findViewById(R.id.txtMensaje)
+        val btnEnviar: ImageButton = findViewById(R.id.btnEnviar)
 
         lblTitulo.text = getString(R.string.chat)
         imgChat.setImageResource(R.drawable.chat_seleccionado)
         lblChat.setTextColor(seleccionado)
 
         val users = intent.getSerializableExtra("userlogin") as? Users
+
+        lifecycleScope.launch {
+            client.connect()
+            launch { client.receiveMessages { msg -> runOnUiThread { appendToChat(msg) } } }
+        }
+
+        btnEnviar.setOnClickListener {
+            val text = txtMensaje.text.toString()
+            lifecycleScope.launch {
+                if (users != null) {
+                    client.sendMessage(users.id, text)
+                }
+            }
+
+            txtMensaje.text = null
+        }
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java).apply {
@@ -54,5 +79,16 @@ class ChatActivity : AppCompatActivity() {
             }
             startActivity(intent)
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        client.disconnect()
+    }
+
+    private fun appendToChat(msg: String) {
+        val lblMensaje: TextView = findViewById(R.id.lblMensaje)
+
+        lblMensaje.append("${msg}\n")
     }
 }

@@ -98,7 +98,7 @@
 
             <TextView
                 android:id="@+id/lblTipo"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="tipo"
                 android:textColor="@color/negro"
@@ -119,7 +119,7 @@
 
             <TextView
                 android:id="@+id/lblPrecio"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="numero"
                 android:textColor="@color/negro"
@@ -146,7 +146,7 @@
 
             <TextView
                 android:id="@+id/lblSala"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="sala"
                 android:textColor="@color/negro"
