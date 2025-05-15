@@ -17,19 +17,11 @@
             android:layout_height="match_parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensajes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/lblMensaje"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-    </LinearLayout>
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,7 +42,8 @@
             android:paddingHorizontal="10dp"
             android:paddingVertical="3dp"
             android:layout_marginEnd="5dp"
-            android:background="@drawable/borde_negro"/>
+            android:background="@drawable/borde_negro"
+            android:maxLines="1"/>
 
         <ImageButton
             android:id="@+id/btnEnviar"

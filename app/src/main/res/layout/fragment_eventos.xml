@@ -23,6 +23,7 @@
             android:paddingVertical="3dp"
             android:layout_marginEnd="4dp"
             android:background="@drawable/borde_negro"
+            android:maxLines="1"
             app:drawableStartCompat="@drawable/lupa_buscador_negra" />
 
         <Spinner

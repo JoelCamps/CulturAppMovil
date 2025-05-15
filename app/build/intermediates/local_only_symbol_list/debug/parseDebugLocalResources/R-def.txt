@@ -72,7 +72,6 @@ id lblEvento
 id lblFechFinal
 id lblFechaInicio
 id lblInicio
-id lblMensaje
 id lblNombreEvento
 id lblPrecio
 id lblRegister
@@ -81,10 +80,12 @@ id lblSala
 id lblTipo
 id lblTitulo
 id login
+id messageText
 id navbar
 id register
 id registroLayout
 id reserva
+id rvMensajes
 id spIdioma
 id spSala
 id spTipo
@@ -120,6 +121,7 @@ layout fragment_eventos
 layout fragment_reservar_eventos
 layout fragment_reservas
 layout item_evento
+layout item_mensaje
 layout navbar
 layout topbar
 mipmap ic_launcher

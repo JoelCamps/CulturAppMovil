@@ -3413,7 +3413,6 @@ int id lblEvento 0x7f0a0104
 int id lblFechFinal 0x7f0a0231
 int id lblFechaInicio 0x7f0a0232
 int id lblInicio 0x7f0a0105
-int id lblMensaje 0x7f0a0239
 int id lblNombreEvento 0x7f0a0233
 int id lblPrecio 0x7f0a0234
 int id lblRegister 0x7f0a0106
@@ -3457,6 +3456,7 @@ int id material_timepicker_view 0x7f0a0129
 int id material_value_index 0x7f0a012a
 int id matrix 0x7f0a012b
 int id message 0x7f0a012c
+int id messageText 0x7f0a023b
 int id middle 0x7f0a012d
 int id mini 0x7f0a012e
 int id month_grid 0x7f0a012f
@@ -3560,6 +3560,7 @@ int id right_icon 0x7f0a0190
 int id right_side 0x7f0a0191
 int id rounded 0x7f0a0192
 int id row_index_key 0x7f0a0193
+int id rvMensajes 0x7f0a023c
 int id save_non_transition_alpha 0x7f0a0194
 int id save_overlay_view 0x7f0a0195
 int id sawtooth 0x7f0a0196
@@ -3861,6 +3862,7 @@ int layout fragment_reservas 0x7f0d0038
 int layout ime_base_split_test_activity 0x7f0d0039
 int layout ime_secondary_split_test_activity 0x7f0d003a
 int layout item_evento 0x7f0d003b
+int layout item_mensaje 0x7f0d007c
 int layout m3_alert_dialog 0x7f0d003c
 int layout m3_alert_dialog_actions 0x7f0d003d
 int layout m3_alert_dialog_title 0x7f0d003e

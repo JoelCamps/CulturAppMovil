@@ -3414,7 +3414,6 @@ id lblEvento
 id lblFechFinal
 id lblFechaInicio
 id lblInicio
-id lblMensaje
 id lblNombreEvento
 id lblPrecio
 id lblRegister
@@ -3458,6 +3457,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+id messageText
 id middle
 id mini
 id month_grid
@@ -3561,6 +3561,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvMensajes
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3862,6 +3863,7 @@ layout fragment_reservas
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_evento
+layout item_mensaje
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

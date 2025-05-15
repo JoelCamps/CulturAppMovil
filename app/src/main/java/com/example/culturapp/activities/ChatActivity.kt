@@ -13,12 +13,17 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.ChatSocket
 import com.example.culturapp.R
+import com.example.culturapp.adapters.ChatAdapter
+import com.example.culturapp.clases.Messages
 import kotlinx.coroutines.launch
 
 class ChatActivity : AppCompatActivity() {
     private val client = ChatSocket("10.0.2.2", 6400)
+    private lateinit var chatAdapter: ChatAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,22 +46,39 @@ class ChatActivity : AppCompatActivity() {
         imgChat.setImageResource(R.drawable.chat_seleccionado)
         lblChat.setTextColor(seleccionado)
 
+        val rvMensajes = findViewById<RecyclerView>(R.id.rvMensajes)
+        chatAdapter = ChatAdapter(mutableListOf())
+        rvMensajes.layoutManager = LinearLayoutManager(this).apply {
+            stackFromEnd = true
+        }
+        rvMensajes.adapter = chatAdapter
+
         val users = intent.getSerializableExtra("userlogin") as? Users
 
         lifecycleScope.launch {
             client.connect()
-            launch { client.receiveMessages { msg -> runOnUiThread { appendToChat(msg) } } }
+            launch {
+                client.receiveMessages { msg ->
+                    runOnUiThread {
+                        chatAdapter.addMessage(Messages(msg))
+                        rvMensajes.scrollToPosition(chatAdapter.itemCount - 1)
+                    }
+                }
+            }
         }
 
         btnEnviar.setOnClickListener {
-            val text = txtMensaje.text.toString()
-            lifecycleScope.launch {
-                if (users != null) {
-                    client.sendMessage(users.id, text)
-                }
-            }
+            val text = txtMensaje.text.trim().toString()
 
-            txtMensaje.text = null
+            if (text != ""){
+                lifecycleScope.launch {
+                    if (users != null) {
+                        client.sendMessage(users.id, text)
+                    }
+                }
+
+                txtMensaje.text = null
+            }
         }
 
         evento.setOnClickListener{
@@ -84,11 +106,5 @@ class ChatActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
         client.disconnect()
-    }
-
-    private fun appendToChat(msg: String) {
-        val lblMensaje: TextView = findViewById(R.id.lblMensaje)
-
-        lblMensaje.append("${msg}\n")
     }
 }

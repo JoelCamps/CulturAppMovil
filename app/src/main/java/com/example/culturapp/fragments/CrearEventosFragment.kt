@@ -60,11 +60,11 @@ class CrearEventosFragment : Fragment() {
                 spSala.adapter = roomAdapter
 
                 btnCrear.setOnClickListener {
-                    val title = txtNombreEvento.text.toString()
-                    val startDate = txtFechaInicio.text.toString()
-                    val endDate = txtFechaFinal.text.toString()
+                    val title = txtNombreEvento.text.trim().toString()
+                    val startDate = txtFechaInicio.text.trim().toString()
+                    val endDate = txtFechaFinal.text.trim().toString()
                     val entradas = txtEntradas.text.toString().toIntOrNull()
-                    val description = txtDescripcion.text.toString()
+                    val description = txtDescripcion.text.trim().toString()
                     val price = txtPrecio.text.toString().toIntOrNull()
 
                     val selectedType = spTipo.selectedItemPosition
