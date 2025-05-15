@@ -40,17 +40,18 @@ class ReservarEventosFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        CoroutineScope(Dispatchers.IO). launch {
+        CoroutineScope(Dispatchers.IO).launch {
             val bundle = Bundle()
 
             try {
-                val bookings: List<Bookings> = BookingsCall().getBookingEvent(event.id)
+                val bookings: List<Bookings>? = event.id?.let { BookingsCall().getBookingEvent(it) }
 
                 withContext(Dispatchers.Main) {
                     var totalQuantity = 0
-
-                    for (booking in bookings) {
-                        totalQuantity += booking.quantity
+                    if (bookings != null) {
+                        for (booking in bookings) {
+                            totalQuantity += booking.quantity
+                        }
                     }
 
                     val quantityDispo = event.capacity - totalQuantity
@@ -63,7 +64,8 @@ class ReservarEventosFragment : Fragment() {
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     Toast.makeText(
-                        context,"Error al obtener entradas disponibles", Toast.LENGTH_SHORT).show() //guardar texto
+                        context, "Error al obtener entradas disponibles", Toast.LENGTH_SHORT
+                                  ).show()
                 }
             }
 
@@ -84,52 +86,52 @@ class ReservarEventosFragment : Fragment() {
                 "Fecha inválida"
             }
 
-            val lblNombreEvento = view.findViewById<TextView>(R.id.lblNombreEvento)
-            val lblFechaInicio = view.findViewById<TextView>(R.id.lblFechaInicio)
-            val lblFechFinal = view.findViewById<TextView>(R.id.lblFechFinal)
-            val lblTipo = view.findViewById<TextView>(R.id.lblTipo)
-            val lblPrecio = view.findViewById<TextView>(R.id.lblPrecio)
-            val lblSala = view.findViewById<TextView>(R.id.lblSala)
-            val lblEntradas = view.findViewById<TextView>(R.id.lblEntradas)
-            val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
-            val btnReservar = view.findViewById<TextView>(R.id.btnReservar)
+            withContext(Dispatchers.Main) {
+                val lblNombreEvento = view.findViewById<TextView>(R.id.lblNombreEvento)
+                val lblFechaInicio = view.findViewById<TextView>(R.id.lblFechaInicio)
+                val lblFechFinal = view.findViewById<TextView>(R.id.lblFechFinal)
+                val lblTipo = view.findViewById<TextView>(R.id.lblTipo)
+                val lblPrecio = view.findViewById<TextView>(R.id.lblPrecio)
+                val lblSala = view.findViewById<TextView>(R.id.lblSala)
+                val lblEntradas = view.findViewById<TextView>(R.id.lblEntradas)
+                val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
+                val btnReservar = view.findViewById<TextView>(R.id.btnReservar)
 
-            lblNombreEvento.text = event.title
-            lblFechaInicio.text = formattedStartDate
-            lblFechFinal.text = formattedEndDate
-            lblTipo.text = event.type_event.name
-            lblPrecio.text = event.price.toString()
-            lblSala.text = event.rooms.name
-            lblEntradas.text = event.capacity.toString()
-            lblDescripcion.text = event.description
+                lblNombreEvento.text = event.title
+                lblFechaInicio.text = formattedStartDate
+                lblFechFinal.text = formattedEndDate
+                lblTipo.text = event.type_event?.name
+                lblPrecio.text = event.price.toString()
+                lblSala.text = event.rooms?.name
+                lblEntradas.text = event.capacity.toString()
+                lblDescripcion.text = event.description
 
-            btnReservar.setOnClickListener {
-                CoroutineScope(Dispatchers.IO).launch {
-                    try {
-                        val bookings: List<Bookings> = BookingsCall().getBookingEvent(event.id)
+                btnReservar.setOnClickListener {
+                    CoroutineScope(Dispatchers.IO).launch {
+                        try {
+                            val bookings: List<Bookings>? =
+                                event.id?.let { it1 -> BookingsCall().getBookingEvent(it1) }
 
-                        withContext(Dispatchers.Main) {
-                            if (bookings.find { it.user_id == user.id } != null) {
-                                Toast.makeText(context, "Ya tienes una reserva para este evento.", Toast.LENGTH_SHORT).show()
-                            } else {
-                                val cantidadFragment = CantidadFragment()
+                            withContext(Dispatchers.Main) {
+                                if (bookings?.find { it.user_id == user.id } != null) {
+                                    Toast.makeText(context, "Ya tienes una reserva para este evento.", Toast.LENGTH_SHORT).show()
+                                } else {
+                                    val cantidadFragment = CantidadFragment()
+                                    bundle.putSerializable("event", event)
+                                    bundle.putSerializable("user", user)
 
-                                bundle.putSerializable("event", event)
-                                bundle.putSerializable("user", user)
+                                    cantidadFragment.arguments = bundle
 
-                                cantidadFragment.arguments = bundle
-
-                                val transaction = requireActivity().supportFragmentManager.beginTransaction()
-                                transaction.replace(R.id.fragment_container, cantidadFragment)
-                                transaction.addToBackStack(null)
-                                transaction.commit()
+                                    val transaction = requireActivity().supportFragmentManager.beginTransaction()
+                                    transaction.replace(R.id.fragment_container, cantidadFragment)
+                                    transaction.addToBackStack(null)
+                                    transaction.commit()
+                                }
                             }
-                        }
-                    } catch (e: Exception) {
-                        withContext(Dispatchers.Main) {
-                            Toast.makeText(
-                                context, "Error al verificar reservas", Toast.LENGTH_SHORT
-                                          ).show()
+                        } catch (e: Exception) {
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(context, "Error al verificar reservas", Toast.LENGTH_SHORT).show()
+                            }
                         }
                     }
                 }

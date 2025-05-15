@@ -87,11 +87,7 @@ class EventosFragment : Fragment() {
         }
 
         btnCrear.setOnClickListener {
-            val crearEventos = CrearEventosFragment().apply {
-                arguments = Bundle().apply {
-                    putSerializable("userlogin", user)
-                }
-            }
+            val crearEventos = CrearEventosFragment()
 
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, crearEventos)

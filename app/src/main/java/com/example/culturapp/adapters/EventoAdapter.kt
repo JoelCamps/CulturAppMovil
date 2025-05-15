@@ -52,7 +52,7 @@ class EventoAdapter(
         val evento = events[position]
         holder.txtNombre.text = evento.title
         holder.txtFecha.text = formattedDate
-        holder.txtTipo.text = evento.type_event.name
+        holder.txtTipo.text = evento.type_event?.name
 
         holder.itemView.tag = evento
     }

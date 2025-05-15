@@ -3,6 +3,8 @@ package com.example.culturapp.api
 import Users
 import com.example.culturapp.clases.Bookings
 import com.example.culturapp.clases.Events
+import com.example.culturapp.clases.Rooms
+import com.example.culturapp.clases.Type_event
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -21,6 +23,11 @@ interface ApiService {
     // EVENTS
     @GET("api/Events")
     suspend fun getEvents(): List<Events>
+
+    @POST("api/Events")
+    suspend fun postEvent(
+        @Body events: Events
+        ): Events
 
     // BOOKINGS
     @GET("api/Bookings/Events/{id_event}")
@@ -44,6 +51,10 @@ interface ApiService {
         ): Response<Bookings?>
 
     // ROOMS
+    @GET("api/Rooms")
+    suspend fun getRooms(): List<Rooms>
 
     // TYPE_EVENT
+    @GET("api/TypeEvent")
+    suspend fun getTypeEvent(): List<Type_event>
 }

@@ -7,4 +7,8 @@ class EventsCall {
     suspend fun getEvents(): List<Events> {
         return RetrofitClient.instance.getEvents()
     }
+
+    suspend fun postEvent(event: Events): Events {
+        return RetrofitClient.instance.postEvent(event)
+    }
 }

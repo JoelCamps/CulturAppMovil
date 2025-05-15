@@ -44,7 +44,7 @@
             android:textColor="@color/negro"
             android:textSize="20sp"
             android:fontFamily="@font/dmseriftextregular"
-            android:digits="0123456789-:"
+            android:digits="0123456789-: "
             android:paddingVertical="7dp"
             android:paddingHorizontal="15dp"/>
     </LinearLayout>
@@ -74,7 +74,7 @@
             android:textColor="@color/negro"
             android:textSize="20sp"
             android:fontFamily="@font/dmseriftextregular"
-            android:digits="0123456789-:"
+            android:digits="0123456789-: "
             android:paddingVertical="7dp"
             android:paddingHorizontal="15dp"/>
     </LinearLayout>

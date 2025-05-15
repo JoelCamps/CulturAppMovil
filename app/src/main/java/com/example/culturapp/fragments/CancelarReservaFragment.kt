@@ -62,9 +62,9 @@ class CancelarReservaFragment : Fragment() {
         lblNombreEvento.text = booking.events.title
         lblFechaInicio.text = formattedStartDate
         lblFechFinal.text = formattedEndDate
-        lblTipo.text = booking.events.type_event.name
+        lblTipo.text = booking.events.type_event?.name
         lblPrecio.text = booking.events.price.toString()
-        lblSala.text = booking.events.rooms.name
+        lblSala.text = booking.events.rooms?.name
         lblEntradas.text = booking.quantity.toString()
         lblDescripcion.text = booking.events.description
 

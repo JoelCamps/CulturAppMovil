@@ -53,7 +53,7 @@ class BookingAdapter(
         val booking = bookings[position]
         holder.txtNombre.text = booking.events.title
         holder.txtFecha.text = formattedDate
-        holder.txtTipo.text = booking.events.type_event.name
+        holder.txtTipo.text = booking.events.type_event?.name
 
         holder.itemView.tag = booking
     }

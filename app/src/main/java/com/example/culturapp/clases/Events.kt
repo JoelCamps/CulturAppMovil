@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 data class Events(
-    @SerializedName("Id") val id: Int,
+    @SerializedName("Id") val id: Int?,
     @SerializedName("Title") val title: String,
     @SerializedName("Start_datetime") val start_datetime: String,
     @SerializedName("End_datetime") val end_datetime: String,
@@ -14,5 +14,5 @@ data class Events(
     @SerializedName("Active") val active: Boolean,
     @SerializedName("Room_id") val room_id: Int,
     @SerializedName("Type_id") val type_id: Int,
-    @SerializedName("Type_event") val type_event: Type_event,
-    @SerializedName("Rooms") val rooms: Rooms ) : Serializable
+    @SerializedName("Type_event") val type_event: Type_event?,
+    @SerializedName("Rooms") val rooms: Rooms? ) : Serializable

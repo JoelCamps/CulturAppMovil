@@ -56,14 +56,18 @@ class CantidadFragment : Fragment() {
                     } else{
                         if ((quantityDispo - booking) >= 0){
 
-                            val newBooking = Bookings(
-                                quantity = booking,
-                                user_id = user.id,
-                                event_id = event.id,
-                                active = true,
-                                events = event )
+                            val newBooking = event.id?.let { it1 ->
+                                Bookings(
+                                    quantity = booking,
+                                    user_id = user.id,
+                                    event_id = it1,
+                                    active = true,
+                                    events = event)
+                            }
 
-                            BookingsCall().postBooking(newBooking)
+                            if (newBooking != null) {
+                                BookingsCall().postBooking(newBooking)
+                            }
 
                             requireActivity().recreate()
                         }
