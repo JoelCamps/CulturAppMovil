@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.culturapp.Encrypt
 import com.example.culturapp.R
 import com.example.culturapp.api.calls.UsersCall
-import com.example.culturapp.clases.Events
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

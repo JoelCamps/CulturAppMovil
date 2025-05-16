@@ -10,6 +10,7 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.PUT
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface ApiService {
@@ -23,7 +24,13 @@ interface ApiService {
     @POST("api/Users")
     suspend fun postUser(
         @Body user: Users
-                         ): Users
+    ): Users
+
+    @PUT("api/Users/{id}")
+    suspend fun putUser(
+        @Path("id") id: Int,
+        @Body user: Users
+    ): Response<Unit>
 
     // EVENTS
     @GET("api/Events")
@@ -32,28 +39,28 @@ interface ApiService {
     @POST("api/Events")
     suspend fun postEvent(
         @Body events: Events
-        ): Events
+    ): Events
 
     // BOOKINGS
     @GET("api/Bookings/Events/{id_event}")
     suspend fun getBookingEvent(
         @Query("id_event") id_event: Int,
-        ): List<Bookings>
+    ): List<Bookings>
 
     @GET("api/Bookings/Users/{id_user}")
     suspend fun getBookingUser(
         @Query("id_user") id_user: Int,
-        ): List<Bookings>
+    ): List<Bookings>
 
     @POST("api/Bookings")
     suspend fun postBooking(
         @Body booking: Bookings
-        ): Bookings
+    ): Bookings
 
     @PUT("api/Bookings")
     suspend fun putBooking(
         @Body booking: Bookings
-        ): Response<Bookings?>
+    ): Response<Bookings?>
 
     // ROOMS
     @GET("api/Rooms")
