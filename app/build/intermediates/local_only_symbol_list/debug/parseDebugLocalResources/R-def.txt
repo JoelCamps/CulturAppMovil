@@ -55,7 +55,6 @@ id btnReservar
 id btnSalir
 id chat
 id contra
-id customSwitch
 id evento
 id fragment_container
 id imgAjustes
@@ -72,6 +71,7 @@ id lblEvento
 id lblFechFinal
 id lblFechaInicio
 id lblInicio
+id lblNombre
 id lblNombreEvento
 id lblPrecio
 id lblRegister
@@ -89,6 +89,7 @@ id rvMensajes
 id spIdioma
 id spSala
 id spTipo
+id swModo
 id topbar
 id txtApellidos
 id txtCantidad

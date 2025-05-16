@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">CulturApp</string>
     <string-array name="languages">
-        <item>ES</item>
         <item>EN</item>
+        <item>ES</item>
         <item>CA</item>
         <item>JA</item>
     </string-array>

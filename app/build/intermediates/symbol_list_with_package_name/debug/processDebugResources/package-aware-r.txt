@@ -3299,7 +3299,6 @@ id cradle
 id currentState
 id custom
 id customPanel
-id customSwitch
 id cut
 id date_picker_actions
 id decelerate
@@ -3414,6 +3413,7 @@ id lblEvento
 id lblFechFinal
 id lblFechaInicio
 id lblInicio
+id lblNombre
 id lblNombreEvento
 id lblPrecio
 id lblRegister
@@ -3626,6 +3626,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id swModo
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

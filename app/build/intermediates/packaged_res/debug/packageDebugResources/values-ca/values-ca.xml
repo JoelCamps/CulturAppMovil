@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
+        <item>CA</item>
         <item>ES</item>
         <item>EN</item>
-        <item>CA</item>
         <item>JA</item>
     </string-array>
     <string name="ajustes">Configuració</string>

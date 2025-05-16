@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="languages">
+        <item>JA</item>
         <item>ES</item>
         <item>EN</item>
         <item>CA</item>
-        <item>JA</item>
     </string-array>
     <string name="ajustes">設定</string>
     <string name="apellidos">苗字</string>

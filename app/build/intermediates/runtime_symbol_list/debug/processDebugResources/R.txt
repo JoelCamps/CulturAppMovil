@@ -3298,7 +3298,6 @@ int id cradle 0x7f0a0094
 int id currentState 0x7f0a0095
 int id custom 0x7f0a0096
 int id customPanel 0x7f0a0097
-int id customSwitch 0x7f0a0098
 int id cut 0x7f0a0099
 int id date_picker_actions 0x7f0a009a
 int id decelerate 0x7f0a009b
@@ -3413,6 +3412,7 @@ int id lblEvento 0x7f0a0104
 int id lblFechFinal 0x7f0a0231
 int id lblFechaInicio 0x7f0a0232
 int id lblInicio 0x7f0a0105
+int id lblNombre 0x7f0a023d
 int id lblNombreEvento 0x7f0a0233
 int id lblPrecio 0x7f0a0234
 int id lblRegister 0x7f0a0106
@@ -3625,6 +3625,7 @@ int id stretch 0x7f0a01d0
 int id submenuarrow 0x7f0a01d1
 int id submit_area 0x7f0a01d2
 int id supportScrollUp 0x7f0a01d3
+int id swModo 0x7f0a023e
 int id tabMode 0x7f0a01d4
 int id tag_accessibility_actions 0x7f0a01d5
 int id tag_accessibility_clickable_spans 0x7f0a01d6

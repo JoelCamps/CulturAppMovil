@@ -27,6 +27,7 @@
         android:gravity="center_horizontal">
 
         <TextView
+            android:id="@+id/lblNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre de usuario"
@@ -69,7 +70,7 @@
                 android:layout_marginEnd="5dp"/>
 
             <Switch
-                android:id="@+id/customSwitch"
+                android:id="@+id/swModo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:thumb="@drawable/switch_thumb"

@@ -3,6 +3,8 @@ package com.example.culturapp.activities
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.view.WindowManager
 import android.widget.AdapterView
@@ -85,21 +87,15 @@ class LoginActivity : AppCompatActivity() {
         spIdioma.post {
             spIdioma.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parentView: AdapterView<*>, view: View?, position: Int, id: Long) {
-                    val selectedLanguage = when (position) {
-                        0 -> "es"
-                        1 -> "en"
-                        2 -> "ca"
-                        3 -> "ja"
-                        else -> "es"
-                    }
+                    val selectedLanguage = parentView.getItemAtPosition(position).toString().lowercase()
+
                     val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
                     sharedPreferences.edit().putString("language", selectedLanguage).apply()
 
                     setLocale(selectedLanguage)
                 }
 
-                override fun onNothingSelected(parentView: AdapterView<*>) {
-                }
+                override fun onNothingSelected(parentView: AdapterView<*>) {}
             }
         }
     }
@@ -112,6 +108,7 @@ class LoginActivity : AppCompatActivity() {
         config.setLocale(locale)
         baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
 
-        recreate()
+        val intent = Intent(this, this::class.java)
+        startActivity(intent)
     }
 }

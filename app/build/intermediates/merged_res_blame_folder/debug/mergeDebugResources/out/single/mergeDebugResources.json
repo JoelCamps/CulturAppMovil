@@ -268,6 +268,10 @@
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\lupa_negra.png"
     },
     {
+        "merged": "com.example.culturapp-debug-32:/layout_activity_ajustes.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/activity_ajustes.xml"
+    },
+    {
         "merged": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_boton_perso_rojo.xml.flat",
         "source": "C:\\Users\\CEP-TARDA\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\boton_perso_rojo.xml"
     }
