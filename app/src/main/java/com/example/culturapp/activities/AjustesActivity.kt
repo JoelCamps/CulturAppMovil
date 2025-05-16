@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
 import com.example.culturapp.R
 
@@ -28,11 +29,19 @@ class AjustesActivity : AppCompatActivity() {
         val reserva: LinearLayout = findViewById(R.id.reserva)
         val seleccionado = ContextCompat.getColor(this, R.color.morado)
 
+        val btnCerrar: AppCompatButton = findViewById(R.id.btnCerrar)
+
         lblTitulo.text = getString(R.string.ajustes)
         imgAjustes.setImageResource(R.drawable.ajustes_seleccionado)
         lblAjustes.setTextColor(seleccionado)
 
         val users = intent.getSerializableExtra("userlogin") as? Users
+
+        btnCerrar.setOnClickListener {
+            val intent = Intent(this@AjustesActivity, LoginActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        }
 
         evento.setOnClickListener{
             val intent = Intent(this, EventosActivity::class.java).apply {

@@ -10,7 +10,14 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.culturapp.Encrypt
 import com.example.culturapp.R
+import com.example.culturapp.api.calls.UsersCall
+import com.example.culturapp.clases.Events
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,13 +40,33 @@ class RegisterActivity : AppCompatActivity() {
                 txtContra.text.isEmpty() || txtConfirmar.text.isEmpty()) {
                 Toast.makeText(this, "Debes completar todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
             }
-//            else if (users?.any { it.email == txtCorreo.text.toString() } == true) {
-//                Toast.makeText(this, "Este usuario ya existe", Toast.LENGTH_SHORT).show()
-//            }
             else {
-                if (txtContra.text == txtConfirmar.text) {
-                    val intent = Intent(this, EventosActivity::class.java)
-                    startActivity(intent)
+                if (txtContra.text.toString() == txtConfirmar.text.toString()) {
+                    CoroutineScope(Dispatchers.IO).launch {
+                        try {
+                            val password = Encrypt().encriptar(txtContra.text.trim().toString())
+
+                            val user = Users(
+                                null,
+                                txtNombre.text.trim().toString(),
+                                txtApellidos.text.trim().toString(),
+                                txtCorreo.text.trim().toString(),
+                                password,
+                                type = "basic",
+                                active = true )
+
+                            UsersCall().postUser(user)
+
+                            withContext(Dispatchers.Main) {
+                                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+                                startActivity(intent)
+                            }
+                        } catch (e: Exception) {
+                            withContext(Dispatchers.Main) {
+                                Toast.makeText(this@RegisterActivity, "Error al registrar el usuario", Toast.LENGTH_SHORT).show() //guardar texto
+                            }
+                        }
+                    }
                 }
                 else {
                     Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()

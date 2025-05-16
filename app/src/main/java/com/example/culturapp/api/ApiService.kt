@@ -15,10 +15,15 @@ import retrofit2.http.Query
 interface ApiService {
     // USERS
     @GET("api/Users/{email}/{password}")
-    suspend fun login(
+    suspend fun getUserLogin(
         @Query("email") email: String,
         @Query("password") password: String
     ): Users
+
+    @POST("api/Users")
+    suspend fun postUser(
+        @Body user: Users
+                         ): Users
 
     // EVENTS
     @GET("api/Events")

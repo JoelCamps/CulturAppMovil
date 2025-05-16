@@ -12,9 +12,9 @@
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp">
 
-            <EditText
+            <SearchView
                 android:layout_width="250dp"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:textSize="15sp"
                 android:hint="@string/buscar"
                 android:textColorHint="@color/grisOscuro"
@@ -23,11 +23,12 @@
                 android:paddingVertical="3dp"
                 android:layout_marginEnd="4dp"
                 android:background="@drawable/borde_negro"
+                android:maxLines="1"
                 app:drawableStartCompat="@drawable/lupa_buscador_negra" />
 
             <Spinner
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:background="@drawable/spinner_personalizado"
                 android:padding="3dp"/>
 

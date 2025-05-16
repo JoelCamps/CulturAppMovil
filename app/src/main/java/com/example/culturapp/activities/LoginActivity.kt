@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
             else {
                 CoroutineScope(Dispatchers.IO).launch {
                     try {
-                        val user = UsersCall().login(txtCorreo.text.trim().toString(), password)
+                        val user = UsersCall().getUserLogin(txtCorreo.text.trim().toString(), password)
 
                         withContext(Dispatchers.Main) {
                             val intent = Intent(this@LoginActivity, EventosActivity::class.java).apply {

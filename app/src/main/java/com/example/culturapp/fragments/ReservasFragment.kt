@@ -42,25 +42,27 @@ class ReservasFragment : Fragment() {
 
         CoroutineScope(Dispatchers.IO). launch {
             try {
-                val bookings: List<Bookings> = BookingsCall().getBookingUser(user.id)
+                val bookings: List<Bookings>? = user.id?.let { BookingsCall().getBookingUser(it) }
 
                 withContext(Dispatchers.Main) {
                     rvReserva.layoutManager = LinearLayoutManager(requireContext())
-                    val adapter = BookingAdapter(bookings, object : BookingAdapter.OnItemClickListener {
-                        override fun onItemClick(booking: Bookings) {
-                            val cancelarReservaFragment = CancelarReservaFragment()
+                    val adapter = bookings?.let {
+                        BookingAdapter(it, object : BookingAdapter.OnItemClickListener {
+                            override fun onItemClick(booking: Bookings) {
+                                val cancelarReservaFragment = CancelarReservaFragment()
 
-                            val bundle = Bundle()
-                            bundle.putSerializable("booking", booking)
+                                val bundle = Bundle()
+                                bundle.putSerializable("booking", booking)
 
-                            cancelarReservaFragment.arguments = bundle
+                                cancelarReservaFragment.arguments = bundle
 
-                            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-                            transaction.replace(R.id.fragment_container, cancelarReservaFragment)
-                            transaction.addToBackStack(null)
-                            transaction.commit()
-                        }
-                    })
+                                val transaction = requireActivity().supportFragmentManager.beginTransaction()
+                                transaction.replace(R.id.fragment_container, cancelarReservaFragment)
+                                transaction.addToBackStack(null)
+                                transaction.commit()
+                            }
+                        })
+                    }
 
                     rvReserva.adapter = adapter
                 }

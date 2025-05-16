@@ -57,12 +57,14 @@ class CantidadFragment : Fragment() {
                         if ((quantityDispo - booking) >= 0){
 
                             val newBooking = event.id?.let { it1 ->
-                                Bookings(
-                                    quantity = booking,
-                                    user_id = user.id,
-                                    event_id = it1,
-                                    active = true,
-                                    events = event)
+                                user.id?.let { it2 ->
+                                    Bookings(
+                                        quantity = booking,
+                                        user_id = it2,
+                                        event_id = it1,
+                                        active = true,
+                                        events = event)
+                                }
                             }
 
                             if (newBooking != null) {

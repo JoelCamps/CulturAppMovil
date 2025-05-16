@@ -73,7 +73,7 @@ class ChatActivity : AppCompatActivity() {
             if (text != ""){
                 lifecycleScope.launch {
                     if (users != null) {
-                        client.sendMessage(users.id, text)
+                        users.id?.let { it1 -> client.sendMessage(it1, text) }
                     }
                 }
 

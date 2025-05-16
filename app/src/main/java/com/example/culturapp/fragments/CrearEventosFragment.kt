@@ -86,8 +86,8 @@ class CrearEventosFragment : Fragment() {
                             room_id,
                             type_id,
                             null,
-                            null
-                                             )
+                            null )
+
                         CoroutineScope(Dispatchers.Main).launch {
                             try {
                                 EventsCall().postEvent(newEvent)
