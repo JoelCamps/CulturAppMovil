@@ -16,4 +16,8 @@ class UsersCall {
     suspend fun putUser(id: Int, user: Users): Response<Unit> {
         return RetrofitClient.instance.putUser(id, user)
     }
+
+    suspend fun putUsersPassword(email: String, password: String): Response<Unit> {
+        return RetrofitClient.instance.putUsersPassword(email, password)
+    }
 }

@@ -73,6 +73,7 @@ class LoginActivity : AppCompatActivity() {
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             Toast.makeText(this@LoginActivity, "Error al iniciar sesión", Toast.LENGTH_SHORT).show() //guardar texto
+                            txtContra.text = null
                         }
                     }
                 }

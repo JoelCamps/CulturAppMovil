@@ -32,6 +32,12 @@ interface ApiService {
         @Body user: Users
     ): Response<Unit>
 
+    @PUT("api/Users/Contraseña/{email}/{password}")
+    suspend fun putUsersPassword(
+        @Path("email") email: String,
+        @Path("password") password: String
+    ): Response<Unit>
+
     // EVENTS
     @GET("api/Events")
     suspend fun getEvents(): List<Events>

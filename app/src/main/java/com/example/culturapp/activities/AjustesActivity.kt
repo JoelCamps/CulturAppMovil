@@ -20,6 +20,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.content.ContextCompat
+import com.example.culturapp.Encrypt
 import com.example.culturapp.R
 import com.example.culturapp.api.calls.UsersCall
 import kotlinx.coroutines.CoroutineScope
@@ -133,6 +134,33 @@ class AjustesActivity : AppCompatActivity() {
                             Toast.makeText(this@AjustesActivity, "Error al cambiar los nuevos datos", Toast.LENGTH_SHORT).show() //guardar texto
                         }
                     }
+                }
+            }
+        }
+
+        btnContra.setOnClickListener {
+            if (txtContra.text.isEmpty() && txtConfirmar.text.isEmpty()){
+                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
+            }
+            else{
+                if (txtContra.text.toString() == txtConfirmar.text.toString()) {
+                    CoroutineScope(Dispatchers.IO).launch {
+                        try {
+                            val password = Encrypt().encriptar(txtContra.text.trim().toString())
+                            user?.email?.let { it1 -> UsersCall().putUsersPassword(it1, password) }
+
+                            txtContra.text = null
+                            txtConfirmar.text = null
+                        } catch (e: Exception) {
+                            withContext(Dispatchers.Main) {
+                                Log.e("ERROR", "Excepción en PUT", e)
+                                Toast.makeText(this@AjustesActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show() //guardar texto
+                            }
+                        }
+                    }
+                }
+                else{
+                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show() //guardar texto
                 }
             }
         }

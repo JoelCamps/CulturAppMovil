@@ -2,13 +2,21 @@ package com.example.culturapp.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.culturapp.Encrypt
 import com.example.culturapp.R
+import com.example.culturapp.api.calls.UsersCall
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class ContraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +31,37 @@ class ContraActivity : AppCompatActivity() {
         val txtConfirmar: EditText = findViewById(R.id.txtConfirmar)
         val btnCambiar: Button = findViewById(R.id.btnCambiar)
         val lblInicio: TextView = findViewById(R.id.lblInicio)
+
+        btnCambiar.setOnClickListener {
+            btnCambiar.setOnClickListener {
+                if (txtCorreo.text.isEmpty() && txtContra.text.isEmpty() && txtConfirmar.text.isEmpty()){
+                    Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
+                }
+                else{
+                    if (txtContra.text.toString() == txtConfirmar.text.toString()) {
+                        CoroutineScope(Dispatchers.IO).launch {
+                            try {
+                                val password = Encrypt().encriptar(txtContra.text.trim().toString())
+                                UsersCall().putUsersPassword(txtCorreo.text.toString(), password)
+
+                                withContext(Dispatchers.Main) {
+                                    val intent = Intent(this@ContraActivity, LoginActivity::class.java)
+                                    startActivity(intent)
+                                }
+                            } catch (e: Exception) {
+                                withContext(Dispatchers.Main) {
+                                    Log.e("ERROR", "Excepción en PUT", e)
+                                    Toast.makeText(this@ContraActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show() //guardar texto
+                                }
+                            }
+                        }
+                    }
+                    else{
+                        Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show() //guardar texto
+                    }
+                }
+            }
+        }
 
         lblInicio.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)

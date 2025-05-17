@@ -5,6 +5,6 @@ data class Users(
     var name: String,
     var surname: String,
     var email: String,
-    val password: String,
+    var password: String,
     val type: String,
     val active: Boolean ) : Serializable
