@@ -5,7 +5,7 @@
     android:id="@+id/login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blanco"
+    android:background="?attr/background"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
@@ -16,12 +16,12 @@
         android:background="@drawable/spinner_personalizado"
         android:layout_gravity="end"
         android:layout_marginEnd="12dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp" />
 
     <ImageView
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:src="@drawable/logo_claro"
+        android:src="@drawable/logo"
         android:layout_marginTop="75dp"/>
 
     <EditText
@@ -62,7 +62,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/olvidado"
-            android:fontFamily="@font/dmseriftextregular"/>
+            android:fontFamily="@font/dmseriftextregular"
+            android:textColor="?attr/colorOnBackground"/>
 
         <TextView
             android:id="@+id/lblContra"
@@ -75,7 +76,6 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -83,15 +83,17 @@
             android:id="@+id/btnIniciar"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:text="@string/iniciar"
-            android:textSize="18sp"
-            android:fontFamily="@font/alkatrabariablefontwght"
-            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/boton_perso_azul"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:text="@string/iniciar"
+            android:textColor="@color/negro"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/registroLayout"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="8dp"/>
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
             android:id="@+id/registroLayout"
@@ -108,7 +110,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cuenta"
-                android:fontFamily="@font/dmseriftextregular"/>
+                android:fontFamily="@font/dmseriftextregular"
+                android:textColor="?attr/colorOnBackground"/>
 
             <TextView
                 android:id="@+id/lblRegister"

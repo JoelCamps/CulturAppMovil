@@ -16,7 +16,7 @@
             android:id="@+id/lblTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/negro"
+            android:textColor="?colorOnBackground"
             android:fontFamily="@font/alkatrabariablefontwght"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -27,7 +27,7 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="50dp"
-            android:src="@drawable/logo_claro"
+            android:src="@drawable/logo"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -35,5 +35,5 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/negro"/>
+        android:background="?colorOnBackground"/>
 </LinearLayout>

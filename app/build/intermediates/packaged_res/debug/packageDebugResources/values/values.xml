@@ -54,8 +54,11 @@
     <string name="tipo">Tipo:</string>
     <string name="total">Totales:</string>
     <style name="Base.Theme.CulturApp" parent="Theme.Material3.DayNight.NoActionBar">
-        
-        
+
+        <item name="background">@color/blanco</item>
+        <item name="colorOnBackground">@color/negro</item>
+
+        <item name="colorOutline">@color/negro</item>
     </style>
     <style name="Theme.CulturApp" parent="Base.Theme.CulturApp"/>
 </resources>

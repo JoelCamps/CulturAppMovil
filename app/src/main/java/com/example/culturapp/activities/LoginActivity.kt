@@ -3,6 +3,7 @@ package com.example.culturapp.activities
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.AdapterView
@@ -13,6 +14,7 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.culturapp.Encrypt
 import com.example.culturapp.R
 import com.example.culturapp.api.calls.UsersCall
@@ -25,6 +27,15 @@ import java.util.Locale
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
+        val modoOscuro = sharedPreferences.getBoolean("modo_oscuro", false)
+        if (modoOscuro) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
         setContentView(R.layout.activity_login)
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
@@ -62,7 +73,6 @@ class LoginActivity : AppCompatActivity() {
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             Toast.makeText(this@LoginActivity, "Error al iniciar sesión", Toast.LENGTH_SHORT).show() //guardar texto
-                            txtContra.text = null
                         }
                     }
                 }
@@ -74,8 +84,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val languages = resources.getStringArray(R.array.languages)
-        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, languages)
+        val adapter = ArrayAdapter.createFromResource(this, R.array.languages, R.layout.item_spinner)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spIdioma.adapter = adapter
 

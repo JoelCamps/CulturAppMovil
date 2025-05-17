@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/blanco"
     android:orientation="vertical"
     android:paddingBottom="10dp"
     android:gravity="center"
@@ -12,7 +11,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/negro"
+        android:background="?colorOnBackground"
         android:layout_marginBottom="10dp"/>
 
     <LinearLayout
@@ -32,7 +31,7 @@
                 android:id="@+id/imgEvento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/lupa_negra"/>
+                android:src="@drawable/lupa"/>
 
             <TextView
                 android:id="@+id/lblEvento"
@@ -40,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/eventos"
                 android:textSize="17sp"
-                android:textColor="@color/negro"
+                android:textColor="?colorOnBackground"
                 android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
@@ -58,7 +57,7 @@
                 android:id="@+id/imgChat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/chat_negro"/>
+                android:src="@drawable/chat"/>
 
             <TextView
                 android:id="@+id/lblChat"
@@ -66,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/chat"
                 android:textSize="17sp"
-                android:textColor="@color/negro"
+                android:textColor="?colorOnBackground"
                 android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
@@ -84,7 +83,7 @@
                 android:id="@+id/imgReserva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/calendario_negro" />
+                android:src="@drawable/calendario" />
 
             <TextView
                 android:id="@+id/lblReserva"
@@ -92,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/reservas"
                 android:textSize="17sp"
-                android:textColor="@color/negro"
+                android:textColor="?colorOnBackground"
                 android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
         </LinearLayout>
@@ -110,7 +109,7 @@
                 android:id="@+id/imgAjustes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ajustes_negro"/>
+                android:src="@drawable/ajustes"/>
 
             <TextView
                 android:id="@+id/lblAjustes"
@@ -118,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ajustes"
                 android:textSize="17sp"
-                android:textColor="@color/negro"
+                android:textColor="?colorOnBackground"
                 android:textStyle="bold"
                 android:fontFamily="@font/dmseriftextregular"/>
 

@@ -30,7 +30,7 @@
             android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:text="Salir"
-            android:textColor="@color/blanco"
+            android:textColor="@color/negro"
             android:textSize="18sp"
             android:fontFamily="@font/alkatrabariablefontwght"
             android:textStyle="bold"

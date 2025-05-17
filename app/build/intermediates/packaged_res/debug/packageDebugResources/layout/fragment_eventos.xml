@@ -18,16 +18,16 @@
             android:textSize="15sp"
             android:hint="@string/buscar"
             android:textColorHint="@color/grisOscuro"
-            android:textColor="@color/negro"
+            android:textColor="?colorOnBackground"
             android:paddingHorizontal="10dp"
             android:layout_marginEnd="4dp"
-            android:background="@drawable/borde_negro"
+            android:background="@drawable/borde_simple"
             android:maxLines="1" />
 
         <Spinner
             android:layout_width="150dp"
             android:layout_height="30dp"
-            android:background="@drawable/spinner_personalizado"
+            android:background="@drawable/spinner_borde"
             android:padding="3dp"/>
 
     </LinearLayout>
@@ -40,6 +40,7 @@
         android:textSize="18sp"
         android:fontFamily="@font/alkatrabariablefontwght"
         android:textStyle="bold"
+        android:textColor="@color/negro"
         android:background="@drawable/boton_perso_azul"
         android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/registroLayout"

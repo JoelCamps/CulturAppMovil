@@ -1,5 +1,5 @@
-com.example.culturapp.test.app-core-1.6.1-0 C:\Users\Joel\.gradle\caches\8.10.2\transforms\a063c24b0760f65f2566b21e6085b633\transformed\core-1.6.1\res
-com.example.culturapp.test.app-tracing-1.2.0-1 C:\Users\Joel\.gradle\caches\8.10.2\transforms\fbee55af539392b29ba012ca8de26051\transformed\tracing-1.2.0\res
+com.example.culturapp.test.app-tracing-1.2.0-0 C:\Users\Joel\.gradle\caches\8.10.2\transforms\401636ee803fd8ea018f3ce7a0fb30db\transformed\tracing-1.2.0\res
+com.example.culturapp.test.app-core-1.6.1-1 C:\Users\Joel\.gradle\caches\8.10.2\transforms\dc4a6d360a54cbb031fb5e9bd90c618d\transformed\core-1.6.1\res
 com.example.culturapp.test.app-androidTest-2 C:\Users\Joel\AndroidStudioProjects\CulturAppMovil\app\build\generated\res\resValues\androidTest\debug
 com.example.culturapp.test.app-mergeDebugAndroidTestResources-3 C:\Users\Joel\AndroidStudioProjects\CulturAppMovil\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
 com.example.culturapp.test.app-mergeDebugAndroidTestResources-4 C:\Users\Joel\AndroidStudioProjects\CulturAppMovil\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
