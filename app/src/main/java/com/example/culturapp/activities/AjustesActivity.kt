@@ -104,7 +104,7 @@ class AjustesActivity : AppCompatActivity() {
         // Actualiza datos del usuario
         btnCambiar.setOnClickListener {
             if (txtNombre.text.isEmpty() && txtApellidos.text.isEmpty() && txtCorreo.text.isEmpty()){
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.completa), Toast.LENGTH_SHORT).show()
             } else {
                 CoroutineScope(Dispatchers.IO).launch {
                     try {
@@ -120,7 +120,7 @@ class AjustesActivity : AppCompatActivity() {
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             Log.e("ERROR", "Excepción en PUT", e)
-                            Toast.makeText(this@AjustesActivity, "Error al cambiar los nuevos datos", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@AjustesActivity, getString(R.string.errorCambioDatos), Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -130,7 +130,7 @@ class AjustesActivity : AppCompatActivity() {
         // Cambia contraseña
         btnContra.setOnClickListener {
             if (txtContra.text.isEmpty() && txtConfirmar.text.isEmpty()){
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.completa), Toast.LENGTH_SHORT).show()
             } else if (txtContra.text.toString() == txtConfirmar.text.toString()) {
                 CoroutineScope(Dispatchers.IO).launch {
                     try {
@@ -141,12 +141,12 @@ class AjustesActivity : AppCompatActivity() {
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             Log.e("ERROR", "Excepción en PUT", e)
-                            Toast.makeText(this@AjustesActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@AjustesActivity, getString(R.string.errorContra), Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             } else {
-                Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.noCoincide), Toast.LENGTH_SHORT).show()
             }
         }
 

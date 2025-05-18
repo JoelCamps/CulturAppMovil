@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.culturapp.R
 import com.example.culturapp.clases.Bookings
@@ -14,6 +15,7 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 class BookingAdapter(
+    private val context: Context,
     private var bookings: List<Bookings>,
     private val listener: OnItemClickListener,
                     ) : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
@@ -47,12 +49,12 @@ class BookingAdapter(
             val date = inputFormat.parse(bookings[position].events?.start_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
-            "Fecha inválida"
+            Toast.makeText(context, context.getString(R.string.errorFecha), Toast.LENGTH_SHORT).show()
         }
 
         val booking = bookings[position]
         holder.txtNombre.text = booking.events?.title
-        holder.txtFecha.text = formattedDate
+        holder.txtFecha.text = formattedDate.toString()
         holder.txtTipo.text = booking.events?.type_event?.name
 
         holder.itemView.tag = booking

@@ -55,7 +55,7 @@ class ConfCancelarFragment : Fragment() {
                     requireActivity().recreate()
                 } catch (e: Exception) {
                     Log.e("API Error", "Excepción: ${e.message}")
-                    Toast.makeText(requireContext(), "Error al realizar la solicitud", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.errorReserva), Toast.LENGTH_SHORT).show()
                 }
             }
         }

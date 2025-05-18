@@ -39,7 +39,7 @@ class ContraActivity : AppCompatActivity() {
         // Al pulsar el botón cambiar contraseña
         btnCambiar.setOnClickListener {
             if (txtCorreo.text.isEmpty() && txtContra.text.isEmpty() && txtConfirmar.text.isEmpty()){
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.completa), Toast.LENGTH_SHORT).show()
             } else {
                 if (txtContra.text.toString() == txtConfirmar.text.toString()) {
                     CoroutineScope(Dispatchers.IO).launch {
@@ -59,7 +59,7 @@ class ContraActivity : AppCompatActivity() {
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {
                                 Log.e("ERROR", "Excepción en PUT", e)
-                                Toast.makeText(this@ContraActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@ContraActivity, getString(R.string.errorContra), Toast.LENGTH_SHORT).show()
 
                                 // Oculta barra y muestra botón de nuevo
                                 bar.visibility = View.GONE
@@ -68,7 +68,7 @@ class ContraActivity : AppCompatActivity() {
                         }
                     }
                 } else {
-                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.noCoincide), Toast.LENGTH_SHORT).show()
                 }
             }
         }

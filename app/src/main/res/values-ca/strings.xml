@@ -44,4 +44,24 @@
     <string name="conf_cambios">Confirmar canvis</string>
     <string name="cerrar">Tancar sessió</string>
     <string name="cancelar">Cancel·lar</string>
+    <string name="completa">Completa tots els camps</string>
+    <string name="errorCambioDatos">Error en canviar les dades noves</string>
+    <string name="errorContra">Error en canviar la contrasenya</string>
+    <string name="noCoincide">La contrasenya no coincideix</string>
+    <string name="correoContra">Has d’introduir un correu i una contrasenya</string>
+    <string name="errorLogin">Error en iniciar sessió</string>
+    <string name="errorRegistro">Error en registrar l’usuari</string>
+    <string name="errorFecha">Data invàlida</string>
+    <string name="entradasValido">Introdueix un nombre d’entrades vàlid</string>
+    <string name="noQuedan">No queden tantes entrades disponibles</string>
+    <string name="ponEntradas">Introdueix un nombre d’entrades</string>
+    <string name="errorReserva">Error en guardar la reserva</string>
+    <string name="errorCrearEvento">Error en crear l’esdeveniment</string>
+    <string name="errorDatos">Error en carregar les dades</string>
+    <string name="todos">Tots</string>
+    <string name="errorVerEventos">Error en mostrar els esdeveniments</string>
+    <string name="errorEntradasDispo">Error en obtenir entrades disponibles</string>
+    <string name="yaTienes">Ja tens una reserva per aquest esdeveniment</string>
+    <string name="errorVerificar">Error en verificar les reserves</string>
+    <string name="errorVerReservas">Error en mostrar les reserves</string>
 </resources>

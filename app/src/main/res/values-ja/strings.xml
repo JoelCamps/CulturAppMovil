@@ -44,4 +44,24 @@
     <string name="conf_cambios">変更確認</string>
     <string name="cerrar">ログアウト</string>
     <string name="cancelar">キャンセル</string>
+    <string name="completa">すべての項目を入力してください</string>
+    <string name="errorCambioDatos">新しいデータの変更エラー</string>
+    <string name="errorContra">パスワード変更エラー</string>
+    <string name="noCoincide">パスワードが一致しません</string>
+    <string name="correoContra">メールアドレスとパスワードを入力してください</string>
+    <string name="errorLogin">ログインエラー</string>
+    <string name="errorRegistro">ユーザー登録エラー</string>
+    <string name="errorFecha">無効な日付</string>
+    <string name="entradasValido">有効なチケット数を入力してください</string>
+    <string name="noQuedan">利用可能なチケットが不足しています</string>
+    <string name="ponEntradas">チケットの数を入力してください</string>
+    <string name="errorReserva">予約の保存エラー</string>
+    <string name="errorCrearEvento">イベント作成エラー</string>
+    <string name="errorDatos">データの読み込みエラー</string>
+    <string name="todos">すべて</string>
+    <string name="errorVerEventos">イベントの表示エラー</string>
+    <string name="errorEntradasDispo">利用可能なチケットの取得エラー</string>
+    <string name="yaTienes">このイベントの予約はすでにあります</string>
+    <string name="errorVerificar">予約の確認エラー</string>
+    <string name="errorVerReservas">予約の表示エラー</string>
 </resources>

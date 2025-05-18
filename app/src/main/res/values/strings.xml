@@ -44,4 +44,24 @@
     <string name="conf_cambios">Confirmar cambios</string>
     <string name="cerrar">Cerrar sesión</string>
     <string name="cancelar">Cancelar</string>
+    <string name="completa">Completa todos los campos</string>
+    <string name="errorCambioDatos">Error al cambiar los nuevos datos</string>
+    <string name="errorContra">Error al cambiar la contraseña</string>
+    <string name="noCoincide">La contraseña no coincide</string>
+    <string name="correoContra">Debes poner un correo y una contraseña</string>
+    <string name="errorLogin">Error al iniciar sesión</string>
+    <string name="errorRegistro">Error al registrar el usuario</string>
+    <string name="errorFecha">Fecha inválida</string>
+    <string name="entradasValido">Introduce un número de entradas válido</string>
+    <string name="noQuedan">No quedan tantas entradas disponibles</string>
+    <string name="ponEntradas">Introduce un número de entradas</string>
+    <string name="errorReserva">Error al guardar la reserva</string>
+    <string name="errorCrearEvento">Error al crear evento</string>
+    <string name="errorDatos">Error al cargar los datos</string>
+    <string name="todos">Todos</string>
+    <string name="errorVerEventos">Error al mostrar los eventos</string>
+    <string name="errorEntradasDispo">Error al obtener entradas disponibles</string>
+    <string name="yaTienes">Ya tienes una reserva para este evento</string>
+    <string name="errorVerificar">Error al verificar reservas</string>
+    <string name="errorVerReservas">Error al mostrar las reservas</string>
 </resources>

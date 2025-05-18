@@ -40,14 +40,14 @@ class CancelarReservaFragment : Fragment() {
             val date = inputFormat.parse(booking.events?.start_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
-            "Fecha inválida"
+            getString(R.string.errorFecha)
         }
 
         val formattedEndDate = try {
             val date = inputFormat.parse(booking.events?.end_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
-            "Fecha inválida"
+            getString(R.string.errorFecha)
         }
 
         // Inicializa vistas principales

@@ -66,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
             val password = Encrypt().encriptar(txtContra.text.trim().toString())
 
             if (txtCorreo.text.isEmpty() || txtContra.text.isEmpty()) {
-                Toast.makeText(this, "Debes poner un correo y una contraseña", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.correoContra), Toast.LENGTH_SHORT).show()
             }
             else {
                 CoroutineScope(Dispatchers.IO).launch {
@@ -84,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
                         }
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@LoginActivity, "Error al iniciar sesión", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@LoginActivity, getString(R.string.errorLogin), Toast.LENGTH_SHORT).show()
                             txtContra.text = null
                             bar.visibility = View.GONE
                             btnIniciar.visibility = View.VISIBLE

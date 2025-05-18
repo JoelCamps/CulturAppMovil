@@ -119,15 +119,14 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04607c32-3e32-455c-b2d9-f30747eef847" name="Changes" comment="Animaciones de cancelar reserva y crear evento, sonido al reservar">
+    <list default="true" id="04607c32-3e32-455c-b2d9-f30747eef847" name="Changes" comment="Comentarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/AjustesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/AjustesActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ChatActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ChatActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ContraActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ContraActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/EventosActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/EventosActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/RegisterActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ReservasActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/activities/ReservasActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/adapters/BookingAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/adapters/BookingAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/adapters/EventsAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/adapters/EventsAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/CancelarReservaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/CancelarReservaFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/CantidadFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/CantidadFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ConfCancelarFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ConfCancelarFragment.kt" afterDir="false" />
@@ -135,6 +134,9 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/EventosFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/EventosFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ReservarEventosFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ReservarEventosFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ReservasFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/culturapp/fragments/ReservasFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-ca/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-ca/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-ja/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-ja/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -396,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747564990040</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Comentarios">
+      <option name="closed" value="true" />
+      <created>1747595920692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747595920692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -407,7 +417,8 @@
     <MESSAGE value="Buscar y filtrar, eventos y reservas" />
     <MESSAGE value="Animaciones login, cambiar contraseña, register" />
     <MESSAGE value="Animaciones de cancelar reserva y crear evento, sonido al reservar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Animaciones de cancelar reserva y crear evento, sonido al reservar" />
+    <MESSAGE value="Comentarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentarios" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -90,19 +90,19 @@ class CrearEventosFragment : Fragment() {
                                 btnCrear.visibility = View.GONE
                                 bar.visibility = View.VISIBLE
                             } catch (e: Exception) {
-                                Toast.makeText(requireContext(), "Error al crear evento", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(requireContext(), getString(R.string.errorCrearEvento), Toast.LENGTH_SHORT).show()
                                 bar.visibility = View.GONE
                                 btnCrear.visibility = View.VISIBLE
                             }
                         }
                     } else {
-                        Toast.makeText(requireContext(), "Completa todos los campos", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(requireContext(), getString(R.string.completa), Toast.LENGTH_SHORT).show()
                     }
                 }
 
             } catch (e: Exception) {
                 e.printStackTrace()
-                Toast.makeText(requireContext(), "Error al cargar los datos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), getString(R.string.errorDatos), Toast.LENGTH_SHORT).show()
             }
         }
     }

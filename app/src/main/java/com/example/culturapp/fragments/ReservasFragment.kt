@@ -53,13 +53,13 @@ class ReservasFragment : Fragment() {
                 val bookings: List<Bookings>? = user.id?.let { BookingsCall().getBookingUser(it) }
                 val reservasFiltrados = bookings?.toMutableList()
                 val tipos = bookings?.mapNotNull { it.events?.type_event?.name }?.distinct()?.toMutableList()
-                tipos?.add(0, "Todos")
+                tipos?.add(0, getString(R.string.todos))
 
                 withContext(Dispatchers.Main) {
                     rvReserva.layoutManager = LinearLayoutManager(requireContext())
 
                     if (reservasFiltrados != null) {
-                        val adapter = BookingAdapter(reservasFiltrados, object : BookingAdapter.OnItemClickListener {
+                        val adapter = BookingAdapter(requireContext(), reservasFiltrados, object : BookingAdapter.OnItemClickListener {
                             override fun onItemClick(booking: Bookings) {
                                 // Abrir fragmento para cancelar reserva
                                 val cancelarReservaFragment = CancelarReservaFragment()
@@ -101,7 +101,7 @@ class ReservasFragment : Fragment() {
                         spFiltro.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                                 val tipoSeleccionado = tipos?.get(position)
-                                val listaFiltrada = if (tipoSeleccionado == "Todos") bookings else bookings.filter { it.events?.type_event?.name == tipoSeleccionado }
+                                val listaFiltrada = if (tipoSeleccionado == getString(R.string.todos)) bookings else bookings.filter { it.events?.type_event?.name == tipoSeleccionado }
                                 reservasFiltrados.clear()
                                 reservasFiltrados.addAll(listaFiltrada)
                                 adapter.updateList(reservasFiltrados)
@@ -113,7 +113,7 @@ class ReservasFragment : Fragment() {
                 }
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(context, "Error al mostrar las reservas", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, getString(R.string.errorVerReservas), Toast.LENGTH_SHORT).show()
                 }
             }
         }

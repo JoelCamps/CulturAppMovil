@@ -63,7 +63,7 @@ class ReservarEventosFragment : Fragment() {
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     Toast.makeText(
-                        context, "Error al obtener entradas disponibles", Toast.LENGTH_SHORT
+                        requireContext(), getString(R.string.errorEntradasDispo), Toast.LENGTH_SHORT
                     ).show()
                 }
             }
@@ -76,14 +76,14 @@ class ReservarEventosFragment : Fragment() {
                 val date = inputFormat.parse(event.start_datetime)
                 outputFormat.format(date!!)
             } catch (e: ParseException) {
-                "Fecha inválida"
+                Toast.makeText(requireContext(), requireContext().getString(R.string.errorFecha), Toast.LENGTH_SHORT).show()
             }
 
             val formattedEndDate = try {
                 val date = inputFormat.parse(event.end_datetime)
                 outputFormat.format(date!!)
             } catch (e: ParseException) {
-                "Fecha inválida"
+                Toast.makeText(requireContext(), requireContext().getString(R.string.errorFecha), Toast.LENGTH_SHORT).show()
             }
 
             withContext(Dispatchers.Main) {
@@ -100,8 +100,8 @@ class ReservarEventosFragment : Fragment() {
 
                 // Mostrar la información del evento en las vistas correspondientes
                 lblNombreEvento.text = event.title
-                lblFechaInicio.text = formattedStartDate
-                lblFechFinal.text = formattedEndDate
+                lblFechaInicio.text = formattedStartDate.toString()
+                lblFechFinal.text = formattedEndDate.toString()
                 lblTipo.text = event.type_event?.name
                 lblPrecio.text = event.price.toString()
                 lblSala.text = event.rooms?.name
@@ -116,7 +116,7 @@ class ReservarEventosFragment : Fragment() {
 
                             withContext(Dispatchers.Main) {
                                 if (bookings?.any { it.user_id == user.id } == true) {
-                                    Toast.makeText(context, "Ya tienes una reserva para este evento.", Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(context, getString(R.string.yaTienes), Toast.LENGTH_SHORT).show()
                                 } else {
                                     val cantidadFragment = CantidadFragment()
                                     bundle.putSerializable("event", event)
@@ -131,7 +131,7 @@ class ReservarEventosFragment : Fragment() {
                             }
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {
-                                Toast.makeText(context, "Error al verificar reservas", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, getString(R.string.errorVerificar), Toast.LENGTH_SHORT).show()
                             }
                         }
                     }

@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
         btnIniciar.setOnClickListener {
             if (txtNombre.text.isEmpty() || txtApellidos.text.isEmpty() || txtCorreo.text.isEmpty() ||
                 txtContra.text.isEmpty() || txtConfirmar.text.isEmpty()) {
-                Toast.makeText(this, "Debes completar todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.completa), Toast.LENGTH_SHORT).show()
             } else {
                 if (txtContra.text.toString() == txtConfirmar.text.toString()) {
                     CoroutineScope(Dispatchers.IO).launch {
@@ -62,14 +62,14 @@ class RegisterActivity : AppCompatActivity() {
                             }
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {
-                                Toast.makeText(this@RegisterActivity, "Error al registrar el usuario", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(this@RegisterActivity, getString(R.string.errorRegistro), Toast.LENGTH_SHORT).show()
                             }
                             bar.visibility = View.GONE
                             btnIniciar.visibility = View.VISIBLE
                         }
                     }
                 } else {
-                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.noCoincide), Toast.LENGTH_SHORT).show()
                 }
             }
         }

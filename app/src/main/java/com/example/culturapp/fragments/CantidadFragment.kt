@@ -56,7 +56,7 @@ class CantidadFragment : Fragment() {
 
                 if (booking != null) {
                     if (booking <= 0) {
-                        Toast.makeText(context,"Introduce un número de entradas válido", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, getString(R.string.entradasValido), Toast.LENGTH_SHORT).show()
                     } else{
                         if ((quantityDispo - booking) >= 0){
 
@@ -78,12 +78,12 @@ class CantidadFragment : Fragment() {
                             requireActivity().recreate()
                         }
                         else{
-                            Toast.makeText(context,"No quedan tantas entradas disponibles", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(context,getString(R.string.noQuedan), Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
                 else{
-                    Toast.makeText(context,"Introduce un número de entradas", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context,getString(R.string.ponEntradas), Toast.LENGTH_SHORT).show()
                 }
             }
         }

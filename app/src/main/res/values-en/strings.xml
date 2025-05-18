@@ -44,4 +44,24 @@
     <string name="conf_cambios">Confirm changes</string>
     <string name="cerrar">Log out</string>
     <string name="cancelar">Cancel</string>
+    <string name="completa">Complete all fields</string>
+    <string name="errorCambioDatos">Error changing new data</string>
+    <string name="errorContra">Error changing password</string>
+    <string name="noCoincide">Password does not match</string>
+    <string name="correoContra">You must enter an email and a password</string>
+    <string name="errorLogin">Error logging in</string>
+    <string name="errorRegistro">Error registering user</string>
+    <string name="errorFecha">Invalid date</string>
+    <string name="entradasValido">Enter a valid number of tickets</string>
+    <string name="noQuedan">Not enough tickets available</string>
+    <string name="ponEntradas">Enter a number of tickets</string>
+    <string name="errorReserva">Error saving the booking</string>
+    <string name="errorCrearEvento">Error creating event</string>
+    <string name="errorDatos">Error loading data</string>
+    <string name="todos">All</string>
+    <string name="errorVerEventos">Error showing events</string>
+    <string name="errorEntradasDispo">Error getting available tickets</string>
+    <string name="yaTienes">You already have a booking for this event</string>
+    <string name="errorVerificar">Error verifying bookings</string>
+    <string name="errorVerReservas">Error showing bookings</string>
 </resources>

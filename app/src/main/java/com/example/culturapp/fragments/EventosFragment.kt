@@ -48,12 +48,12 @@ class EventosFragment : Fragment() {
 
                 val eventosFiltrados = events.toMutableList()
                 val tipos = events.map { it.type_event?.name }.distinct().toMutableList()
-                tipos.add(0, "Todos")
+                tipos.add(0, getString(R.string.todos))
 
                 withContext(Dispatchers.Main) {
                     // Configura RecyclerView y abre a ReservarEventosFragment al hacer clic
                     rvEvento.layoutManager = LinearLayoutManager(requireContext())
-                    val adapter = EventsAdapter(eventosFiltrados, object : EventsAdapter.OnItemClickListener {
+                    val adapter = EventsAdapter(requireContext(), eventosFiltrados, object : EventsAdapter.OnItemClickListener {
                         override fun onItemClick(event: Events) {
                             val reservarEventosFragment = ReservarEventosFragment()
                             val bundle = Bundle()
@@ -94,7 +94,7 @@ class EventosFragment : Fragment() {
                     spFiltro.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                         override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                             val tipoSeleccionado = tipos[position]
-                            val listaFiltrada = if (tipoSeleccionado == "Todos") {
+                            val listaFiltrada = if (tipoSeleccionado == getString(R.string.todos)) {
                                 events
                             } else {
                                 events.filter { it.type_event?.name == tipoSeleccionado }
@@ -111,7 +111,7 @@ class EventosFragment : Fragment() {
             } catch (e: Exception) {
                 withContext(Dispatchers.Main) {
                     val context = this@EventosFragment.context ?: return@withContext
-                    Toast.makeText(context, "Error al mostrar los eventos", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, getString(R.string.errorVerEventos), Toast.LENGTH_SHORT).show()
                 }
             }
         }
