@@ -18,9 +18,11 @@ class EventosActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_eventos)
 
+        // Configura pantalla fullscreen y oculta navegación
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        // Inicializa vistas principales y selecciona sección activa
         val lblTitulo: TextView = findViewById(R.id.lblTitulo)
         val imgEvento: ImageView = findViewById(R.id.imgEvento)
         val lblEvento: TextView = findViewById(R.id.lblEvento)
@@ -35,36 +37,29 @@ class EventosActivity : AppCompatActivity() {
         lblEvento.setTextColor(seleccionado)
 
         val users = intent.getSerializableExtra("userlogin") as? Users
+
+        // Inserta el fragmento de eventos con el usuario actual
         val fragment = users?.let { EventosFragment.newInstance(it) }
         if (fragment != null) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         }
 
-        evento.setOnClickListener{
+        // Recarga fragmento eventos
+        evento.setOnClickListener {
             if (fragment != null) {
                 supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
             }
         }
 
-        chat.setOnClickListener{
-            val intent = Intent(this, ChatActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        // Navegación a otras actividades
+        chat.setOnClickListener {
+            startActivity(Intent(this, ChatActivity::class.java).apply { putExtra("userlogin", users) })
         }
-
-        reserva.setOnClickListener{
-            val intent = Intent(this, ReservasActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        reserva.setOnClickListener {
+            startActivity(Intent(this, ReservasActivity::class.java).apply { putExtra("userlogin", users) })
         }
-
-        ajustes.setOnClickListener{
-            val intent = Intent(this, AjustesActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        ajustes.setOnClickListener {
+            startActivity(Intent(this, AjustesActivity::class.java).apply { putExtra("userlogin", users) })
         }
     }
 }

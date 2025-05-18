@@ -19,9 +19,11 @@ class ReservasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reservas)
 
+        // Configura pantalla fullscreen y oculta navegación
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        // Inicializa vistas principales
         val lblTitulo: TextView = findViewById(R.id.lblTitulo)
         val imgReserva: ImageView = findViewById(R.id.imgReserva)
         val lblReserva: TextView = findViewById(R.id.lblReserva)
@@ -31,38 +33,42 @@ class ReservasActivity : AppCompatActivity() {
         val ajustes: LinearLayout = findViewById(R.id.ajustes)
         val seleccionado = ContextCompat.getColor(this, R.color.morado)
 
+        // Marca la pestaña de reservas como seleccionada
         lblTitulo.text = getString(R.string.reservas)
         imgReserva.setImageResource(R.drawable.calendario_seleccionado)
         lblReserva.setTextColor(seleccionado)
 
         val users = intent.getSerializableExtra("userlogin") as? Users
 
+        // Carga fragmento de reservas con usuario
         val fragment = users?.let { ReservasFragment.newInstance(it) }
         if (fragment != null) {
             supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
         }
 
-        evento.setOnClickListener{
+        // Recarga fragmento eventos
+        reserva.setOnClickListener {
+            if (fragment != null) {
+                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
+            }
+        }
+
+        // Navegación a otras actividades
+        evento.setOnClickListener {
             val intent = Intent(this, EventosActivity::class.java).apply {
                 putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
-        chat.setOnClickListener{
+        chat.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java).apply {
                 putExtra("userlogin", users)
             }
             startActivity(intent)
         }
 
-        reserva.setOnClickListener{
-            if (fragment != null) {
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
-            }
-        }
-
-        ajustes.setOnClickListener{
+        ajustes.setOnClickListener {
             val intent = Intent(this, AjustesActivity::class.java).apply {
                 putExtra("userlogin", users)
             }

@@ -35,14 +35,17 @@ class AjustesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        // Recupera el usuario desde savedInstanceState o intent
         user = savedInstanceState?.getSerializable("userlogin") as? Users
             ?: intent.getSerializableExtra("userlogin") as? Users
 
         setContentView(R.layout.activity_ajustes)
 
+        // Configura pantalla fullscreen y oculta navegación
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        // Inicializa vistas principales y selecciona sección activa
         val lblTitulo: TextView = findViewById(R.id.lblTitulo)
         val imgAjustes: ImageView = findViewById(R.id.imgAjustes)
         val lblAjustes: TextView = findViewById(R.id.lblAjustes)
@@ -69,10 +72,10 @@ class AjustesActivity : AppCompatActivity() {
 
         lblNombre.text = user?.name
 
+        // Configura spinner de idiomas y listener
         val adapter = ArrayAdapter.createFromResource(this, R.array.languages, R.layout.item_spinner)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spIdioma.adapter = adapter
-
         spIdioma.onItemSelectedListener = null
         spIdioma.setSelection(0)
 
@@ -80,111 +83,89 @@ class AjustesActivity : AppCompatActivity() {
             spIdioma.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(parentView: AdapterView<*>, view: View?, position: Int, id: Long) {
                     val selectedLanguage = parentView.getItemAtPosition(position).toString().lowercase()
-
                     val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
                     sharedPreferences.edit().putString("language", selectedLanguage).apply()
-
                     setLocale(selectedLanguage, user)
                 }
-
                 override fun onNothingSelected(parentView: AdapterView<*>) {}
             }
         }
 
+        // Aplica preferencia del modo oscuro y configura switch
         val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
         val modoOscuro = sharedPreferences.getBoolean("modo_oscuro", false)
         swModo.isChecked = modoOscuro
-
         swModo.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
+            if (isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             sharedPreferences.edit().putBoolean("modo_oscuro", isChecked).apply()
         }
 
+        // Actualiza datos del usuario
         btnCambiar.setOnClickListener {
             if (txtNombre.text.isEmpty() && txtApellidos.text.isEmpty() && txtCorreo.text.isEmpty()){
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
-            }
-            else{
+                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+            } else {
                 CoroutineScope(Dispatchers.IO).launch {
                     try {
                         user?.name = txtNombre.text.trim().toString()
                         user?.surname = txtApellidos.text.trim().toString()
                         user?.email = txtCorreo.text.trim().toString()
-
-                        user?.id?.let { it1 -> UsersCall().putUser(it1, user!!) }
-
+                        user?.id?.let { UsersCall().putUser(it, user!!) }
                         withContext(Dispatchers.Main) {
-                            val intent = Intent(this@AjustesActivity, AjustesActivity::class.java).apply {
+                            startActivity(Intent(this@AjustesActivity, AjustesActivity::class.java).apply {
                                 putExtra("userlogin", user)
-                            }
-                            startActivity(intent)
+                            })
                         }
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             Log.e("ERROR", "Excepción en PUT", e)
-                            Toast.makeText(this@AjustesActivity, "Error al cambiar los nuevos datos", Toast.LENGTH_SHORT).show() //guardar texto
+                            Toast.makeText(this@AjustesActivity, "Error al cambiar los nuevos datos", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
             }
         }
 
+        // Cambia contraseña
         btnContra.setOnClickListener {
             if (txtContra.text.isEmpty() && txtConfirmar.text.isEmpty()){
-                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show() //guardar texto
-            }
-            else{
-                if (txtContra.text.toString() == txtConfirmar.text.toString()) {
-                    CoroutineScope(Dispatchers.IO).launch {
-                        try {
-                            val password = Encrypt().encriptar(txtContra.text.trim().toString())
-                            user?.email?.let { it1 -> UsersCall().putUsersPassword(it1, password) }
-
-                            txtContra.text = null
-                            txtConfirmar.text = null
-                        } catch (e: Exception) {
-                            withContext(Dispatchers.Main) {
-                                Log.e("ERROR", "Excepción en PUT", e)
-                                Toast.makeText(this@AjustesActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show() //guardar texto
-                            }
+                Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
+            } else if (txtContra.text.toString() == txtConfirmar.text.toString()) {
+                CoroutineScope(Dispatchers.IO).launch {
+                    try {
+                        val password = Encrypt().encriptar(txtContra.text.trim().toString())
+                        user?.email?.let { UsersCall().putUsersPassword(it, password) }
+                        txtContra.text = null
+                        txtConfirmar.text = null
+                    } catch (e: Exception) {
+                        withContext(Dispatchers.Main) {
+                            Log.e("ERROR", "Excepción en PUT", e)
+                            Toast.makeText(this@AjustesActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
-                else{
-                    Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show() //guardar texto
-                }
+            } else {
+                Toast.makeText(this, "La contraseña no coincide", Toast.LENGTH_SHORT).show()
             }
         }
 
+        // Cierra sesión
         btnCerrar.setOnClickListener {
             val intent = Intent(this@AjustesActivity, LoginActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
         }
 
-        evento.setOnClickListener{
-            val intent = Intent(this, EventosActivity::class.java).apply {
-                putExtra("userlogin", user)
-            }
-            startActivity(intent)
+        // Navegación a otras actividades
+        evento.setOnClickListener {
+            startActivity(Intent(this, EventosActivity::class.java).apply { putExtra("userlogin", user) })
         }
-
-        chat.setOnClickListener{
-            val intent = Intent(this, ChatActivity::class.java).apply {
-                putExtra("userlogin", user)
-            }
-            startActivity(intent)
+        chat.setOnClickListener {
+            startActivity(Intent(this, ChatActivity::class.java).apply { putExtra("userlogin", user) })
         }
-
-        reserva.setOnClickListener{
-            val intent = Intent(this, ReservasActivity::class.java).apply {
-                putExtra("userlogin", user)
-            }
-            startActivity(intent)
+        reserva.setOnClickListener {
+            startActivity(Intent(this, ReservasActivity::class.java).apply { putExtra("userlogin", user) })
         }
     }
 
@@ -193,17 +174,13 @@ class AjustesActivity : AppCompatActivity() {
         outState.putSerializable("userlogin", user)
     }
 
+    // Cambia idioma de la aplicación
     private fun setLocale(idioma: String, user: Users?) {
         val locale = Locale(idioma)
         Locale.setDefault(locale)
-
         val config = Configuration()
         config.setLocale(locale)
         baseContext.resources.updateConfiguration(config, baseContext.resources.displayMetrics)
-
-        val intent = Intent(this, this::class.java).apply {
-            putExtra("userlogin", user)
-        }
-        startActivity(intent)
+        startActivity(Intent(this, this::class.java).apply { putExtra("userlogin", user) })
     }
 }

@@ -32,6 +32,7 @@ class CancelarReservaFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val bundle = Bundle()
 
+        // Formateo de fechas desde el formato original al estándar
         val inputFormat = SimpleDateFormat("MMM dd yyyy h:mma", Locale.getDefault())
         val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
@@ -49,6 +50,7 @@ class CancelarReservaFragment : Fragment() {
             "Fecha inválida"
         }
 
+        // Inicializa vistas principales
         val lblNombreEvento = view.findViewById<TextView>(R.id.lblNombreEvento)
         val lblFechaInicio = view.findViewById<TextView>(R.id.lblFechaInicio)
         val lblFechFinal = view.findViewById<TextView>(R.id.lblFechFinal)
@@ -59,6 +61,7 @@ class CancelarReservaFragment : Fragment() {
         val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
         val btnCancelar = view.findViewById<TextView>(R.id.btnCancelar)
 
+        // Asignación de datos a la interfaz
         lblNombreEvento.text = booking.events?.title
         lblFechaInicio.text = formattedStartDate
         lblFechFinal.text = formattedEndDate
@@ -68,6 +71,7 @@ class CancelarReservaFragment : Fragment() {
         lblEntradas.text = booking.quantity.toString()
         lblDescripcion.text = booking.events?.description
 
+        // Abre el fragmento de confirmación de cancelación
         btnCancelar.setOnClickListener {
             val confCancelarFragment = ConfCancelarFragment()
 

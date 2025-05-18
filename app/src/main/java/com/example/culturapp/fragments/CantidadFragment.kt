@@ -43,11 +43,13 @@ class CantidadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Inicializa vistas principales
         val notification = MediaPlayer.create(requireContext(), R.raw.notification_sound)
         val txtCantidad = view.findViewById<EditText>(R.id.txtCantidad)
         val btnReservar = view.findViewById<AppCompatButton>(R.id.btnReservar)
         val btnCancelar = view.findViewById<AppCompatButton>(R.id.btnCancelar)
 
+        // Valida la cantidad y realiza la reserva si es posible
         btnReservar.setOnClickListener {
             CoroutineScope(Dispatchers.Main). launch {
                 val booking: Int? = txtCantidad.text.toString().toIntOrNull()
@@ -86,6 +88,7 @@ class CantidadFragment : Fragment() {
             }
         }
 
+        // Cierra el fragmento
         btnCancelar.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }

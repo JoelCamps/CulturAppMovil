@@ -29,9 +29,11 @@ class ChatActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)
 
+        // Configura pantalla fullscreen y oculta navegación
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
 
+        // Inicializa vistas principales y selecciona sección activa
         val lblTitulo: TextView = findViewById(R.id.lblTitulo)
         val imgChat: ImageView = findViewById(R.id.imgChat)
         val lblChat: TextView = findViewById(R.id.lblChat)
@@ -46,6 +48,7 @@ class ChatActivity : AppCompatActivity() {
         imgChat.setImageResource(R.drawable.chat_seleccionado)
         lblChat.setTextColor(seleccionado)
 
+        // Configura RecyclerView para mostrar mensajes en orden
         val rvMensajes = findViewById<RecyclerView>(R.id.rvMensajes)
         chatAdapter = ChatAdapter(mutableListOf())
         rvMensajes.layoutManager = LinearLayoutManager(this).apply {
@@ -55,6 +58,7 @@ class ChatActivity : AppCompatActivity() {
 
         val users = intent.getSerializableExtra("userlogin") as? Users
 
+        // Establece conexión con el servidor y escucha mensajes entrantes
         lifecycleScope.launch {
             client.connect()
             launch {
@@ -67,42 +71,33 @@ class ChatActivity : AppCompatActivity() {
             }
         }
 
+        // Envía mensaje al servidor
         btnEnviar.setOnClickListener {
             val text = txtMensaje.text.trim().toString()
 
-            if (text != ""){
+            if (text.isNotEmpty()) {
                 lifecycleScope.launch {
                     if (users != null) {
-                        users.id?.let { it1 -> client.sendMessage(it1, text) }
+                        users.id?.let { client.sendMessage(it, text) }
                     }
                 }
-
                 txtMensaje.text = null
             }
         }
 
-        evento.setOnClickListener{
-            val intent = Intent(this, EventosActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        // Navegación a otras actividades
+        evento.setOnClickListener {
+            startActivity(Intent(this, EventosActivity::class.java).apply { putExtra("userlogin", users) })
         }
-
-        reserva.setOnClickListener{
-            val intent = Intent(this, ReservasActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        reserva.setOnClickListener {
+            startActivity(Intent(this, ReservasActivity::class.java).apply { putExtra("userlogin", users) })
         }
-
-        ajustes.setOnClickListener{
-            val intent = Intent(this, AjustesActivity::class.java).apply {
-                putExtra("userlogin", users)
-            }
-            startActivity(intent)
+        ajustes.setOnClickListener {
+            startActivity(Intent(this, AjustesActivity::class.java).apply { putExtra("userlogin", users) })
         }
     }
 
+    // Desconecta el cliente al destruir la actividad
     override fun onDestroy() {
         super.onDestroy()
         client.disconnect()

@@ -20,10 +20,10 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-private lateinit var event: Events
-private lateinit var user: Users
-
 class ReservarEventosFragment : Fragment() {
+
+    private lateinit var event: Events
+    private lateinit var user: Users
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,11 +35,12 @@ class ReservarEventosFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
-                             ): View? {
+    ): View? {
         return inflater.inflate(R.layout.fragment_reservar_eventos, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        // Calcula y muestra en la interfaz la cantidad de entradas disponibles para el evento.
         CoroutineScope(Dispatchers.IO).launch {
             val bundle = Bundle()
 
@@ -48,10 +49,8 @@ class ReservarEventosFragment : Fragment() {
 
                 withContext(Dispatchers.Main) {
                     var totalQuantity = 0
-                    if (bookings != null) {
-                        for (booking in bookings) {
-                            totalQuantity += booking.quantity
-                        }
+                    bookings?.forEach { booking ->
+                        totalQuantity += booking.quantity
                     }
 
                     val quantityDispo = event.capacity - totalQuantity
@@ -65,10 +64,11 @@ class ReservarEventosFragment : Fragment() {
                 withContext(Dispatchers.Main) {
                     Toast.makeText(
                         context, "Error al obtener entradas disponibles", Toast.LENGTH_SHORT
-                                  ).show()
+                    ).show()
                 }
             }
 
+            // Formatear las fechas del evento para mostrar en la UI
             val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
             val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
@@ -87,6 +87,7 @@ class ReservarEventosFragment : Fragment() {
             }
 
             withContext(Dispatchers.Main) {
+                // Referencias a vistas para mostrar la información del evento
                 val lblNombreEvento = view.findViewById<TextView>(R.id.lblNombreEvento)
                 val lblFechaInicio = view.findViewById<TextView>(R.id.lblFechaInicio)
                 val lblFechFinal = view.findViewById<TextView>(R.id.lblFechFinal)
@@ -97,6 +98,7 @@ class ReservarEventosFragment : Fragment() {
                 val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
                 val btnReservar = view.findViewById<TextView>(R.id.btnReservar)
 
+                // Mostrar la información del evento en las vistas correspondientes
                 lblNombreEvento.text = event.title
                 lblFechaInicio.text = formattedStartDate
                 lblFechFinal.text = formattedEndDate
@@ -106,20 +108,19 @@ class ReservarEventosFragment : Fragment() {
                 lblEntradas.text = event.capacity.toString()
                 lblDescripcion.text = event.description
 
+                // Verifica si el usuario ya tiene reserva y, si no, abre el fragmento para para reservar.
                 btnReservar.setOnClickListener {
                     CoroutineScope(Dispatchers.IO).launch {
                         try {
-                            val bookings: List<Bookings>? =
-                                event.id?.let { it1 -> BookingsCall().getBookingEvent(it1) }
+                            val bookings: List<Bookings>? = event.id?.let { BookingsCall().getBookingEvent(it) }
 
                             withContext(Dispatchers.Main) {
-                                if (bookings?.find { it.user_id == user.id } != null) {
+                                if (bookings?.any { it.user_id == user.id } == true) {
                                     Toast.makeText(context, "Ya tienes una reserva para este evento.", Toast.LENGTH_SHORT).show()
                                 } else {
                                     val cantidadFragment = CantidadFragment()
                                     bundle.putSerializable("event", event)
                                     bundle.putSerializable("user", user)
-
                                     cantidadFragment.arguments = bundle
 
                                     val transaction = requireActivity().supportFragmentManager.beginTransaction()

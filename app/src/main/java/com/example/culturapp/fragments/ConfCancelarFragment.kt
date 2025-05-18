@@ -36,13 +36,16 @@ class ConfCancelarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Inicializa vistas principales
         val btnSalir = view.findViewById<AppCompatButton>(R.id.btnSalir)
         val btnCancelar = view.findViewById<AppCompatButton>(R.id.btnCancelar)
 
+        // Cierra el fragmento
         btnSalir.setOnClickListener {
             requireActivity().supportFragmentManager.popBackStack()
         }
 
+        // Cancela la reserva y actualiza
         btnCancelar.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
                 try {
