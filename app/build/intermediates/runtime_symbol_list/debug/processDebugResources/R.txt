@@ -3592,6 +3592,7 @@ int id snackbar_text 0x7f0a01c2
 int id snap 0x7f0a01c3
 int id snapMargins 0x7f0a01c4
 int id south 0x7f0a01c5
+int id spFiltro 0x7f0a023c
 int id spIdioma 0x7f0a01c6
 int id spSala 0x7f0a01c7
 int id spTipo 0x7f0a01c8
@@ -3619,6 +3620,7 @@ int id stretch 0x7f0a01dd
 int id submenuarrow 0x7f0a01de
 int id submit_area 0x7f0a01df
 int id supportScrollUp 0x7f0a01e0
+int id svBuscar 0x7f0a023d
 int id swModo 0x7f0a01e1
 int id tabMode 0x7f0a01e2
 int id tag_accessibility_actions 0x7f0a01e3

@@ -63,7 +63,7 @@ class CantidadFragment : Fragment() {
                                         user_id = it2,
                                         event_id = it1,
                                         active = true,
-                                        events = event)
+                                        events = null)
                                 }
                             }
 

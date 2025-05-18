@@ -3593,6 +3593,7 @@ id snackbar_text
 id snap
 id snapMargins
 id south
+id spFiltro
 id spIdioma
 id spSala
 id spTipo
@@ -3620,6 +3621,7 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
+id svBuscar
 id swModo
 id tabMode
 id tag_accessibility_actions

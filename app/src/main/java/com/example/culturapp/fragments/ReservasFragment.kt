@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
+import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -38,16 +40,21 @@ class ReservasFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val svBuscar = view.findViewById<SearchView>(R.id.svBuscar)
+        val spFiltro = view.findViewById<Spinner>(R.id.spFiltro)
         val rvReserva = view.findViewById<RecyclerView>(R.id.RVReserva)
 
         CoroutineScope(Dispatchers.IO). launch {
             try {
                 val bookings: List<Bookings>? = user.id?.let { BookingsCall().getBookingUser(it) }
 
+                val reservasFiltrados = bookings?.toMutableList()
+
                 withContext(Dispatchers.Main) {
                     rvReserva.layoutManager = LinearLayoutManager(requireContext())
-                    val adapter = bookings?.let {
-                        BookingAdapter(it, object : BookingAdapter.OnItemClickListener {
+
+                    if (reservasFiltrados != null) {
+                        val adapter = BookingAdapter(reservasFiltrados, object : BookingAdapter.OnItemClickListener {
                             override fun onItemClick(booking: Bookings) {
                                 val cancelarReservaFragment = CancelarReservaFragment()
 
@@ -62,10 +69,32 @@ class ReservasFragment : Fragment() {
                                 transaction.commit()
                             }
                         })
-                    }
 
-                    rvReserva.adapter = adapter
+                        rvReserva.adapter = adapter
+
+                        svBuscar.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+                            override fun onQueryTextSubmit(query: String?): Boolean {
+                                return false
+                            }
+
+                            override fun onQueryTextChange(newText: String?): Boolean {
+                                val texto = newText.orEmpty().lowercase()
+
+                                val listaFiltrada = bookings.filter {
+                                    (it.events?.title?.contains(texto, ignoreCase = true) == true) ||
+                                            (it.events?.description?.contains(texto, ignoreCase = true) == true)
+                                }
+
+                                reservasFiltrados.clear()
+                                reservasFiltrados.addAll(listaFiltrada)
+                                adapter.updateList(reservasFiltrados)
+
+                                return true
+                            }
+                        })
+                    }
                 }
+
             }
             catch (e: Exception){
                 withContext(Dispatchers.Main) {

@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 class BookingAdapter(
-    private val bookings: List<Bookings>,
+    private var bookings: List<Bookings>,
     private val listener: OnItemClickListener,
                     ) : RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
 
@@ -44,20 +44,25 @@ class BookingAdapter(
         val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
         val formattedDate = try {
-            val date = inputFormat.parse(bookings[position].events.start_datetime)
+            val date = inputFormat.parse(bookings[position].events?.start_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
             "Fecha inválida"
         }
 
         val booking = bookings[position]
-        holder.txtNombre.text = booking.events.title
+        holder.txtNombre.text = booking.events?.title
         holder.txtFecha.text = formattedDate
-        holder.txtTipo.text = booking.events.type_event?.name
+        holder.txtTipo.text = booking.events?.type_event?.name
 
         holder.itemView.tag = booking
     }
 
     override fun getItemCount() = bookings.size
+
+    fun updateList(newList: List<Bookings>) {
+        bookings = newList.toMutableList()
+        notifyDataSetChanged()
+    }
 }
 

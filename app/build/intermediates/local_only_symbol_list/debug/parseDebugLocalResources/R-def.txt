@@ -79,10 +79,12 @@ id register
 id registroLayout
 id reserva
 id rvMensajes
+id spFiltro
 id spIdioma
 id spSala
 id spTipo
 id spinnerText
+id svBuscar
 id swModo
 id topbar
 id txtApellidos

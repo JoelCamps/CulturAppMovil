@@ -1,6 +1,5 @@
 package com.example.culturapp.adapters
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,10 +11,10 @@ import java.text.ParseException
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-class EventoAdapter(
-    private val events: List<Events>,
+class EventsAdapter(
+    private var events: List<Events>,
     private val listener: OnItemClickListener,
-                   ) : RecyclerView.Adapter<EventoAdapter.EventoViewHolder>() {
+                   ) : RecyclerView.Adapter<EventsAdapter.EventoViewHolder>() {
 
     interface OnItemClickListener {
         fun onItemClick(event: Events)
@@ -58,5 +57,10 @@ class EventoAdapter(
     }
 
     override fun getItemCount() = events.size
+
+    fun updateList(newList: List<Events>) {
+        events = newList.toMutableList()
+        notifyDataSetChanged()
+    }
 }
 

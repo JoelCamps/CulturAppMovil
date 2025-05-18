@@ -102,11 +102,6 @@ class AjustesActivity : AppCompatActivity() {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
             sharedPreferences.edit().putBoolean("modo_oscuro", isChecked).apply()
-
-            val intent = Intent(this, this::class.java).apply {
-                putExtra("userlogin", user)
-            }
-            startActivity(intent)
         }
 
         btnCambiar.setOnClickListener {

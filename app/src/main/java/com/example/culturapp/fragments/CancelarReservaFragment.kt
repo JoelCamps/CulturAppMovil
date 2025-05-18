@@ -36,14 +36,14 @@ class CancelarReservaFragment : Fragment() {
         val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
         val formattedStartDate = try {
-            val date = inputFormat.parse(booking.events.start_datetime)
+            val date = inputFormat.parse(booking.events?.start_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
             "Fecha inválida"
         }
 
         val formattedEndDate = try {
-            val date = inputFormat.parse(booking.events.end_datetime)
+            val date = inputFormat.parse(booking.events?.end_datetime)
             outputFormat.format(date!!)
         } catch (e: ParseException) {
             "Fecha inválida"
@@ -59,14 +59,14 @@ class CancelarReservaFragment : Fragment() {
         val lblDescripcion = view.findViewById<TextView>(R.id.lblDescripcion)
         val btnCancelar = view.findViewById<TextView>(R.id.btnCancelar)
 
-        lblNombreEvento.text = booking.events.title
+        lblNombreEvento.text = booking.events?.title
         lblFechaInicio.text = formattedStartDate
         lblFechFinal.text = formattedEndDate
-        lblTipo.text = booking.events.type_event?.name
-        lblPrecio.text = booking.events.price.toString()
-        lblSala.text = booking.events.rooms?.name
+        lblTipo.text = booking.events?.type_event?.name
+        lblPrecio.text = booking.events?.price.toString()
+        lblSala.text = booking.events?.rooms?.name
         lblEntradas.text = booking.quantity.toString()
-        lblDescripcion.text = booking.events.description
+        lblDescripcion.text = booking.events?.description
 
         btnCancelar.setOnClickListener {
             val confCancelarFragment = ConfCancelarFragment()
