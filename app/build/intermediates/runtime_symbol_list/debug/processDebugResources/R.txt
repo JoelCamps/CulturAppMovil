@@ -3230,6 +3230,7 @@ int id autoComplete 0x7f0a0058
 int id autoCompleteToEnd 0x7f0a0059
 int id autoCompleteToStart 0x7f0a005a
 int id axisRelative 0x7f0a005b
+int id bar 0x7f0a023e
 int id barrier 0x7f0a005c
 int id baseline 0x7f0a005d
 int id beginOnFirstDraw 0x7f0a005e

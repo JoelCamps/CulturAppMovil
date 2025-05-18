@@ -37,6 +37,7 @@ font dmseriftextregular
 id RVEvento
 id RVReserva
 id ajustes
+id bar
 id btnCambiar
 id btnCancelar
 id btnCerrar

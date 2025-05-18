@@ -3,6 +3,8 @@ package com.example.culturapp.activities
 import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
@@ -10,6 +12,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
@@ -47,6 +50,7 @@ class LoginActivity : AppCompatActivity() {
         val lblContra: TextView = findViewById(R.id.lblContra)
         val lblRegister: TextView = findViewById(R.id.lblRegister)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
+        val bar: ProgressBar = findViewById(R.id.bar)
 
         lblContra.setOnClickListener {
             val intent = Intent(this, ContraActivity::class.java)
@@ -69,6 +73,9 @@ class LoginActivity : AppCompatActivity() {
                                 putExtra("userlogin", user)
                             }
                             startActivity(intent)
+
+                            btnIniciar.visibility = View.GONE
+                            bar.visibility = View.VISIBLE
                         }
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {

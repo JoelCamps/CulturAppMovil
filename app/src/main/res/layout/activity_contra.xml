@@ -64,20 +64,33 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnCambiar"
+            <FrameLayout
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:text="@string/cambiar"
-                android:textSize="18sp"
-                android:fontFamily="@font/alkatrabariablefontwght"
-                android:textStyle="bold"
-                android:textColor="@color/negro"
-                android:background="@drawable/boton_perso_azul"
+                android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toTopOf="@+id/lblInicio"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginBottom="8dp"/>
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCambiar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cambiar"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/alkatrabariablefontwght"
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:background="@drawable/boton_perso_azul" />
+
+                <ProgressBar
+                    android:id="@+id/bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:indeterminate="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/lblInicio"

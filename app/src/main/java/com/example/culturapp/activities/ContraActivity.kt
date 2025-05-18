@@ -7,6 +7,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -31,6 +32,7 @@ class ContraActivity : AppCompatActivity() {
         val txtConfirmar: EditText = findViewById(R.id.txtConfirmar)
         val btnCambiar: Button = findViewById(R.id.btnCambiar)
         val lblInicio: TextView = findViewById(R.id.lblInicio)
+        val bar: ProgressBar = findViewById(R.id.bar)
 
         btnCambiar.setOnClickListener {
             btnCambiar.setOnClickListener {
@@ -47,6 +49,8 @@ class ContraActivity : AppCompatActivity() {
                                 withContext(Dispatchers.Main) {
                                     val intent = Intent(this@ContraActivity, LoginActivity::class.java)
                                     startActivity(intent)
+                                    btnCambiar.visibility = View.GONE
+                                    bar.visibility = View.VISIBLE
                                 }
                             } catch (e: Exception) {
                                 withContext(Dispatchers.Main) {

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -33,6 +34,7 @@ class RegisterActivity : AppCompatActivity() {
         val txtConfirmar: EditText = findViewById(R.id.txtConfirmar)
         val btnIniciar: Button = findViewById(R.id.btnIniciar)
         val lblInicio: TextView = findViewById(R.id.lblInicio)
+        val bar: ProgressBar = findViewById(R.id.bar)
 
         btnIniciar.setOnClickListener{
             if (txtNombre.text.isEmpty() || txtApellidos.text.isEmpty() || txtCorreo.text.isEmpty() ||
@@ -59,6 +61,8 @@ class RegisterActivity : AppCompatActivity() {
                             withContext(Dispatchers.Main) {
                                 val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                                 startActivity(intent)
+                                btnIniciar.visibility = View.GONE
+                                bar.visibility = View.VISIBLE
                             }
                         } catch (e: Exception) {
                             withContext(Dispatchers.Main) {

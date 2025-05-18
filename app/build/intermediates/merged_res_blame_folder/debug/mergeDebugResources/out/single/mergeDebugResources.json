@@ -12,8 +12,16 @@
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\edittext_personalizado.xml"
     },
     {
+        "merged": "com.example.culturapp-debug-32:/layout_activity_register.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/activity_register.xml"
+    },
+    {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable-night_cerrar_sesion.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable-night\\cerrar_sesion.png"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_activity_contra.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/activity_contra.xml"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_borde_fondo.xml.flat",
@@ -82,6 +90,10 @@
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_chat.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\chat.png"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_activity_login.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_calendario_seleccionado.png.flat",
@@ -270,10 +282,6 @@
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_activity_chat.xml.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\layout\\activity_chat.xml"
-    },
-    {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_ajustes.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_ajustes.xml"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\layout_topbar.xml.flat",
