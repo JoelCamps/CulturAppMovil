@@ -12,16 +12,8 @@
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\edittext_personalizado.xml"
     },
     {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_register.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable-night_cerrar_sesion.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable-night\\cerrar_sesion.png"
-    },
-    {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_contra.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_contra.xml"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_borde_fondo.xml.flat",
@@ -46,6 +38,10 @@
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/raw_notification_sound.flac.flat",
+        "source": "com.example.culturapp-main-34:/raw/notification_sound.flac"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable-night_logo.png.flat",
@@ -90,10 +86,6 @@
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_chat.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\chat.png"
-    },
-    {
-        "merged": "com.example.culturapp-debug-32:/layout_activity_login.xml.flat",
-        "source": "com.example.culturapp-main-34:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_calendario_seleccionado.png.flat",
@@ -204,6 +196,10 @@
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\chat_seleccionado.png"
     },
     {
+        "merged": "com.example.culturapp-debug-32:/layout_fragment_crear_evento.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/fragment_crear_evento.xml"
+    },
+    {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable-night_ajustes.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable-night\\ajustes.png"
     },
@@ -290,5 +286,9 @@
     {
         "merged": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-debug-32:\\drawable_ajustes_seleccionado.png.flat",
         "source": "C:\\Users\\Joel\\.gradle\\daemon\\8.10.2\\com.example.culturapp-main-34:\\drawable\\ajustes_seleccionado.png"
+    },
+    {
+        "merged": "com.example.culturapp-debug-32:/layout_fragment_cancelar_reserva.xml.flat",
+        "source": "com.example.culturapp-main-34:/layout/fragment_cancelar_reserva.xml"
     }
 ]

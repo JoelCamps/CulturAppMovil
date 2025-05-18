@@ -1,6 +1,7 @@
 package com.example.culturapp.fragments
 
 import Users
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -42,6 +43,7 @@ class CantidadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val notification = MediaPlayer.create(requireContext(), R.raw.notification_sound)
         val txtCantidad = view.findViewById<EditText>(R.id.txtCantidad)
         val btnReservar = view.findViewById<AppCompatButton>(R.id.btnReservar)
         val btnCancelar = view.findViewById<AppCompatButton>(R.id.btnCancelar)
@@ -70,7 +72,7 @@ class CantidadFragment : Fragment() {
                             if (newBooking != null) {
                                 BookingsCall().postBooking(newBooking)
                             }
-
+                            notification.start()
                             requireActivity().recreate()
                         }
                         else{

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -219,16 +219,36 @@
         android:layout_marginBottom="20dp"
         android:maxLines="1" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCrear"
-        android:layout_width="280dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/crear"
-        android:textSize="18sp"
-        android:fontFamily="@font/alkatrabariablefontwght"
-        android:textStyle="bold"
-        android:textColor="@color/negro"
-        android:background="@drawable/boton_perso_azul"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="20dp">
 
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCrear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/crear"
+            android:textSize="18sp"
+            android:fontFamily="@font/alkatrabariablefontwght"
+            android:textStyle="bold"
+            android:textColor="@color/negro"
+            android:background="@drawable/boton_perso_azul" />
+
+            <ProgressBar
+                android:id="@+id/bar"
+                style="?android:attr/progressBarStyle"
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

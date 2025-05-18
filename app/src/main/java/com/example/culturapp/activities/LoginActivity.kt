@@ -81,6 +81,8 @@ class LoginActivity : AppCompatActivity() {
                         withContext(Dispatchers.Main) {
                             Toast.makeText(this@LoginActivity, "Error al iniciar sesión", Toast.LENGTH_SHORT).show() //guardar texto
                             txtContra.text = null
+                            bar.visibility = View.GONE
+                            btnIniciar.visibility = View.VISIBLE
                         }
                     }
                 }

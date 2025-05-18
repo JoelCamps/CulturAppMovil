@@ -40,7 +40,7 @@ class BookingAdapter(
     }
 
     override fun onBindViewHolder(holder: BookingViewHolder, position: Int) {
-        val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.getDefault())
+        val inputFormat = SimpleDateFormat("MMM dd yyyy h:mma", Locale.getDefault())
         val outputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
         val formattedDate = try {

@@ -68,6 +68,8 @@ class RegisterActivity : AppCompatActivity() {
                             withContext(Dispatchers.Main) {
                                 Toast.makeText(this@RegisterActivity, "Error al registrar el usuario", Toast.LENGTH_SHORT).show() //guardar texto
                             }
+                            bar.visibility = View.GONE
+                            btnIniciar.visibility = View.VISIBLE
                         }
                     }
                 }

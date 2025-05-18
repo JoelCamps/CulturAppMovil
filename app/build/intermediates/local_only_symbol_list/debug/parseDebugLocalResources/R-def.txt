@@ -38,6 +38,7 @@ id RVEvento
 id RVReserva
 id ajustes
 id bar
+id barCancelar
 id btnCambiar
 id btnCancelar
 id btnCerrar
@@ -125,6 +126,7 @@ layout navbar
 layout topbar
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw notification_sound
 string ajustes
 string apellidos
 string app_name

@@ -57,6 +57,8 @@ class ContraActivity : AppCompatActivity() {
                                     Log.e("ERROR", "Excepción en PUT", e)
                                     Toast.makeText(this@ContraActivity, "Error al cambiar la contraseña", Toast.LENGTH_SHORT).show() //guardar texto
                                 }
+                                bar.visibility = View.GONE
+                                btnCambiar.visibility = View.VISIBLE
                             }
                         }
                     }

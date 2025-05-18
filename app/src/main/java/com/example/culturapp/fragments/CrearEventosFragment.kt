@@ -1,16 +1,20 @@
 package com.example.culturapp.fragments
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.lifecycle.lifecycleScope
+import androidx.transition.Visibility
 import com.example.culturapp.R
 import com.example.culturapp.api.calls.EventsCall
 import com.example.culturapp.api.calls.RoomsCall
@@ -19,6 +23,9 @@ import com.example.culturapp.clases.Events
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.text.ParseException
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 
 class CrearEventosFragment : Fragment() {
@@ -42,6 +49,7 @@ class CrearEventosFragment : Fragment() {
         val txtEntradas = view.findViewById<EditText>(R.id.txtEntradas)
         val txtDescripcion = view.findViewById<EditText>(R.id.txtDescripcion)
         val btnCrear = view.findViewById<AppCompatButton>(R.id.btnCrear)
+        val bar = view.findViewById<ProgressBar>(R.id.bar)
 
         viewLifecycleOwner.lifecycleScope.launch {
             try {
@@ -92,6 +100,9 @@ class CrearEventosFragment : Fragment() {
                             try {
                                 EventsCall().postEvent(newEvent)
                                 requireActivity().recreate()
+
+                                btnCrear.visibility = View.GONE
+                                bar.visibility = View.VISIBLE
                             }
                             catch (e: Exception) {
                                 context?.let { safeContext ->
@@ -101,6 +112,8 @@ class CrearEventosFragment : Fragment() {
                                         Toast.LENGTH_SHORT
                                                   ).show()
                                 }
+                                bar.visibility = View.GONE
+                                btnCrear.visibility = View.VISIBLE
                             }
                         }
                     }
