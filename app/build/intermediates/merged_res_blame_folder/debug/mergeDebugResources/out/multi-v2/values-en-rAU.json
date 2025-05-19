@@ -4,7 +4,7 @@
             "outputFile": "com.example.culturapp-mergeDebugResources-30:/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joel\\.gradle\\caches\\8.10.2\\transforms\\c5fdbd9493998d03ebb8c733a5546a37\\transformed\\appcompat-1.7.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\c5fdbd9493998d03ebb8c733a5546a37\\transformed\\appcompat-1.7.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Joel\\.gradle\\caches\\8.10.2\\transforms\\819944b5cb08d5cd16a9338085e7886d\\transformed\\core-1.15.0\\res\\values-en-rAU\\values-en-rAU.xml",
+                    "source": "C:\\Users\\CEP-TARDA\\.gradle\\caches\\8.10.2\\transforms\\819944b5cb08d5cd16a9338085e7886d\\transformed\\core-1.15.0\\res\\values-en-rAU\\values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

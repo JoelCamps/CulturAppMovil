@@ -92,14 +92,14 @@ class AjustesActivity : AppCompatActivity() {
         }
 
         // Aplica preferencia del modo oscuro y configura switch
-        val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
-        val modoOscuro = sharedPreferences.getBoolean("modo_oscuro", false)
-        swModo.isChecked = modoOscuro
-        swModo.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            sharedPreferences.edit().putBoolean("modo_oscuro", isChecked).apply()
-        }
+//        val sharedPreferences = getSharedPreferences("user_preferences", MODE_PRIVATE)
+//        val modoOscuro = sharedPreferences.getBoolean("modo_oscuro", false)
+//        swModo.isChecked = modoOscuro
+//        swModo.setOnCheckedChangeListener { _, isChecked ->
+//            if (isChecked) AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//            else AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+//            sharedPreferences.edit().putBoolean("modo_oscuro", isChecked).apply()
+//        }
 
         // Actualiza datos del usuario
         btnCambiar.setOnClickListener {
